@@ -9,6 +9,8 @@ function run_demo(name::String, coefficients::Union{Dagger.Shard, Nothing})
         graph = FrameworkDemo.parse_graphml(path)
         df = FrameworkDemo.mockup_dataflow(graph)
         event = FrameworkDemo.Event(df)
+        logfile = open("test_$(name)_logfile.log", "a")
+        FrameworkDemo.redirect_logs_to_file(logfile)
         @test_nowarn wait.(FrameworkDemo.schedule_graph!(event, coefficients))
     end
 end
