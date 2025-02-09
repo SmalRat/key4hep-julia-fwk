@@ -31,3 +31,10 @@ Manifest.toml
 
 # Data/results/output files
 results/
+
+# Logs
+
+*.log
+
+# Plots images
+*_plot.png
