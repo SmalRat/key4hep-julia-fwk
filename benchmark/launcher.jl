@@ -1,4 +1,4 @@
-using Distributed, Dagger, Plots
+using Plots, JSON
 
 results = Dict()
 
@@ -6,47 +6,21 @@ results = Dict()
 for t in 1:4
     println("Adding a new worker process with $t threads...")
 
-    # Add a worker with the specified thread count
-    worker_id = addprocs(1; exeflags="--threads=$t")[1]
+    output = read(Cmd(`julia --threads=$t --project=. worker.jl`), String)
 
-    @everywhere begin
+    println("Worker output: $output")
 
-    using FrameworkDemo
-    using Dagger
-
-    function compute_task(name::String)
-        println("Running $(name) workflow demo")
-        path = joinpath(pkgdir(FrameworkDemo), "data/demo/$(name)/df.graphml")
-        graph = FrameworkDemo.parse_graphml(path)
-        df = FrameworkDemo.mockup_dataflow(graph)
-        event_count = 10
-        max_concurrent = 4
-        fast = true
-
-        t = @elapsed FrameworkDemo.run_pipeline(df;
-        event_count = event_count,
-        max_concurrent = max_concurrent,
-        fast = fast)
-
-        println("Worker $name output: ", t)
-        return t
+    parsed_result = try
+        JSON.parse(output)["result"]
+    catch e
+        @warn "Failed to parse worker output: $e"
+        nothing
     end
-
-    end
-
-    # Execute the function remotely and fetch the result
-    result = remotecall_fetch(compute_task, worker_id, "sequential")
 
     # Store result in the dictionary
-    results[t] = result
+    results[t] = parsed_result
 
-    println("Execution time for $t threads: ", result)
-
-    # Remove the worker after execution
-    if length(workers()) > 1
-        rmprocs!(Dagger.Sch.eager_context(), workers())
-        workers() |> rmprocs |> wait
-    end
+    println("Execution time for $t threads: ", parsed_result)
 end
 
 # Plot results
