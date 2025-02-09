@@ -1,4 +1,5 @@
 [deps]
+ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 Dagger = "d58978e5-989f-55fb-8d15-ea34adc7bf54"
 FrameworkDemo = "cfbf7e84-66d2-421e-b147-9edb7a8672d2"
@@ -6,6 +7,7 @@ GraphMLReader = "8e6830a9-644c-4485-8539-40ee18e3ca8c"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [sources]
 FrameworkDemo = {path = ".."}

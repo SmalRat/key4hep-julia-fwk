@@ -1,40 +1,105 @@
 using Plots, JSON
+using ArgParse
+using Statistics
 
-results = Dict()
 
-# Launch workers one by one and wait for each to finish
-for t in 1:4
-    println("Adding a new worker process with $t threads...")
+function parse_args(raw_args)
+    s = ArgParseSettings()
 
-    output = read(Cmd(`julia --threads=$t --project=. worker.jl`), String)
+    @add_arg_table! s begin
+        "data-flow"
+        help = "Input data-flow graph as a GraphML file"
+        arg_type = String
+        required = true
 
-    println("Worker output: $output")
+        "--runs-number"
+        help = "Number of runs for each thread count"
+        arg_type = Int
+        default = 1
 
-    parsed_result = try
-        JSON.parse(output)["result"]
-    catch e
-        @warn "Failed to parse worker output: $e"
-        nothing
+        "--min-threads"
+        help = "Minimum number of threads to test"
+        arg_type = Int
+        default = 1
+
+        "--max-threads"
+        help = "Maximum number of threads to test"
+        arg_type = Int
+        default = 4
+
+        "--event-count"
+        help = "Number of events to be processed"
+        arg_type = Int
+        default = 1
+
+        "--max-concurrent"
+        help = "Number of slots for graphs to be scheduled concurrently"
+        arg_type = Int
+        default = 1
+
+        "--fast"
+        help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
+        action = :store_true
+
     end
 
-    # Store result in the dictionary
-    results[t] = parsed_result
-
-    println("Execution time for $t threads: ", parsed_result)
+    return ArgParse.parse_args(raw_args, s)
 end
 
-# Plot results
-thread_counts = collect(keys(results))
-execution_times = collect(values(results))
+function (@main)(raw_args)
+    args = parse_args(raw_args)
 
-p = plot(thread_counts, execution_times, seriestype=:scatter,
-     xlabel="Worker threads", ylabel="Execution time, s", title="Execution time vs. worker threads",
-     marker=:circle, markersize=6, legend=false)
+    run_repetitions = args["runs-number"]
+    min_threads = args["min-threads"]
+    max_threads = args["max-threads"]
 
-filename = "worker_plot.png"
-savefig(p, filename)
-println("Plot saved as $filename")
+    data_flow = args["data-flow"]
+    event_count = args["event-count"]
+    max_concurrent = args["max-concurrent"]
+    fast = args["fast"]
 
-display(p)
+    results = Dict()
 
-sleep(100)
+    # Launch workers for thread counts from 1 to 8, running each a few times
+    for t in min_threads:max_threads
+        results[t] = []
+
+        for i in 1:run_repetitions
+            println("Adding a new worker process with $t threads (Run $i)...")
+
+            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow --event-count=$event_count --max-concurrent=$max_concurrent --fast=$fast`)
+            output = read(worker_cmd, String)
+
+            println("Worker output: $output")
+
+            parsed_result = try
+                JSON.parse(output)["result"]
+            catch e
+                @warn "Failed to parse worker output: $e"
+                nothing
+            end
+
+            push!(results[t], parsed_result)
+
+            println("Execution time for $t threads (Run $i): ", parsed_result)
+        end
+    end
+
+    # Prepare data for plotting
+    thread_counts = collect(keys(results))
+    execution_times = [Statistics.mean(filter(!isnothing, results[t])) for t in thread_counts]  # Take mean of valid results
+
+
+    p = plot(thread_counts, execution_times, seriestype=:scatter,
+        xlabel="Worker threads", ylabel="Execution time, s", title="Execution time vs. worker threads",
+        marker=:circle, markersize=6, legend=false)
+
+    filename = "worker_plot.png"
+    savefig(p, filename)
+    println("Plot saved as $filename")
+
+    display(p)
+
+    sleep(100)
+
+end
