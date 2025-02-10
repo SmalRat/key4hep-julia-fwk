@@ -38,3 +38,6 @@ results/
 
 # Plots images
 *_plot.png
+
+# Benchmark results
+benchmark/benchmark_results/*.json

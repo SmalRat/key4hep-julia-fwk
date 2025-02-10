@@ -1,6 +1,7 @@
 using Plots, JSON
 using ArgParse
 using Statistics
+using Dates
 
 
 function parse_args(raw_args)
@@ -46,6 +47,20 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
+function save_results(results::Dict)
+    dir = "benchmark_results"
+    timestamp = Dates.format(now(), "yyyy-mm-dd_HH-MM-SS")
+    filename = "$dir/benchmark_results_$timestamp.json"
+
+    mkpath(dir)
+
+    open(filename, "w") do io
+        JSON.print(io, results, 2)
+    end
+
+    println("Results saved to $filename")
+end
+
 function (@main)(raw_args)
     args = parse_args(raw_args)
 
@@ -85,6 +100,7 @@ function (@main)(raw_args)
         end
     end
 
+    save_results(results)
     # Prepare data for plotting
     thread_counts = collect(keys(results))
     execution_means = [mean(filter(!isnothing, results[t])) for t in thread_counts]  # Mean execution times
@@ -94,7 +110,8 @@ function (@main)(raw_args)
              yerror=execution_stds,
              xlabel="Worker threads", ylabel="Execution time (s)",
              title="Execution Time vs. Worker Threads",
-             marker=:circle, markersize=6, legend=false)
+             marker=:circle, markersize=6, legend=false,
+             xticks=(thread_counts, string.(thread_counts)))
 
     filename = "worker_plot.png"
     savefig(p, filename)
