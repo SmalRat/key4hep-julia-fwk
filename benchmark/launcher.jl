@@ -87,12 +87,14 @@ function (@main)(raw_args)
 
     # Prepare data for plotting
     thread_counts = collect(keys(results))
-    execution_times = [Statistics.mean(filter(!isnothing, results[t])) for t in thread_counts]  # Take mean of valid results
+    execution_means = [mean(filter(!isnothing, results[t])) for t in thread_counts]  # Mean execution times
+    execution_stds = [std(filter(!isnothing, results[t])) for t in thread_counts]    # Standard deviations
 
-
-    p = plot(thread_counts, execution_times, seriestype=:scatter,
-        xlabel="Worker threads", ylabel="Execution time, s", title="Execution time vs. worker threads",
-        marker=:circle, markersize=6, legend=false)
+    p = plot(thread_counts, execution_means, seriestype=:scatter,
+             yerror=execution_stds,
+             xlabel="Worker threads", ylabel="Execution time (s)",
+             title="Execution Time vs. Worker Threads",
+             marker=:circle, markersize=6, legend=false)
 
     filename = "worker_plot.png"
     savefig(p, filename)
