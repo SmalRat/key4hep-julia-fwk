@@ -1,6 +1,5 @@
-using Plots, JSON
+using JSON
 using ArgParse
-using Statistics
 using Dates
 
 
@@ -101,24 +100,4 @@ function (@main)(raw_args)
     end
 
     save_results(results)
-    # Prepare data for plotting
-    thread_counts = collect(keys(results))
-    execution_means = [mean(filter(!isnothing, results[t])) for t in thread_counts]  # Mean execution times
-    execution_stds = [std(filter(!isnothing, results[t])) for t in thread_counts]    # Standard deviations
-
-    p = plot(thread_counts, execution_means, seriestype=:scatter,
-             yerror=execution_stds,
-             xlabel="Worker threads", ylabel="Execution time (s)",
-             title="Execution Time vs. Worker Threads",
-             marker=:circle, markersize=6, legend=false,
-             xticks=(thread_counts, string.(thread_counts)))
-
-    filename = "worker_plot.png"
-    savefig(p, filename)
-    println("Plot saved as $filename")
-
-    display(p)
-
-    sleep(100)
-
 end
