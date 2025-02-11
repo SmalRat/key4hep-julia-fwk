@@ -2,6 +2,7 @@
 ArgParse = "c7e460c6-2fb9-53a9-8c5b-16f535851c63"
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 Dagger = "d58978e5-989f-55fb-8d15-ea34adc7bf54"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
 FrameworkDemo = "cfbf7e84-66d2-421e-b147-9edb7a8672d2"
 GraphMLReader = "8e6830a9-644c-4485-8539-40ee18e3ca8c"
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
