@@ -1,6 +1,7 @@
 using JSON
 using ArgParse
 using Dates
+using Random
 
 
 function parse_args(raw_args)
@@ -74,29 +75,29 @@ function (@main)(raw_args)
 
     results = Dict()
 
-    # Launch workers for thread counts from 1 to 8, running each a few times
-    for t in min_threads:max_threads
+    threads_list = repeat(min_threads:max_threads, run_repetitions)
+    shuffled_threads = shuffle(threads_list)
+
+    for t in shuffled_threads
         results[t] = []
 
-        for i in 1:run_repetitions
-            println("Adding a new worker process with $t threads (Run $i)...")
+        println("Adding a new worker process with $t threads...")
 
-            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow --event-count=$event_count --max-concurrent=$max_concurrent --fast=$fast`)
-            output = read(worker_cmd, String)
+        worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow --event-count=$event_count --max-concurrent=$max_concurrent --fast=$fast`)
+        output = read(worker_cmd, String)
 
-            println("Worker output: $output")
+        println("Worker output: $output")
 
-            parsed_result = try
-                JSON.parse(output)["result"]
-            catch e
-                @warn "Failed to parse worker output: $e"
-                nothing
-            end
-
-            push!(results[t], parsed_result)
-
-            println("Execution time for $t threads (Run $i): ", parsed_result)
+        parsed_result = try
+            JSON.parse(output)["result"]
+        catch e
+            @warn "Failed to parse worker output: $e"
+            nothing
         end
+
+        push!(results[t], parsed_result)
+
+        println("Execution time for $t threads: ", parsed_result)
     end
 
     save_results(results)
