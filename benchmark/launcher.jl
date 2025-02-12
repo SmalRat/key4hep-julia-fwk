@@ -78,9 +78,11 @@ function (@main)(raw_args)
     threads_list = repeat(min_threads:max_threads, run_repetitions)
     shuffled_threads = shuffle(threads_list)
 
-    for t in shuffled_threads
+    for t in min_threads:max_threads
         results[t] = []
+    end
 
+    for t in shuffled_threads
         println("Adding a new worker process with $t threads...")
 
         worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow --event-count=$event_count --max-concurrent=$max_concurrent --fast=$fast`)
