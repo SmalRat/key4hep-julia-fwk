@@ -93,12 +93,12 @@ function save_execution_plan(df::DataFlowGraph, path::String)
             @info "Written execution plan dot graph to $path"
         end
     else
-        buffer = IOBuffer()
-        MetaGraphs.savedot(buffer, g)
-        dot = String(take!(buffer))
-        graphviz = GraphViz.Graph(dot)
-        GraphViz.layout!(graphviz; engine = "dot")
-        FileIO.save(path, graphviz)
+        dot_buffer = IOBuffer()
+        MetaGraphs.savedot(dot_buffer, g)
+        seekstart(dot_buffer)
+        graph = GraphViz.Graph(dot_buffer)
+        GraphViz.layout!(graph; engine = "dot")
+        FileIO.save(path, graph)
         @info "Written execution plan graph to $path"
     end
 end
