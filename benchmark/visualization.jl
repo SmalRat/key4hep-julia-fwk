@@ -2,6 +2,8 @@ using JSON
 using Statistics
 using Plots
 using DataStructures
+using Cairo
+using FrameworkDemo
 
 function import_results(file::String)::SortedDict{Int, Vector{Float64}}
     local results::SortedDict{Int, Vector{Float64}}
@@ -59,12 +61,18 @@ function plot_histogram_for_thread_count(results::SortedDict{Int, Vector{Float64
                   title="Histogram of Execution Times for $thread_count Threads", legend=false)
 end
 
-results_filename = "benchmark_results_2025-02-10_05-55-06.json"
+function draw_execution_plan(path::String, save_path::String)
+    graph = FrameworkDemo.parse_graphml(path)
+    df = FrameworkDemo.mockup_dataflow(graph)
+    FrameworkDemo.save_execution_plan(df, save_path)
+end
+
+results_filename = "benchmark_results_2025-02-13_23-53-50.json"
 res = import_results(results_filename)
 
 strong_scalability_p = plot_strong_scalability(res)
 parallel_efficiency_p = plot_parallel_efficiency(res)
-histogram_p = plot_histogram_for_thread_count(res, 8)
+histogram_p = plot_histogram_for_thread_count(res, 1)
 
 strong_scalability_plot_filename = "strong_scalability_plot.png"
 parallel_efficiency_plot_filename = "parallel_efficiency_plot.png"
@@ -74,6 +82,11 @@ savefig(strong_scalability_p, strong_scalability_plot_filename)
 savefig(parallel_efficiency_p, parallel_efficiency_plot_filename)
 savefig(histogram_p, histogram_plot_filename)
 
+graph_path = "../data/demo/sequential/df.graphml"
+execution_plan_path = "execution_plan.png"
+draw_execution_plan(graph_path, execution_plan_path)
+
 println("Strong scalability_plot saved as $strong_scalability_plot_filename")
 println("Parallel efficiency_plot saved as $parallel_efficiency_plot_filename")
 println("Histogram plot saved as $histogram_plot_filename")
+println("Execution plan graph saved as $execution_plan_path")
