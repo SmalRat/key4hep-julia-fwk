@@ -4,6 +4,17 @@ using Plots
 using DataStructures
 using Cairo
 using FrameworkDemo
+using ArgParse
+
+
+"""
+Script for visualizing benchmark results
+
+Usage:
+    julia visualization.jl results-filename=<results-filename> [--str-scal=<str-scal>] [--par-eff=<par-eff>] [--hist=<hist>] [--exec-plan=<exec-plan>] [--df-graph=<df-graph>]
+Example:
+    julia --project=. visualization.jl benchmark_results_2025-02-13_23-53-50.json --str-scal=strong_scalability_plot.png --par-eff=parallel_efficiency_plot.png --hist=histogram_plot.png --exec-plan=execution_plan.png --df-graph=../data/demo/sequential/df.graphml
+"""
 
 function import_results(file::String)::SortedDict{Int, Vector{Float64}}
     local results::SortedDict{Int, Vector{Float64}}
@@ -67,26 +78,90 @@ function draw_execution_plan(path::String, save_path::String)
     FrameworkDemo.save_execution_plan(df, save_path)
 end
 
-results_filename = "benchmark_results_2025-02-13_23-53-50.json"
-res = import_results(results_filename)
 
-strong_scalability_p = plot_strong_scalability(res)
-parallel_efficiency_p = plot_parallel_efficiency(res)
-histogram_p = plot_histogram_for_thread_count(res, 1)
+function parse_args(raw_args)
+    s = ArgParseSettings()
 
-strong_scalability_plot_filename = "strong_scalability_plot.png"
-parallel_efficiency_plot_filename = "parallel_efficiency_plot.png"
-histogram_plot_filename = "histogram_plot.png"
+    @add_arg_table! s begin
+        "results-filename"
+        help = "Results file to visualize"
+        arg_type = String
+        required = true
 
-savefig(strong_scalability_p, strong_scalability_plot_filename)
-savefig(parallel_efficiency_p, parallel_efficiency_plot_filename)
-savefig(histogram_p, histogram_plot_filename)
+        "--str-scal"
+        help = "Strong scalability plot filename"
+        arg_type = String
+        default = nothing
 
-graph_path = "../data/demo/sequential/df.graphml"
-execution_plan_path = "execution_plan.png"
-draw_execution_plan(graph_path, execution_plan_path)
+        "--par-eff"
+        help = "Parallel efficiency plot filename"
+        arg_type = String
+        default = nothing
 
-println("Strong scalability_plot saved as $strong_scalability_plot_filename")
-println("Parallel efficiency_plot saved as $parallel_efficiency_plot_filename")
-println("Histogram plot saved as $histogram_plot_filename")
-println("Execution plan graph saved as $execution_plan_path")
+        "--hist"
+        help = "Histogram plot filename"
+        arg_type = String
+        default = nothing
+
+        "--exec-plan"
+        help = "Execution plan graph filename"
+        arg_type = String
+        default = nothing
+
+        "--df-graph"
+        help = "Data flow graph filename"
+        arg_type = String
+        default = nothing
+    end
+
+    return ArgParse.parse_args(raw_args, s)
+end
+
+
+function (@main)(raw_args)
+    args = parse_args(raw_args)
+
+    results_filename = args["results-filename"]
+    strong_scalability_plot_filename = args["str-scal"]
+    parallel_efficiency_plot_filename = args["par-eff"]
+    histogram_plot_filename = args["hist"]
+
+    execution_plan_path = args["exec-plan"]
+    df_graph_path = args["df-graph"]
+
+    res = import_results(results_filename)
+
+    if !isnothing(strong_scalability_plot_filename)
+        strong_scalability_p = plot_strong_scalability(res)
+        dir = "strong_scalability_plots"
+        mkpath(dir)
+        savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
+        println("Strong scalability_plot saved as $strong_scalability_plot_filename")
+    end
+
+    if !isnothing(parallel_efficiency_plot_filename)
+        parallel_efficiency_p = plot_parallel_efficiency(res)
+        dir = "parallel_efficiency_plots"
+        mkpath(dir)
+        savefig(parallel_efficiency_p, dir * "/" *  parallel_efficiency_plot_filename)
+        println("Parallel efficiency_plot saved as $parallel_efficiency_plot_filename")
+    end
+
+    if !isnothing(histogram_plot_filename)
+        for threads_count in keys(res)
+            histogram_p = plot_histogram_for_thread_count(res, threads_count)
+            dir = "histogram_plots"
+            mkpath(dir)
+            cur_file_name = histogram_plot_filename * "_$threads_count" * ".png"
+            savefig(histogram_p, dir * "/" * cur_file_name)
+            println("Histogram plot for $threads_count threads saved as $cur_file_name")
+        end
+    end
+
+    if !isnothing(execution_plan_path) && !isnothing(df_graph_path)
+        dir = "execution_plans"
+        mkpath(dir)
+        draw_execution_plan(df_graph_path, dir * "/" * execution_plan_path)
+        println("Execution plan graph saved as $execution_plan_path")
+    end
+end
