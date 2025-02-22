@@ -4,12 +4,20 @@ using Dates
 using Random
 
 
+const PROGRAM_VERSION = "0.0"
+const RESULTS_DIR = "benchmark_results"
+
 function parse_args(raw_args)
     s = ArgParseSettings()
 
     @add_arg_table! s begin
         "data-flow"
         help = "Input data-flow graph as a GraphML file"
+        arg_type = String
+        required = true
+
+        "--results-filename"
+        help = "Benchmark results will be stored in this file"
         arg_type = String
         required = true
 
@@ -47,18 +55,33 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
-function save_results(results::Dict)
-    dir = "benchmark_results"
+function save_results(results::Dict, results_filename::String)
     timestamp = Dates.format(now(), "yyyy-mm-dd_HH-MM-SS")
-    filename = "$dir/benchmark_results_$timestamp.json"
+    file_path = "$RESULTS_DIR/$results_filename"
 
-    mkpath(dir)
+    new_entry = Dict(
+        "timestamp" => timestamp,
+        "version" => PROGRAM_VERSION,
+        "results" => results
+    )
 
-    open(filename, "w") do io
+    existing_data = if isfile(file_path)
+        try
+            JSON.parsefile(file_path)
+        catch
+            []
+        end
+    else
+        []
+    end
+
+    push!(existing_data, new_entry)
+
+    open(file_path, "w") do io
         JSON.print(io, results, 2)
     end
 
-    println("Results saved to $filename")
+    println("Results saved to $file_path")
 end
 
 function (@main)(raw_args)
@@ -72,6 +95,10 @@ function (@main)(raw_args)
     event_count = args["event-count"]
     max_concurrent = args["max-concurrent"]
     fast = args["fast"]
+
+    results_filename = args["results-filename"]
+
+    mkpath("./$RESULTS_DIR")
 
     results = Dict()
 
@@ -102,5 +129,5 @@ function (@main)(raw_args)
         println("Execution time for $t threads: ", parsed_result)
     end
 
-    save_results(results)
+    save_results(results, results_filename)
 end
