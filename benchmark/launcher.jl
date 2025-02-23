@@ -78,7 +78,7 @@ function save_results(results::Dict, results_filename::String)
     push!(existing_data, new_entry)
 
     open(file_path, "w") do io
-        JSON.print(io, results, 2)
+        JSON.print(io, existing_data, 2)
     end
 
     println("Results saved to $file_path")
