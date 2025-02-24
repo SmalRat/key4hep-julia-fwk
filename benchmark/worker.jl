@@ -5,12 +5,22 @@ using ArgParse
 using BenchmarkTools
 using BenchmarkPlots, StatsPlots
 
+
+const PROGRAM_VERSION = "0.0"
+const RESULTS_DIR = "benchmark_results"
+
+
 function parse_args(raw_args)
     s = ArgParseSettings()
 
     @add_arg_table! s begin
         "data-flow"
         help = "Input data-flow graph as a GraphML file"
+        arg_type = String
+        required = true
+
+        "results-filename"
+        help = "Benchmark results will be stored in this file"
         arg_type = String
         required = true
 
@@ -41,6 +51,9 @@ end
 function append_save(filename::AbstractString, args...)
     endswith(filename, ".json") || badext(filename)
 
+    mkpath(RESULTS_DIR)
+    filename = joinpath(RESULTS_DIR, filename)
+    
     existing_data = if isfile(filename)
         try
             open(filename, "r") do io
@@ -65,7 +78,7 @@ function append_save(filename::AbstractString, args...)
     end
 end
 
-function compute_task(data_flow_name::String, samples::Int, event_count::Int, max_concurrent::Int, fast::Bool)
+function compute_task(data_flow_name::String, results_filename::String, samples::Int, event_count::Int, max_concurrent::Int, fast::Bool)
     path = joinpath(pkgdir(FrameworkDemo), "data/$(data_flow_name)/df.graphml")
     graph = FrameworkDemo.parse_graphml(path)
     df = FrameworkDemo.mockup_dataflow(graph)
@@ -93,7 +106,7 @@ function compute_task(data_flow_name::String, samples::Int, event_count::Int, ma
     savefig(p, dir * "/" * cur_file_name)
     println("Violin benchmark plot saved as $cur_file_name")
 
-    append_save("test_benchmarktools.json", t)
+    append_save(results_filename, t)
 
     return t
 end
@@ -102,6 +115,7 @@ function (@main)(raw_args)
     args = parse_args(raw_args)
 
     data_flow = args["data-flow"]
+    results_filename = args["results-filename"]
     samples = args["samples"]
     event_count = args["event-count"]
     max_concurrent = args["max-concurrent"]
@@ -114,6 +128,6 @@ function (@main)(raw_args)
     FrameworkDemo.redirect_logs_to_file(logfile)
     @info "Worker started"
 
-    res = compute_task(data_flow, samples, event_count, max_concurrent, fast)
+    res = compute_task(data_flow, results_filename, samples, event_count, max_concurrent, fast)
     println(JSON.json(Dict("result" => res)))
 end
