@@ -48,12 +48,12 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
-function append_save(filename::AbstractString, args...)
+function append_save(filename::AbstractString, t::BenchmarkTools.Trial, parameters::Dict)
     endswith(filename, ".json") || badext(filename)
 
     mkpath(RESULTS_DIR)
     filename = joinpath(RESULTS_DIR, filename)
-    
+
     existing_data = if isfile(filename)
         try
             open(filename, "r") do io
@@ -68,8 +68,10 @@ function append_save(filename::AbstractString, args...)
 
     # Generate new JSON object from BenchmarkTools
     buffer = IOBuffer()
-    BenchmarkTools.save(buffer, args...)
+    BenchmarkTools.save(buffer, t)
     new_entry = JSON.parse(String(take!(buffer)))
+    new_entry_dict = new_entry isa Vector{Any} ? new_entry[1] : new_entry
+    new_entry = merge(Dict(new_entry_dict), parameters)
 
     push!(existing_data, new_entry)
 
@@ -95,6 +97,14 @@ function compute_task(data_flow_name::String, results_filename::String, samples:
     max_concurrent = $max_concurrent,
     fast = $fast) seconds = 3600 samples = samples evals = 1
 
+    parameters = Dict(
+        "samples" => "samples",
+        "event_count" => "event_count",
+        "max_concurrent" => "max_concurrent",
+        "fast" => "fast",
+        "data_flow" => "data_flow_name"
+        )
+
     t = run(b)
     println("Trial results:")
     println(t)
@@ -106,7 +116,7 @@ function compute_task(data_flow_name::String, results_filename::String, samples:
     savefig(p, dir * "/" * cur_file_name)
     println("Violin benchmark plot saved as $cur_file_name")
 
-    append_save(results_filename, t)
+    append_save(results_filename, t, parameters)
 
     return t
 end
