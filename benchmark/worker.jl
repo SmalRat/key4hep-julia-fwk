@@ -70,8 +70,7 @@ function append_save(filename::AbstractString, t::BenchmarkTools.Trial, paramete
     buffer = IOBuffer()
     BenchmarkTools.save(buffer, t)
     new_entry = JSON.parse(String(take!(buffer)))
-    new_entry_dict = new_entry isa Vector{Any} ? new_entry[1] : new_entry
-    new_entry = merge(Dict(new_entry_dict), parameters)
+    new_entry = push!(new_entry, parameters)
 
     push!(existing_data, new_entry)
 
@@ -98,11 +97,11 @@ function compute_task(data_flow_name::String, results_filename::String, samples:
     fast = $fast) seconds = 3600 samples = samples evals = 1
 
     parameters = Dict(
-        "samples" => "samples",
-        "event_count" => "event_count",
-        "max_concurrent" => "max_concurrent",
-        "fast" => "fast",
-        "data_flow" => "data_flow_name"
+        "samples" => samples,
+        "event_count" => event_count,
+        "max_concurrent" => max_concurrent,
+        "fast" => fast,
+        "data_flow" => data_flow_name
         )
 
     t = run(b)
