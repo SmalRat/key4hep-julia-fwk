@@ -5,9 +5,9 @@ using ArgParse
 using BenchmarkTools
 using BenchmarkPlots, StatsPlots
 
+include("./db_tools.jl")
 
 const PROGRAM_VERSION = "0.0"
-const RESULTS_DIR = "benchmark_results"
 
 
 function parse_args(raw_args)
@@ -48,36 +48,6 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
-function append_save(filename::AbstractString, t::BenchmarkTools.Trial, parameters::Dict)
-    endswith(filename, ".json") || badext(filename)
-
-    mkpath(RESULTS_DIR)
-    filename = joinpath(RESULTS_DIR, filename)
-
-    existing_data = if isfile(filename)
-        try
-            open(filename, "r") do io
-                JSON.parse(io)
-            end
-        catch
-            []
-        end
-    else
-        []
-    end
-
-    # Generate new JSON object from BenchmarkTools
-    buffer = IOBuffer()
-    BenchmarkTools.save(buffer, t)
-    new_entry = JSON.parse(String(take!(buffer)))
-    new_entry = push!(new_entry, parameters)
-
-    push!(existing_data, new_entry)
-
-    open(filename, "w") do io
-        JSON.print(io, existing_data, 2)
-    end
-end
 
 function compute_task(data_flow_name::String, results_filename::String, samples::Int, event_count::Int, max_concurrent::Int, fast::Bool)
     path = joinpath(pkgdir(FrameworkDemo), "data/$(data_flow_name)/df.graphml")
