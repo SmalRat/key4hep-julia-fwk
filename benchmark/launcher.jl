@@ -1,9 +1,7 @@
-using JSON
 using ArgParse
-using Dates
-using Random
 
-
+# Example cmd line command:
+# julia --project=. launcher.jl demo/parallel results.json --samples=2 --min-threads=8 --max-threads=9 --event-count=20 --max-concurrent=10
 
 function parse_args(raw_args)
     s = ArgParseSettings()
@@ -53,34 +51,6 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
-function save_results(results::Dict, results_filename::String)
-    timestamp = Dates.format(now(), "yyyy-mm-dd_HH-MM-SS")
-    file_path = "$RESULTS_DIR/$results_filename"
-
-    new_entry = Dict(
-        "timestamp" => timestamp,
-        "version" => PROGRAM_VERSION,
-        "results" => results
-    )
-
-    existing_data = if isfile(file_path)
-        try
-            JSON.parsefile(file_path)
-        catch
-            []
-        end
-    else
-        []
-    end
-
-    push!(existing_data, new_entry)
-
-    open(file_path, "w") do io
-        JSON.print(io, existing_data, 2)
-    end
-
-    println("Results saved to $file_path")
-end
 
 function (@main)(raw_args)
     args = parse_args(raw_args)
@@ -99,7 +69,7 @@ function (@main)(raw_args)
     for t in min_threads:max_threads
         println("Adding a new worker process with $t threads...")
 
-        worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$max_concurrent --fast=$fast --samples=$samples`)
+        worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$max_concurrent --samples=$samples --fast=$fast`)
         run(worker_cmd)
 
         println("Worker with $t threads exited.")
