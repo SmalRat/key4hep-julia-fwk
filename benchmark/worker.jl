@@ -7,7 +7,7 @@ using BenchmarkPlots, StatsPlots
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.1"
+const PROGRAM_VERSION = "0.2"
 
 
 function parse_args(raw_args)
@@ -50,21 +50,31 @@ end
 
 
 function compute_task(parameters::Dict)
-    path = joinpath(pkgdir(FrameworkDemo), "data/$(parameters["data_flow_name"])/df.graphml")
+    experiment_parameters = parameters["experiment_parameters"]
+    data_flow_name = experiment_parameters["data_flow_name"]
+    event_count = experiment_parameters["event_count"]
+    max_concurrent = experiment_parameters["max_concurrent"]
+    fast = experiment_parameters["fast"]
+    samples = experiment_parameters["samples"]
+
+    metadata = parameters["metadata"]
+    results_filename = metadata["results_filename"]
+
+    path = joinpath(pkgdir(FrameworkDemo), "data/$(data_flow_name)/df.graphml")
     graph = FrameworkDemo.parse_graphml(path)
     df = FrameworkDemo.mockup_dataflow(graph)
 
     execution_time_with_precompilation = @elapsed FrameworkDemo.run_pipeline(df;
-    event_count = parameters["event_count"],
-    max_concurrent = parameters["max_concurrent"],
-    fast = parameters["fast"])
+    event_count = event_count,
+    max_concurrent = max_concurrent,
+    fast = fast)
 
     println("Execution time with precompilation: $execution_time_with_precompilation")
 
     b = @benchmarkable FrameworkDemo.run_pipeline($df;
-    event_count = $parameters["event_count"],
-    max_concurrent = $parameters["max_concurrent"],
-    fast = $parameters["fast"]) seconds = 3600 samples = parameters["samples"] evals = 1
+    event_count = $event_count,
+    max_concurrent = $max_concurrent,
+    fast = $fast) seconds = 3600 samples = samples evals = 1
 
 
     t = run(b)
@@ -78,7 +88,7 @@ function compute_task(parameters::Dict)
     savefig(p, dir * "/" * cur_file_name)
     println("Violin benchmark plot saved as $cur_file_name")
 
-    append_save(parameters["metadata"]["results_filename"], t, parameters)
+    append_save(results_filename, t, parameters)
 
     return t
 end
@@ -96,12 +106,14 @@ function (@main)(raw_args)
     fast::Bool = args["fast"]
 
     parameters = Dict(
-        "data_flow_name" => data_flow_name,
-        "samples" => samples,
-        "event_count" => event_count,
-        "max_concurrent" => max_concurrent,
-        "fast" => fast,
-        "threads_num" => threads_num,
+        "experiment_parameters" => Dict(
+            "data_flow_name" => data_flow_name,
+            "samples" => samples,
+            "event_count" => event_count,
+            "max_concurrent" => max_concurrent,
+            "fast" => fast,
+            "threads_num" => threads_num
+        ),
         "metadata" => Dict(
             "benchmark_version" => PROGRAM_VERSION,
             "results_filename" => results_filename,
