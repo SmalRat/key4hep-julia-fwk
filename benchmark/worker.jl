@@ -1,13 +1,15 @@
 using FrameworkDemo
 using JSON
 using ArgParse
+using Dates
+using UUIDs
 
 using BenchmarkTools
 using BenchmarkPlots, StatsPlots
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.2"
+const PROGRAM_VERSION = "0.3"
 
 
 function parse_args(raw_args)
@@ -49,7 +51,18 @@ function parse_args(raw_args)
 end
 
 
+function save_violin_plot(t::BenchmarkTools.Trial)
+    p = plot(t)
+    dir = "violin_benchmark_plots"
+    mkpath(dir)
+    cur_file_name = "violin_plot.png"
+    savefig(p, dir * "/" * cur_file_name)
+    println("Violin benchmark plot saved as $cur_file_name")
+end
+
+
 function compute_task(parameters::Dict)
+    # Unpack parameters
     experiment_parameters = parameters["experiment_parameters"]
     data_flow_name = experiment_parameters["data_flow_name"]
     event_count = experiment_parameters["event_count"]
@@ -60,35 +73,37 @@ function compute_task(parameters::Dict)
     metadata = parameters["metadata"]
     results_filename = metadata["results_filename"]
 
+    # Load data-flow graph
     path = joinpath(pkgdir(FrameworkDemo), "data/$(data_flow_name)/df.graphml")
     graph = FrameworkDemo.parse_graphml(path)
     df = FrameworkDemo.mockup_dataflow(graph)
 
+    # Run pipeline with precompilation
     execution_time_with_precompilation = @elapsed FrameworkDemo.run_pipeline(df;
     event_count = event_count,
     max_concurrent = max_concurrent,
     fast = fast)
-
     println("Execution time with precompilation: $execution_time_with_precompilation")
+    parameters["warmup_results"] = Dict("execution_time" => execution_time_with_precompilation)
+
+    # Start experiment
+    metadata["start_time"] = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
 
     b = @benchmarkable FrameworkDemo.run_pipeline($df;
     event_count = $event_count,
     max_concurrent = $max_concurrent,
     fast = $fast) seconds = 3600 samples = samples evals = 1
-
-
     t = run(b)
+
+    metadata["end_time"] = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
+    metadata["UUID"] = string(UUIDs.uuid4())
+
     println("Trial results:")
     println(t)
 
-    p = plot(t)
-    dir = "violin_benchmark_plots"
-    mkpath(dir)
-    cur_file_name = "violin_plot.png"
-    savefig(p, dir * "/" * cur_file_name)
-    println("Violin benchmark plot saved as $cur_file_name")
-
-    append_save(results_filename, t, parameters)
+    # Save results
+    save_violin_plot(t)
+    trial_append_to_db(results_filename, t, parameters)
 
     return t
 end

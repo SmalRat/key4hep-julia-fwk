@@ -48,8 +48,7 @@ end
 
 
 function trial_add_worker_parameters(trial_dict::Dict, parameters::Dict)
-    trial_dict["experiment_parameters"] = parameters["experiment_parameters"]
-    trial_dict["metadata"] = parameters["metadata"]
+    merge!(trial_dict, parameters)
     trial_dict
 end
 
@@ -67,7 +66,7 @@ function filter_by_benchmarktools_parameters(data::Vector{Dict}, key::String, va
 end
 
 
-function append_save(filename::AbstractString, t::BenchmarkTools.Trial, parameters::Dict)
+function trial_append_to_db(filename::AbstractString, t::BenchmarkTools.Trial, parameters::Dict)
     filename = joinpath(DB_DIR, filename)
 
     data = load_db_file(filename)
