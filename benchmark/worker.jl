@@ -71,7 +71,8 @@ function compute_task(data_flow_name::String, results_filename::String, samples:
         "event_count" => event_count,
         "max_concurrent" => max_concurrent,
         "fast" => fast,
-        "data_flow" => data_flow_name
+        "data_flow" => data_flow_name,
+        "benchmark_version" => PROGRAM_VERSION
         )
 
     t = run(b)
@@ -102,11 +103,11 @@ function (@main)(raw_args)
     fast = args["fast"]
 
     # Redirect logs to the file
-
     logfile = open("Worker_logfile.log", "a")
     FrameworkDemo.redirect_logs_to_file(logfile)
     @info "Worker started"
 
-    res = compute_task(data_flow, results_filename, samples, event_count, max_concurrent, fast)
-    println(JSON.json(Dict("result" => res)))
+    compute_task(data_flow, results_filename, samples, event_count, max_concurrent, fast)
+
+    return 0
 end
