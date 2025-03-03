@@ -7,7 +7,7 @@ using BenchmarkPlots, StatsPlots
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.0"
+const PROGRAM_VERSION = "0.1"
 
 
 function parse_args(raw_args)
@@ -49,31 +49,23 @@ function parse_args(raw_args)
 end
 
 
-function compute_task(data_flow_name::String, results_filename::String, samples::Int, event_count::Int, max_concurrent::Int, fast::Bool)
-    path = joinpath(pkgdir(FrameworkDemo), "data/$(data_flow_name)/df.graphml")
+function compute_task(parameters::Dict)
+    path = joinpath(pkgdir(FrameworkDemo), "data/$(parameters["data_flow_name"])/df.graphml")
     graph = FrameworkDemo.parse_graphml(path)
     df = FrameworkDemo.mockup_dataflow(graph)
 
     execution_time_with_precompilation = @elapsed FrameworkDemo.run_pipeline(df;
-    event_count = event_count,
-    max_concurrent = max_concurrent,
-    fast = fast)
+    event_count = parameters["event_count"],
+    max_concurrent = parameters["max_concurrent"],
+    fast = parameters["fast"])
 
     println("Execution time with precompilation: $execution_time_with_precompilation")
 
     b = @benchmarkable FrameworkDemo.run_pipeline($df;
-    event_count = $event_count,
-    max_concurrent = $max_concurrent,
-    fast = $fast) seconds = 3600 samples = samples evals = 1
+    event_count = $parameters["event_count"],
+    max_concurrent = $parameters["max_concurrent"],
+    fast = $parameters["fast"]) seconds = 3600 samples = parameters["samples"] evals = 1
 
-    parameters = Dict(
-        "samples" => samples,
-        "event_count" => event_count,
-        "max_concurrent" => max_concurrent,
-        "fast" => fast,
-        "data_flow" => data_flow_name,
-        "benchmark_version" => PROGRAM_VERSION
-        )
 
     t = run(b)
     println("Trial results:")
@@ -86,7 +78,7 @@ function compute_task(data_flow_name::String, results_filename::String, samples:
     savefig(p, dir * "/" * cur_file_name)
     println("Violin benchmark plot saved as $cur_file_name")
 
-    append_save(results_filename, t, parameters)
+    append_save(parameters["metadata"]["results_filename"], t, parameters)
 
     return t
 end
@@ -94,20 +86,34 @@ end
 function (@main)(raw_args)
     args = parse_args(raw_args)
 
-    data_flow = args["data-flow"]
-    results_filename = args["results-filename"]
-    samples = args["samples"]
-    event_count = args["event-count"]
-    max_concurrent = args["max-concurrent"]
+    data_flow_name::String = args["data-flow"]
+    results_filename::String = args["results-filename"]
+    samples::Int = args["samples"]
+    event_count::Int = args["event-count"]
+    max_concurrent::Int = args["max-concurrent"]
+    threads_num::Int = Threads.nthreads()
 
-    fast = args["fast"]
+    fast::Bool = args["fast"]
+
+    parameters = Dict(
+        "data_flow_name" => data_flow_name,
+        "samples" => samples,
+        "event_count" => event_count,
+        "max_concurrent" => max_concurrent,
+        "fast" => fast,
+        "threads_num" => threads_num,
+        "metadata" => Dict(
+            "benchmark_version" => PROGRAM_VERSION,
+            "results_filename" => results_filename,
+        ),
+        )
 
     # Redirect logs to the file
     logfile = open("Worker_logfile.log", "a")
     FrameworkDemo.redirect_logs_to_file(logfile)
     @info "Worker started"
 
-    compute_task(data_flow, results_filename, samples, event_count, max_concurrent, fast)
+    compute_task(parameters)
 
     return 0
 end

@@ -49,8 +49,8 @@ end
 
 function trial_add_worker_parameters(trial_dict::Dict, parameters::Dict)
     parameters_ = copy(parameters)
-    trial_dict["versions"]["Benchmark_version"] = parameters_["benchmark_version"]
-    pop!(parameters_, "benchmark_version")
+    trial_dict["versions"]["Benchmark_version"] = parameters_["metadata"]["benchmark_version"]
+    pop!(parameters_, "metadata")
     trial_dict["parameters"] = parameters_
     trial_dict
 end
