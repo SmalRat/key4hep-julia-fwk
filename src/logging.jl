@@ -40,3 +40,7 @@ function redirect_logs_to_file(logfile)
     logger = FileLogger(logfile)
     global_logger(logger)
 end
+
+function disable_all_logs()
+    global_logger(NullLogger())
+end

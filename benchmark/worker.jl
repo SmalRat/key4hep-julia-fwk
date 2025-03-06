@@ -9,7 +9,7 @@ using BenchmarkPlots, StatsPlots
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.3"
+const PROGRAM_VERSION = "0.4"
 
 
 function parse_args(raw_args)
@@ -92,7 +92,7 @@ function compute_task(parameters::Dict)
     b = @benchmarkable FrameworkDemo.run_pipeline($df;
     event_count = $event_count,
     max_concurrent = $max_concurrent,
-    fast = $fast) seconds = 3600 samples = samples evals = 1
+    fast = $fast) seconds = 172800 samples = samples evals = 1
     t = run(b)
 
     metadata["end_time"] = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
@@ -136,8 +136,11 @@ function (@main)(raw_args)
         )
 
     # Redirect logs to the file
-    logfile = open("Worker_logfile.log", "a")
-    FrameworkDemo.redirect_logs_to_file(logfile)
+    # logfile = open("logs/Worker_logfile_" * Dates.format(Dates.now(), "yyyy-mm-dd_HH-MM-SS") * ".log", "a")
+    # FrameworkDemo.redirect_logs_to_file(logfile)
+    # FrameworkDemo.disable_logging!()
+
+    FrameworkDemo.disable_all_logs()
     @info "Worker started"
 
     compute_task(parameters)
