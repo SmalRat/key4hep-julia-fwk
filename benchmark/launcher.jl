@@ -37,8 +37,13 @@ function parse_args(raw_args)
         arg_type = Int
         default = 1
 
-        "--max-concurrent"
-        help = "Number of slots for graphs to be scheduled concurrently"
+        "--max-concurrent-low"
+        help = "Number of slots for graphs to be scheduled concurrently (lower bound)"
+        arg_type = Int
+        default = 1
+
+        "--max-concurrent-high"
+        help = "Number of slots for graphs to be scheduled concurrently (upper bound)"
         arg_type = Int
         default = 1
 
@@ -61,17 +66,20 @@ function (@main)(raw_args)
 
     data_flow = args["data-flow"]
     event_count = args["event-count"]
-    max_concurrent = args["max-concurrent"]
+    concurrent_low = args["max-concurrent-low"]
+    concurrent_high = args["max-concurrent-high"]
     fast = args["fast"]
 
     results_filename = args["results-filename"]
 
     for t in min_threads:max_threads
-        println("Adding a new worker process with $t threads...")
+        for c in concurrent_low:concurrent_high
+            println("Adding a new worker process with $t threads and concurrency number: $c...")
 
-        worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$max_concurrent --samples=$samples --fast=$fast`)
-        run(worker_cmd)
+            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$c --samples=$samples --fast=$fast`)
+            run(worker_cmd)
 
-        println("Worker with $t threads exited.")
+            println("Worker with $t threads and concurrency number: $c exited.")
+        end
     end
 end
