@@ -6,6 +6,7 @@ using Cairo
 using FrameworkDemo
 using ArgParse
 
+include("db_tools.jl")
 
 """
 Script for visualizing benchmark results
@@ -117,6 +118,26 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
+function filter_entries(db, filter_args::Dict)
+    # Filter entries by experiment parameters
+    data = filter_by_experiment_parameters(db, "event_count", filter_args["event_count"])
+    data = filter_by_experiment_parameters(data, "samples", filter_args["samples"])
+    data = filter_by_experiment_parameters(data, "data_flow_name", filter_args["ATLAS/q449"])
+    data = filter_by_experiment_parameters(data, "threads_num", filter_args["threads_num"])
+
+    # Filter entries by version
+    data = filter_by_version(data, "Julia", "1.11.3")
+    # data = filter_by_version(data, "BenchmarkTools", "")
+
+    # Filter entries by BenchmarkTools parameters
+
+    data
+end
+
+function concurrency_effect_plot()
+
+end
+
 
 function (@main)(raw_args)
     args = parse_args(raw_args)
@@ -129,7 +150,29 @@ function (@main)(raw_args)
     execution_plan_path = args["exec-plan"]
     df_graph_path = args["df-graph"]
 
-    res = import_results(results_filename)
+    db = load_db_file("benchmark_results/results.json")
+    filter_args = Dict("event_count" => 100,
+    "samples" => 5,
+    "data_flow_name" => "ATLAS/q449",
+    "threads_num" => 7)
+    filtered_db = filter_entries(db, filter_args)
+    trial_entries = dicts_to_trial_entries(filtered_db)
+
+    # print(trial_entries[8].results["execution_times"])
+    # strong_scalability_p = plot_strong_scalability(trial_entries[1].results["execution_times"])
+    #     dir = "strong_scalability_plots"
+    #     mkpath(dir)
+    #     savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
+    #     println("Strong scalability_plot saved as $strong_scalability_plot_filename")
+    # res = import_results(results_filename)
+
+    if !isnothing(strong_scalability_plot_filename)
+        strong_scalability_p = plot_strong_scalability(res)
+        dir = "strong_scalability_plots"
+        mkpath(dir)
+        savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
+        println("Strong scalability_plot saved as $strong_scalability_plot_filename")
+    end
 
     if !isnothing(strong_scalability_plot_filename)
         strong_scalability_p = plot_strong_scalability(res)
@@ -164,4 +207,6 @@ function (@main)(raw_args)
         draw_execution_plan(df_graph_path, dir * "/" * execution_plan_path)
         println("Execution plan graph saved as $execution_plan_path")
     end
+
+    return 0
 end

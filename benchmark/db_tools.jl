@@ -1,4 +1,15 @@
+using BenchmarkTools
+
 const DB_DIR = "benchmark_results"
+
+struct TrialEntry
+    warmup_results::Dict
+    versions::Dict
+    benchmarktools_parameters::Dict
+    results::Dict
+    metadata::Dict
+    experiment_parameters::Dict
+end
 
 
 function load_db_file(filename::AbstractString)::Vector{Dict}
@@ -19,6 +30,9 @@ function load_db_file(filename::AbstractString)::Vector{Dict}
     return convert(Vector{Dict}, existing_data)
 end
 
+dict_to_trial_entry(d::Dict) = TrialEntry(d["warmup_results"], d["versions"], d["benchmarktools_parameters"], d["results"], d["metadata"], d["experiment_parameters"])
+dicts_to_trial_entries(dicts::Vector{Dict}) = map(dict_to_trial_entry, dicts)
+# db_file_to_trial_entries(filename::AbstractString) = dicts_to_trial_entries(load_db_file(filename))
 
 function trial_format_results(trial_json)
     version_info = trial_json[1]
@@ -57,8 +71,8 @@ function filter_by_version(data::Vector{Dict}, key::String, value)
     filter(entry -> get(entry["versions"], key, nothing) == value, data)
 end
 
-function filter_by_parameters(data::Vector{Dict}, key::String, value)
-    filter(entry -> get(entry["parameters"], key, nothing) == value, data)
+function filter_by_experiment_parameters(data::Vector{Dict}, key::String, value)
+    filter(entry -> get(entry["experiment_parameters"], key, nothing) == value, data)
 end
 
 function filter_by_benchmarktools_parameters(data::Vector{Dict}, key::String, value)
