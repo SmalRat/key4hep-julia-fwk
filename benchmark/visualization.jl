@@ -5,6 +5,7 @@ using DataStructures
 using Cairo
 using FrameworkDemo
 using ArgParse
+using StatsBase
 
 include("db_tools.jl")
 
@@ -16,6 +17,8 @@ Usage:
 Example:
     julia --project=. visualization.jl benchmark_results_2025-02-13_23-53-50.json --str-scal=strong_scalability_plot.png --par-eff=parallel_efficiency_plot.png --hist=histogram_plot.png --exec-plan=execution_plan.png --df-graph=../data/demo/sequential/df.graphml
 """
+
+const CONCURRENCY_EFFECT_PLOTS_DIR = "concurrency_effect_plots"
 
 function import_results(file::String)::SortedDict{Int, Vector{Float64}}
     local results::SortedDict{Int, Vector{Float64}}
@@ -79,6 +82,44 @@ function draw_execution_plan(path::String, save_path::String)
     FrameworkDemo.save_execution_plan(df, save_path)
 end
 
+"""
+Expects the vector of filtered (meaning the same parameters) Trial entries and plots the concurrency effect on execution time
+"""
+function concurrency_effect_plot(data::Vector{TrialEntry})
+    grouped_data = Dict{Int, Vector{Float64}}()
+
+    for entry in data
+        max_concurrent = entry.experiment_parameters["max_concurrent"]
+        execution_times = entry.results["execution_times"]
+
+        if haskey(grouped_data, max_concurrent)
+            append!(grouped_data[max_concurrent], execution_times)
+        else
+            grouped_data[max_concurrent] = copy(execution_times)
+        end
+    end
+
+    # Compute mode of execution times for each max_concurrent value
+    x_vals = sort(collect(keys(grouped_data)))
+    y_vals = [mode(grouped_data[k]) for k in x_vals]
+
+    scatter(x_vals, y_vals, xlabel="Max Concurrent", ylabel="Execution Time (ns)",
+            title="Concurrency Effect on Execution Time", legend=false, markersize=6,
+            ylims=(0, 1.1*maximum(y_vals)))
+end
+
+function create_and_save_plot(dir, filename, f, data...)
+    if !isnothing(filename)
+        p = f(data...)
+        mkpath(dir)
+        savefig(p, dir * "/" * filename)
+        println("Plot saved as $(dir * "/" * filename)")
+    end
+end
+
+function gen_concurrency_effect_plot(data::Vector{TrialEntry}, dir, filename)
+    create_and_save_plot(dir, filename, concurrency_effect_plot, data)
+end
 
 function parse_args(raw_args)
     s = ArgParseSettings()
@@ -104,6 +145,11 @@ function parse_args(raw_args)
         arg_type = String
         default = nothing
 
+        "--conc-eff"
+        help = "Concurrency efficiency plot filename"
+        arg_type = String
+        default = nothing
+
         "--exec-plan"
         help = "Execution plan graph filename"
         arg_type = String
@@ -122,20 +168,16 @@ function filter_entries(db, filter_args::Dict)
     # Filter entries by experiment parameters
     data = filter_by_experiment_parameters(db, "event_count", filter_args["event_count"])
     data = filter_by_experiment_parameters(data, "samples", filter_args["samples"])
-    data = filter_by_experiment_parameters(data, "data_flow_name", filter_args["ATLAS/q449"])
+    data = filter_by_experiment_parameters(data, "data_flow_name", filter_args["data_flow_name"])
     data = filter_by_experiment_parameters(data, "threads_num", filter_args["threads_num"])
 
     # Filter entries by version
-    data = filter_by_version(data, "Julia", "1.11.3")
+    data = filter_by_version(data, "Julia", filter_args["julia_version"])
     # data = filter_by_version(data, "BenchmarkTools", "")
 
     # Filter entries by BenchmarkTools parameters
 
     data
-end
-
-function concurrency_effect_plot()
-
 end
 
 
@@ -146,67 +188,70 @@ function (@main)(raw_args)
     strong_scalability_plot_filename = args["str-scal"]
     parallel_efficiency_plot_filename = args["par-eff"]
     histogram_plot_filename = args["hist"]
+    concurrency_effect_plot_filename = args["conc-eff"]
 
     execution_plan_path = args["exec-plan"]
     df_graph_path = args["df-graph"]
 
+
+    # Filter entries by parameters
     db = load_db_file("benchmark_results/results.json")
     filter_args = Dict("event_count" => 100,
     "samples" => 5,
     "data_flow_name" => "ATLAS/q449",
-    "threads_num" => 7)
+    "threads_num" => 5,
+    "julia_version" => "1.11.3")
     filtered_db = filter_entries(db, filter_args)
     trial_entries = dicts_to_trial_entries(filtered_db)
 
-    # print(trial_entries[8].results["execution_times"])
-    # strong_scalability_p = plot_strong_scalability(trial_entries[1].results["execution_times"])
+
+    gen_concurrency_effect_plot(trial_entries, CONCURRENCY_EFFECT_PLOTS_DIR, concurrency_effect_plot_filename)
+
+    # concurrency_effect_p = concurrency_effect_plot(trial_entries)
+    # savefig(concurrency_effect_p, "concurrency_effect_plot.png")
+    # println("Concurrency effect plot saved as concurrency_effect_plot.png")
+
+    # if !isnothing(strong_scalability_plot_filename)
+    #     strong_scalability_p = plot_strong_scalability(res)
     #     dir = "strong_scalability_plots"
     #     mkpath(dir)
     #     savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
     #     println("Strong scalability_plot saved as $strong_scalability_plot_filename")
-    # res = import_results(results_filename)
+    # end
 
-    if !isnothing(strong_scalability_plot_filename)
-        strong_scalability_p = plot_strong_scalability(res)
-        dir = "strong_scalability_plots"
-        mkpath(dir)
-        savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
-        println("Strong scalability_plot saved as $strong_scalability_plot_filename")
-    end
+    # if !isnothing(strong_scalability_plot_filename)
+    #     strong_scalability_p = plot_strong_scalability(res)
+    #     dir = "strong_scalability_plots"
+    #     mkpath(dir)
+    #     savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
+    #     println("Strong scalability_plot saved as $strong_scalability_plot_filename")
+    # end
 
-    if !isnothing(strong_scalability_plot_filename)
-        strong_scalability_p = plot_strong_scalability(res)
-        dir = "strong_scalability_plots"
-        mkpath(dir)
-        savefig(strong_scalability_p, dir * "/" * strong_scalability_plot_filename)
-        println("Strong scalability_plot saved as $strong_scalability_plot_filename")
-    end
+    # if !isnothing(parallel_efficiency_plot_filename)
+    #     parallel_efficiency_p = plot_parallel_efficiency(res)
+    #     dir = "parallel_efficiency_plots"
+    #     mkpath(dir)
+    #     savefig(parallel_efficiency_p, dir * "/" *  parallel_efficiency_plot_filename)
+    #     println("Parallel efficiency_plot saved as $parallel_efficiency_plot_filename")
+    # end
 
-    if !isnothing(parallel_efficiency_plot_filename)
-        parallel_efficiency_p = plot_parallel_efficiency(res)
-        dir = "parallel_efficiency_plots"
-        mkpath(dir)
-        savefig(parallel_efficiency_p, dir * "/" *  parallel_efficiency_plot_filename)
-        println("Parallel efficiency_plot saved as $parallel_efficiency_plot_filename")
-    end
+    # if !isnothing(histogram_plot_filename)
+    #     for threads_count in keys(res)
+    #         histogram_p = plot_histogram_for_thread_count(res, threads_count)
+    #         dir = "histogram_plots"
+    #         mkpath(dir)
+    #         cur_file_name = histogram_plot_filename * "_$threads_count" * ".png"
+    #         savefig(histogram_p, dir * "/" * cur_file_name)
+    #         println("Histogram plot for $threads_count threads saved as $cur_file_name")
+    #     end
+    # end
 
-    if !isnothing(histogram_plot_filename)
-        for threads_count in keys(res)
-            histogram_p = plot_histogram_for_thread_count(res, threads_count)
-            dir = "histogram_plots"
-            mkpath(dir)
-            cur_file_name = histogram_plot_filename * "_$threads_count" * ".png"
-            savefig(histogram_p, dir * "/" * cur_file_name)
-            println("Histogram plot for $threads_count threads saved as $cur_file_name")
-        end
-    end
-
-    if !isnothing(execution_plan_path) && !isnothing(df_graph_path)
-        dir = "execution_plans"
-        mkpath(dir)
-        draw_execution_plan(df_graph_path, dir * "/" * execution_plan_path)
-        println("Execution plan graph saved as $execution_plan_path")
-    end
+    # if !isnothing(execution_plan_path) && !isnothing(df_graph_path)
+    #     dir = "execution_plans"
+    #     mkpath(dir)
+    #     draw_execution_plan(df_graph_path, dir * "/" * execution_plan_path)
+    #     println("Execution plan graph saved as $execution_plan_path")
+    # end
 
     return 0
 end
