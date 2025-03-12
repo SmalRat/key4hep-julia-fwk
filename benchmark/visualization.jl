@@ -90,12 +90,15 @@ function concurrency_effect_plot(data::Vector{TrialEntry})
 
     for entry in data
         max_concurrent = entry.experiment_parameters["max_concurrent"]
-        execution_times = entry.results["execution_times"]
+        execution_times = entry.results["execution_times"] / 1e9 # Convert to seconds
+        event_count = entry.experiment_parameters["event_count"]
+
+        throughputs = event_count ./ execution_times
 
         if haskey(grouped_data, max_concurrent)
-            append!(grouped_data[max_concurrent], execution_times)
+            append!(grouped_data[max_concurrent], throughputs)
         else
-            grouped_data[max_concurrent] = copy(execution_times)
+            grouped_data[max_concurrent] = copy(throughputs)
         end
     end
 
@@ -103,7 +106,7 @@ function concurrency_effect_plot(data::Vector{TrialEntry})
     x_vals = sort(collect(keys(grouped_data)))
     y_vals = [mode(grouped_data[k]) for k in x_vals]
 
-    scatter(x_vals, y_vals, xlabel="Max Concurrent", ylabel="Execution Time (ns)",
+    scatter(x_vals, y_vals, xlabel="Max Concurrent Events", ylabel="Throughput, events/s",
             title="Concurrency Effect on Execution Time", legend=false, markersize=6,
             ylims=(0, 1.1*maximum(y_vals)))
 end
@@ -205,7 +208,8 @@ function (@main)(raw_args)
     trial_entries = dicts_to_trial_entries(filtered_db)
 
 
-    gen_concurrency_effect_plot(trial_entries, CONCURRENCY_EFFECT_PLOTS_DIR, concurrency_effect_plot_filename)
+    gen_concurrency_effect_plot(trial_entries, CONCURRENCY_EFFECT_PLOTS_DIR,
+     concurrency_effect_plot_filename)
 
     # concurrency_effect_p = concurrency_effect_plot(trial_entries)
     # savefig(concurrency_effect_p, "concurrency_effect_plot.png")
