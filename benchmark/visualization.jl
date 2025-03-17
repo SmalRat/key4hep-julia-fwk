@@ -82,33 +82,47 @@ function draw_execution_plan(path::String, save_path::String)
     FrameworkDemo.save_execution_plan(df, save_path)
 end
 
-"""
-Expects the vector of filtered (meaning the same parameters) Trial entries and plots the concurrency effect on execution time
-"""
-function concurrency_effect_plot(data::Vector{TrialEntry})
+function construct_scatter_plot(data::Vector{TrialEntry}, x_func, y_func, xlabel="X", ylabel="Y", title="Title")
     grouped_data = Dict{Int, Vector{Float64}}()
 
     for entry in data
-        max_concurrent = entry.experiment_parameters["max_concurrent"]
-        execution_times = entry.results["execution_times"] / 1e9 # Convert to seconds
-        event_count = entry.experiment_parameters["event_count"]
+        key = x_func(entry)
+        value = y_func(entry)
 
-        throughputs = event_count ./ execution_times
-
-        if haskey(grouped_data, max_concurrent)
-            append!(grouped_data[max_concurrent], throughputs)
+        if haskey(grouped_data, key)
+            append!(grouped_data[key], value)
         else
-            grouped_data[max_concurrent] = copy(throughputs)
+            grouped_data[key] = copy(value)
         end
     end
 
-    # Compute mode of execution times for each max_concurrent value
     x_vals = sort(collect(keys(grouped_data)))
     y_vals = [mode(grouped_data[k]) for k in x_vals]
 
-    scatter(x_vals, y_vals, xlabel="Max Concurrent Events", ylabel="Throughput, events/s",
-            title="Concurrency Effect on Execution Time", legend=false, markersize=6,
+    scatter(x_vals,
+            y_vals,
+            xlabel=xlabel,
+            ylabel=ylabel,
+            title=title,
+            legend=false,
+            markersize=6,
             ylims=(0, 1.1*maximum(y_vals)))
+end
+
+"""
+Expects the vector of filtered (meaning the same parameters) Trial entries and plots the concurrency effect on throughput
+"""
+function concurrency_effect_plot(data::Vector{TrialEntry})
+    construct_scatter_plot(data,
+    entry -> entry.experiment_parameters["max_concurrent"],
+    entry -> begin
+            execution_times = entry.results["execution_times"] / 1e9 # Convert to seconds
+            event_count = entry.experiment_parameters["event_count"]
+            throughputs = event_count ./ execution_times
+        end,
+    "Max Concurrent Events",
+    "Throughput, events/s",
+    "Concurrency Effect on Throughput")
 end
 
 function create_and_save_plot(dir, filename, f, data...)
@@ -202,7 +216,7 @@ function (@main)(raw_args)
     filter_args = Dict("event_count" => 100,
     "samples" => 5,
     "data_flow_name" => "ATLAS/q449",
-    "threads_num" => 5,
+    "threads_num" => 9,
     "julia_version" => "1.11.3")
     filtered_db = filter_entries(db, filter_args)
     trial_entries = dicts_to_trial_entries(filtered_db)
