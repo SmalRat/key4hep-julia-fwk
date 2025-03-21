@@ -9,7 +9,7 @@ using BenchmarkPlots, StatsPlots
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.4"
+const PROGRAM_VERSION = "0.5"
 
 
 function parse_args(raw_args)
@@ -78,11 +78,14 @@ function compute_task(parameters::Dict)
     graph = FrameworkDemo.parse_graphml(path)
     df = FrameworkDemo.mockup_dataflow(graph)
 
+    # Calibrate crunching
+    crunch_coefficients = FrameworkDemo.calibrate_crunch(; fast = fast)
+
     # Run pipeline with precompilation
     execution_time_with_precompilation = @elapsed FrameworkDemo.run_pipeline(df;
     event_count = event_count,
     max_concurrent = max_concurrent,
-    fast = fast)
+    crunch_coefficients = crunch_coefficients)
     println("Execution time with precompilation: $execution_time_with_precompilation")
     parameters["warmup_results"] = Dict("execution_time" => execution_time_with_precompilation)
 
@@ -92,7 +95,7 @@ function compute_task(parameters::Dict)
     b = @benchmarkable FrameworkDemo.run_pipeline($df;
     event_count = $event_count,
     max_concurrent = $max_concurrent,
-    fast = $fast) seconds = 172800 samples = samples evals = 1
+    crunch_coefficients = $crunch_coefficients) seconds = 172800 samples = samples evals = 1
     t = run(b)
 
     metadata["end_time"] = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
