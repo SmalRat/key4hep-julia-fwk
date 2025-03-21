@@ -7,9 +7,11 @@ using UUIDs
 using BenchmarkTools
 using BenchmarkPlots, StatsPlots
 
+using Logging
+
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.5"
+const PROGRAM_VERSION = "0.6"
 
 
 function parse_args(raw_args)
@@ -80,6 +82,12 @@ function compute_task(parameters::Dict)
 
     # Calibrate crunching
     crunch_coefficients = FrameworkDemo.calibrate_crunch(; fast = fast)
+
+    # Configure logs
+    FrameworkDemo.disable_logging!() # Disables internal Dagger logging mechanism
+    Logging.disable_logging(Logging.Info) # Disables all Julia "debug" and "info" logs completely
+    mkpath("logs")
+    FrameworkDemo.redirect_logs_to_file(open("logs/Worker_logfile_" * Dates.format(Dates.now(), "yyyy-mm-dd_HH-MM-SS") * ".log", "a"))
 
     # Run pipeline with precompilation
     execution_time_with_precompilation = @elapsed FrameworkDemo.run_pipeline(df;
