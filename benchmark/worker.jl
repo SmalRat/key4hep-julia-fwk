@@ -84,7 +84,7 @@ function compute_task(parameters::Dict)
     crunch_coefficients = FrameworkDemo.calibrate_crunch(; fast = fast)
 
     # Configure logs
-    FrameworkDemo.disable_logging!() # Disables internal Dagger logging mechanism
+    FrameworkDemo.disable_tracing!() # Disables internal Dagger logging mechanism
     Logging.disable_logging(Logging.Info) # Disables all Julia "debug" and "info" logs completely
     mkpath("logs")
     FrameworkDemo.redirect_logs_to_file(open("logs/Worker_logfile_" * Dates.format(Dates.now(), "yyyy-mm-dd_HH-MM-SS") * ".log", "a"))

@@ -1,7 +1,7 @@
 using Dagger
 using Logging, LoggingExtras
 
-function enable_logging!()
+function enable_tracing!()
     Dagger.enable_logging!(tasknames = true,
                            taskfuncnames = true,
                            taskdeps = true,
@@ -12,11 +12,11 @@ function enable_logging!()
                            tasktochunk = true)
 end
 
-function disable_logging!()
+function disable_tracing!()
     Dagger.disable_logging!()
 end
 
-function fetch_logs!()
+function fetch_trace!()
     return Dagger.fetch_logs!()
 end
 
