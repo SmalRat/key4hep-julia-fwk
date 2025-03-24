@@ -51,6 +51,10 @@ function parse_args(raw_args)
         help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
         action = :store_true
 
+        "--pin-threads"
+        help = "Pin Julia threads to CPU threads"
+        arg_type = Bool
+        default = false
     end
 
     return ArgParse.parse_args(raw_args, s)
@@ -60,6 +64,7 @@ end
 function (@main)(raw_args)
     args = parse_args(raw_args)
 
+    pin_threads = args["pin-threads"]
     samples = args["samples"]
     min_threads = args["min-threads"]
     max_threads = args["max-threads"]
@@ -76,7 +81,7 @@ function (@main)(raw_args)
         for c in concurrent_low:concurrent_high
             println("Adding a new worker process with $t threads and concurrency number: $c...")
 
-            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$c --samples=$samples --fast=$fast`)
+            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$c --samples=$samples --fast=$fast --pin-threads=$pin_threads`)
             run(worker_cmd)
 
             println("Worker with $t threads and concurrency number: $c exited.")
