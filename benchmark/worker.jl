@@ -171,12 +171,6 @@ function (@main)(raw_args)
         ),
         )
 
-    # Redirect logs to the file
-    # logfile = open("logs/Worker_logfile_" * Dates.format(Dates.now(), "yyyy-mm-dd_HH-MM-SS") * ".log", "a")
-    # FrameworkDemo.redirect_logs_to_file(logfile)
-    # FrameworkDemo.disable_logging!()
-
-    # FrameworkDemo.disable_all_logs()
     @info "Worker started"
 
     compute_task(parameters)
