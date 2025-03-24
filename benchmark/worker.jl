@@ -3,6 +3,7 @@ using JSON
 using ArgParse
 using Dates
 using UUIDs
+using ThreadPinning
 
 using BenchmarkTools
 using BenchmarkPlots, StatsPlots
@@ -11,7 +12,7 @@ using Logging
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.6"
+const PROGRAM_VERSION = "0.7"
 
 
 function parse_args(raw_args)
@@ -47,9 +48,27 @@ function parse_args(raw_args)
         help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
         arg_type = Bool
         default = false
+
+        "--pin-threads"
+        help = "Pin Julia threads to CPU threads"
+        arg_type = Bool
+        default = false
     end
 
     return ArgParse.parse_args(raw_args, s)
+end
+
+function do_pin_threads()
+    println("Pinning Julia threads to CPU threads")
+    cpu_threads = socket(1)
+    num_julia_threads = Threads.nthreads()
+    if (num_julia_threads > length(cpu_threads))
+        println("Warning: number of Julia threads ($num_julia_threads) is greater than allocated CPU threads ($cpu_threads). Oversubscribing.")
+        mult_factor = ceil(num_julia_threads / length(cpu_threads))
+        cpu_threads = repeat(cpu_threads, Int(mult_factor))
+    end
+    pinthreads(cpu_threads) # Move to the CPU threads of the first socket
+    pinthreads(:current) # Pin threads to the current CPU threads
 end
 
 
@@ -122,6 +141,11 @@ end
 function (@main)(raw_args)
     args = parse_args(raw_args)
 
+    pin_threads::Bool = args["pin-threads"]
+    if (pin_threads)
+        do_pin_threads()
+    end
+
     data_flow_name::String = args["data-flow"]
     results_filename::String = args["results-filename"]
     samples::Int = args["samples"]
@@ -138,7 +162,8 @@ function (@main)(raw_args)
             "event_count" => event_count,
             "max_concurrent" => max_concurrent,
             "fast" => fast,
-            "threads_num" => threads_num
+            "threads_num" => threads_num,
+            "thread_pinning" => pin_threads
         ),
         "metadata" => Dict(
             "benchmark_version" => PROGRAM_VERSION,
@@ -151,7 +176,7 @@ function (@main)(raw_args)
     # FrameworkDemo.redirect_logs_to_file(logfile)
     # FrameworkDemo.disable_logging!()
 
-    FrameworkDemo.disable_all_logs()
+    # FrameworkDemo.disable_all_logs()
     @info "Worker started"
 
     compute_task(parameters)
