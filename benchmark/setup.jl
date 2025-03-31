@@ -1,4 +1,5 @@
 using JSON
+using ArgParse
 
 function get_cpu_info()
     cpu_info = Dict()
@@ -73,9 +74,10 @@ function get_boost_info()
     return boost_info
 end
 
-function create_machine_info_json()
+function create_machine_info_json(machine_id::String)
     machine_info = Dict()
 
+    machine_info["machine_id"] = machine_id
     machine_info["hardware_info"] = get_cpu_info()
     machine_info["os_info"] = get_os_info()
     machine_info["boost_info"] = get_boost_info()
@@ -87,4 +89,22 @@ function create_machine_info_json()
     println("Machine info saved to machine_info.json. Check the file for details and correction before benchmarking.")
 end
 
-create_machine_info_json()
+function parse_args(raw_args)
+    s = ArgParseSettings()
+
+    @add_arg_table! s begin
+        "--machine-id"
+        help = "Machine id"
+        arg_type = String
+        required = true
+    end
+
+    return ArgParse.parse_args(raw_args, s)
+end
+
+function (@main)(raw_args)
+    args = parse_args(raw_args)
+
+    machine_id::String = args["machine-id"]
+    create_machine_info_json(machine_id)
+end
