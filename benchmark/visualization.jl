@@ -213,13 +213,15 @@ function (@main)(raw_args)
                                  "event_count" => 100,
                                  "samples" => 5,
                                  "data_flow_name" => "ATLAS/q449")
+    machine_info = Dict()
 
     template = TrialEntry(warmup_results,
                           versions,
                           benchmarktools_parameters,
                           results,
                           metadata,
-                          experiment_parameters)
+                          experiment_parameters,
+                          machine_info)
 
     filtered_db = filter_trial_entries(db, template)
 

@@ -12,7 +12,7 @@ using Logging
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.7"
+const PROGRAM_VERSION = "0.8"
 
 
 function parse_args(raw_args)
@@ -170,6 +170,11 @@ function (@main)(raw_args)
             "results_filename" => results_filename,
         ),
         )
+
+    open("machine_info.json", "r") do io
+        machine_info = JSON.parse(io)
+        parameters["machine_info"] = machine_info
+    end
 
     @info "Worker started"
 

@@ -5,11 +5,13 @@ function get_cpu_info()
 
     if Sys.KERNEL == :Linux
         cpu_model = readchomp(pipeline(`lscpu`,`grep "Model name"`))
-        num_cores = readchomp(pipeline(`lscpu`, `grep "^CPU(s)"`))
+        threads_per_core = readchomp(pipeline(`lscpu`, `grep "^Thread(s) per core:"`))
+        cores_per_socket = readchomp(pipeline(`lscpu`, `grep "^Core(s) per socket:"`))
         num_sockets = readchomp(pipeline(`lscpu`, `grep "Socket(s)"`))
 
         cpu_info["cpu_model"] = cpu_model
-        cpu_info["num_cores"] = num_cores
+        cpu_info["threads_per_socket"] = threads_per_core
+        cpu_info["cores_per_socket"] = cores_per_socket
         cpu_info["num_sockets"] = num_sockets
     elseif Sys.KERNEL == :Windows
         @warn "Windows detected, functionality was not tested!"

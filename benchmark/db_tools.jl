@@ -10,6 +10,7 @@ struct TrialEntry
     results::Dict
     metadata::Dict
     experiment_parameters::Dict
+    machine_info::Dict
 end
 
 # Loading entries from file
@@ -39,7 +40,7 @@ function load_db_file_to_dicts(filename::AbstractString)::Vector{Dict}
 end
 
 function dict_to_trial_entry(d::Dict)::TrialEntry
-    TrialEntry(d["warmup_results"], d["versions"], d["benchmarktools_parameters"], d["results"], d["metadata"], d["experiment_parameters"])
+    TrialEntry(d["warmup_results"], d["versions"], d["benchmarktools_parameters"], d["results"], d["metadata"], d["experiment_parameters"], get(d, "machine_info", Dict()))
 end
 dicts_to_trial_entries(dicts::Vector{Dict})::Vector{TrialEntry} = map(dict_to_trial_entry, dicts)
 get_trial_entries_from_file(filename::AbstractString)::Vector{TrialEntry} = dicts_to_trial_entries(load_db_file_to_dicts(filename))
