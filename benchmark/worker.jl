@@ -171,9 +171,15 @@ function (@main)(raw_args)
         ),
         )
 
-    open("machine_info.json", "r") do io
-        machine_info = JSON.parse(io)
-        parameters["machine_info"] = machine_info
+    machine_info_filename = "machine_info.json"
+    if isfile(machine_info_filename)
+        open(machine_info_filename, "r") do io
+            machine_info = JSON.parse(io)
+            parameters["machine_info"] = machine_info
+        end
+    else
+        @warn "Machine info file not found. Skipping machine info."
+        parameters["machine_info"] = Dict()
     end
 
     @info "Worker started"
