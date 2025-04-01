@@ -11,7 +11,7 @@ function get_cpu_info()
         num_sockets = readchomp(pipeline(`lscpu`, `grep "Socket(s)"`))
 
         cpu_info["cpu_model"] = cpu_model
-        cpu_info["threads_per_socket"] = threads_per_core
+        cpu_info["threads_per_core"] = threads_per_core
         cpu_info["cores_per_socket"] = cores_per_socket
         cpu_info["num_sockets"] = num_sockets
     elseif Sys.KERNEL == :Windows
@@ -54,7 +54,7 @@ function get_os_info()
 end
 
 function get_boost_info()
-    boost_info = Dict("boost_enabled" => "unknown")
+    boost_info = Dict{String, Any}("boost_enabled" => "unknown")
 
     if Sys.KERNEL == :Linux
         try
