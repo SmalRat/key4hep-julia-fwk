@@ -60,14 +60,14 @@ end
 
 function do_pin_threads()
     println("Pinning Julia threads to CPU threads")
-    cpu_threads = socket(1)
+    cpu_threads = numa(1)
     num_julia_threads = Threads.nthreads()
     if (num_julia_threads > length(cpu_threads))
         println("Warning: number of Julia threads ($num_julia_threads) is greater than allocated CPU threads ($cpu_threads). Oversubscribing.")
         mult_factor = ceil(num_julia_threads / length(cpu_threads))
         cpu_threads = repeat(cpu_threads, Int(mult_factor))
     end
-    pinthreads(cpu_threads) # Move to the CPU threads of the first socket
+    pinthreads(cpu_threads) # Move to the CPU threads of the first numa node
     pinthreads(:current) # Pin threads to the current CPU threads
 end
 
