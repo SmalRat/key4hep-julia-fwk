@@ -3,7 +3,7 @@ using JSON
 
 const DB_DIR = "benchmark_results"
 
-struct TrialEntry
+mutable struct TrialEntry
     warmup_results::Dict
     versions::Dict
     benchmarktools_parameters::Dict
