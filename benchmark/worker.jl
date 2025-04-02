@@ -4,7 +4,7 @@ using ArgParse
 using Dates
 using UUIDs
 using ThreadPinning
-using Hwloc
+import SysInfo
 
 using BenchmarkTools
 using BenchmarkPlots, StatsPlots
@@ -63,7 +63,7 @@ function do_pin_threads()
     @info "Pinning Julia threads to CPU threads"
     cpu_threads::Vector{Int} = []
     i = 0
-    n_numa_nodes = num_numa_nodes()
+    n_numa_nodes = SysInfo.nnuma()
 
     for i in 1:n_numa_nodes
         cpu_threads = numa(i)
