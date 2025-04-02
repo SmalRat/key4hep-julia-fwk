@@ -13,7 +13,7 @@ using Logging
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.8"
+const PROGRAM_VERSION = "0.9"
 
 
 function parse_args(raw_args)
