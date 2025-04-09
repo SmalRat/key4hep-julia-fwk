@@ -1,4 +1,5 @@
 using ArgParse
+using Dates
 
 # Example cmd line command:
 # julia --project=. launcher.jl demo/parallel results.json --samples=2 --min-threads=8 --max-threads=9 --event-count=20 --max-concurrent=10
@@ -16,6 +17,11 @@ function parse_args(raw_args)
         help = "Benchmark results will be stored in this file"
         arg_type = String
         required = true
+
+        "--errors-log-filename"
+        help = "File to redirect workers' stderr output"
+        arg_type = String
+        default = "error_log.txt"
 
         "--samples"
         help = "Number of samples for each thread count"
@@ -55,6 +61,11 @@ function parse_args(raw_args)
         help = "Pin Julia threads to CPU threads"
         arg_type = Bool
         default = false
+
+        "--relaunch-on-error"
+        help = "Relaunch worker script on error"
+        arg_type = Bool
+        default = false
     end
 
     return ArgParse.parse_args(raw_args, s)
@@ -74,17 +85,38 @@ function (@main)(raw_args)
     concurrent_low = args["max-concurrent-low"]
     concurrent_high = args["max-concurrent-high"]
     fast = args["fast"]
+    relaunch_on_error = args["relaunch-on-error"]
 
     results_filename = args["results-filename"]
+    errors_log_filename = args["errors-log-filename"]
 
     for t in min_threads:max_threads
         for c in concurrent_low:concurrent_high
             println("Adding a new worker process with $t threads and concurrency number: $c...")
 
-            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$c --samples=$samples --fast=$fast --pin-threads=$pin_threads`)
-            run(worker_cmd)
+            open(errors_log_filename, "a") do f_errors_log
+                write(f_errors_log, "\n" * Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS" * "\n\n"))
+                flush(f_errors_log)
 
-            println("Worker with $t threads and concurrency number: $c exited.")
+                while (true)
+                    worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl $data_flow $results_filename --event-count=$event_count --max-concurrent=$c --samples=$samples --fast=$fast --pin-threads=$pin_threads`)
+                    proc = run(pipeline(ignorestatus(worker_cmd), stderr=f_errors_log))
+                    exit_code = proc.exitcode
+
+                    if (exit_code == 0)
+                        println("Worker with $t threads and concurrency number: $c finished successfully.")
+                        break
+                    elseif (exit_code != 43 && exit_code != 44)
+                        println("Worker with $t threads and concurrency number: $c failed with exit code: $exit_code. Errors output saved to file $errors_log_filename.")
+                        println("Exiting...")
+                        break
+                    else
+                        println("Worker with $t threads and concurrency number: $c failed with exit code: $exit_code. Errors output saved to file $errors_log_filename.")
+                        !relaunch_on_error && (println("Exiting..."); break)
+                        println("Relaunching worker process with $t threads and concurrency number: $c...")
+                    end
+                end
+            end
         end
     end
 end

@@ -13,7 +13,7 @@ using Logging
 
 include("./db_tools.jl")
 
-const PROGRAM_VERSION = "0.9"
+const PROGRAM_VERSION = "0.10"
 
 
 function parse_args(raw_args)
@@ -59,6 +59,40 @@ function parse_args(raw_args)
     return ArgParse.parse_args(raw_args, s)
 end
 
+function parse_kwargs_exprs(kwargs, d)
+    for expr in kwargs
+        if expr isa Expr && expr.head == :(=) && length(expr.args) == 2
+            key = expr.args[1]
+            value = expr.args[2]
+            if key isa Symbol
+                d[key] = value
+            else
+                error("Invalid key in keyword arguments: $key")
+            end
+        end
+    end
+end
+
+macro custom_exitcode_on_error(ex, kwargs...)
+    kwargs_dict = Dict{Symbol, Any}(:errmsg => nothing, :exitcode => 1)
+    parse_kwargs_exprs(kwargs, kwargs_dict)
+
+    errmsg = kwargs_dict[:errmsg]
+    exitcode = kwargs_dict[:exitcode]
+
+    return quote
+        try
+            $(esc(ex))
+        catch
+            if $errmsg !== nothing
+                @error $errmsg
+            end
+            atexit(() -> exit($exitcode))
+            rethrow()
+        end
+    end
+end
+
 function do_pin_threads()
     @info "Pinning Julia threads to CPU threads"
     cpu_threads::Vector{Int} = []
@@ -97,7 +131,7 @@ function save_violin_plot(t::BenchmarkTools.Trial)
 end
 
 
-function compute_task(parameters::Dict)
+function benchmark_task(parameters::Dict)
     # Unpack parameters
     experiment_parameters = parameters["experiment_parameters"]
     data_flow_name = experiment_parameters["data_flow_name"]
@@ -109,6 +143,14 @@ function compute_task(parameters::Dict)
     metadata = parameters["metadata"]
     results_filename = metadata["results_filename"]
 
+    # Configure logs
+    FrameworkDemo.disable_tracing!() # Disables internal Dagger logging mechanism
+    Logging.disable_logging(Logging.Info) # Disables all Julia "debug" and "info" logs completely
+    mkpath("logs")
+    logs_filename = "logs/Worker_logfile_" * Dates.format(Dates.now(), "yyyy-mm-dd_HH-MM-SS") * ".log"
+    FrameworkDemo.redirect_logs_to_file(open(logs_filename, "a"))
+    println("Logs are redirected to $logs_filename.")
+
     # Load data-flow graph
     path = joinpath(pkgdir(FrameworkDemo), "data/$(data_flow_name)/df.graphml")
     graph = FrameworkDemo.parse_graphml(path)
@@ -117,17 +159,14 @@ function compute_task(parameters::Dict)
     # Calibrate crunching
     crunch_coefficients = FrameworkDemo.calibrate_crunch(; fast = fast)
 
-    # Configure logs
-    FrameworkDemo.disable_tracing!() # Disables internal Dagger logging mechanism
-    Logging.disable_logging(Logging.Info) # Disables all Julia "debug" and "info" logs completely
-    mkpath("logs")
-    FrameworkDemo.redirect_logs_to_file(open("logs/Worker_logfile_" * Dates.format(Dates.now(), "yyyy-mm-dd_HH-MM-SS") * ".log", "a"))
-
     # Run pipeline with precompilation
-    execution_time_with_precompilation = @elapsed FrameworkDemo.run_pipeline(df;
-    event_count = event_count,
-    max_concurrent = max_concurrent,
-    crunch_coefficients = crunch_coefficients)
+    execution_time_with_precompilation = @custom_exitcode_on_error begin
+        @elapsed FrameworkDemo.run_pipeline(df;
+        event_count = event_count,
+        max_concurrent = max_concurrent,
+        crunch_coefficients = crunch_coefficients)
+    end errmsg="Error during task warmup execution!" exitcode=43
+
     println("Execution time with precompilation: $execution_time_with_precompilation")
     parameters["warmup_results"] = Dict("execution_time" => execution_time_with_precompilation)
 
@@ -138,7 +177,10 @@ function compute_task(parameters::Dict)
     event_count = $event_count,
     max_concurrent = $max_concurrent,
     crunch_coefficients = $crunch_coefficients) seconds = 172800 samples = samples evals = 1
-    t = run(b)
+
+    t = @custom_exitcode_on_error begin
+        run(b)
+    end errmsg="Error during task execution!" exitcode=44
 
     metadata["end_time"] = Dates.format(Dates.now(), "yyyy-mm-dd HH:MM:SS")
     metadata["UUID"] = string(UUIDs.uuid4())
@@ -150,7 +192,7 @@ function compute_task(parameters::Dict)
     save_violin_plot(t)
     trial_append_to_db(results_filename, t, parameters)
 
-    return t
+    return 0
 end
 
 function (@main)(raw_args)
@@ -199,7 +241,5 @@ function (@main)(raw_args)
 
     @info "Worker started"
 
-    compute_task(parameters)
-
-    return 0
+    return benchmark_task(parameters)
 end
