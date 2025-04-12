@@ -157,6 +157,8 @@ function (@main)(raw_args)
 
     for (exp, params) in epg
         println("Running with $(params.threads_num) threads on experiment $(exp)...")
-        launcher(exp, params, implementation, errors_log_filename, relaunch_on_error)
+        for _ in 1:300
+            launcher(exp, params, implementation, errors_log_filename, relaunch_on_error)
+        end
     end
 end

@@ -49,7 +49,7 @@ end
 
 teardown_experiment(x::FrameworkDemoPipelineExperiment) = nothing
 
-get_version(x::FrameworkDemoPipelineExperiment) = "0.1"
+get_version(x::FrameworkDemoPipelineExperiment) = "0.1.1"
 
 get_experiment_parameters(x::FrameworkDemoPipelineExperiment) = Dict(
     "data_flow_name" => x.data_flow_name,
