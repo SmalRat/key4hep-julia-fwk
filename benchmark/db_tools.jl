@@ -4,16 +4,33 @@ using JSON
 const DB_DIR = "benchmark_results"
 
 mutable struct TrialEntry
-    warmup_results::Dict
     versions::Dict
-    benchmarktools_parameters::Dict
+    experiment_parameters::Dict
     results::Dict
     metadata::Dict
-    experiment_parameters::Dict
     machine_info::Dict
+
+    TrialEntry(versions::Dict, experiment_parameters::Dict, results::Dict, metadata::Dict, machine_info::Dict) = new(versions, experiment_parameters, results, metadata, machine_info)
+end
+
+function TrialEntry(r::BenchmarkResults, p::AllParams, m::BenchmarkMetadata)
+    t_ = convert_(Dict, r.trial)
+    experiment_version = get_version(p.experiment)
+    domain_parameters = get_experiment_parameters(p.experiment)
+
+    versions = merge!(t_["versions"], Dict("experiment_version" => experiment_version, "benchmark_version" => get_benchmark_version(m)))
+    experiment_parameters = Dict("threads_num" => p.benchmark_parameters.threads_num, "thread_pinning" => p.benchmark_parameters.pin_threads, "domain_parameters" => domain_parameters, "benchmarktools_parameters" => t_["benchmarktools_parameters"])
+    results = merge!(t_["results"], Dict("warmup_time" => r.warmup_time))
+    metadata = convert_(Dict, m)
+    machine_info = p.machine_info
+
+    TrialEntry(versions, experiment_parameters, results, metadata, machine_info)
 end
 
 # Loading entries from file
+
+#TODO check on start
+badext(filename::String) = error("File $filename is not appropriate for db: it does not have a .json extension")
 
 function load_db_file_to_dicts(filename::AbstractString)::Vector{Dict}
     endswith(filename, ".json") || badext(filename)
@@ -40,7 +57,7 @@ function load_db_file_to_dicts(filename::AbstractString)::Vector{Dict}
 end
 
 function dict_to_trial_entry(d::Dict)::TrialEntry
-    TrialEntry(d["warmup_results"], d["versions"], d["benchmarktools_parameters"], d["results"], d["metadata"], d["experiment_parameters"], get(d, "machine_info", Dict()))
+    TrialEntry(d["versions"],  d["experiment_parameters"], d["results"], d["metadata"], get(d, "machine_info", Dict()))
 end
 dicts_to_trial_entries(dicts::Vector{Dict})::Vector{TrialEntry} = map(dict_to_trial_entry, dicts)
 get_trial_entries_from_file(filename::AbstractString)::Vector{TrialEntry} = dicts_to_trial_entries(load_db_file_to_dicts(filename))
@@ -48,40 +65,37 @@ get_trial_entries_from_file(filename::AbstractString)::Vector{TrialEntry} = dict
 
 # Converting trials to trial entries
 
-function trial_to_dict(t::BenchmarkTools.Trial)
-    function trial_format_results(trial_json)::Dict
-        version_info = trial_json[1]
-
-        trial_data = trial_json[2][1][2]
-        trial_params = trial_data["params"][2]
-
-        results = Dict("allocations" => trial_data["allocs"],
-                   "memory_usage" => trial_data["memory"],
-                   "gc_times" => trial_data["gctimes"],
-                   "execution_times" => trial_data["times"])
-
-        return Dict(
-            "versions" => version_info,
-            "results" => results,
-            "benchmarktools_parameters" => trial_params
-        )
-    end
-
+function trial_to_dict(t::BenchmarkTools.Trial)::Dict
     # Generate new dict from BenchmarkTools.Trial object
     buffer = IOBuffer()
     BenchmarkTools.save(buffer, t)
-    return trial_format_results(JSON.parse(String(take!(buffer))))
+    t_json = JSON.parse(String(take!(buffer)))
+
+    version_info = t_json[1]
+
+    trial_data = t_json[2][1][2]
+    trial_params = trial_data["params"][2]
+
+    results = Dict("allocations" => trial_data["allocs"],
+                "memory_usage" => trial_data["memory"],
+                "gc_times" => trial_data["gctimes"],
+                "execution_times" => trial_data["times"])
+
+    return Dict(
+        "versions" => version_info,
+        "results" => results,
+        "benchmarktools_parameters" => trial_params
+    )
 end
 
-function trial_add_worker_parameters(trial_dict::Dict, parameters::Dict)
-    merge!(trial_dict, parameters)
-    trial_dict
-end
-
-convert(::Type{Dict}, t::BenchmarkTools.Trial)::Dict = trial_to_dict(t)
-convert(::Type{Dict}, t::BenchmarkTools.Trial, parameters::Dict)::Dict = convert(Dict, t) |> (x -> trial_add_worker_parameters(x, parameters))
-convert(::Type{TrialEntry}, t::BenchmarkTools.Trial, parameters::Dict)::TrialEntry = convert(Dict, t, parameters) |> dict_to_trial_entry
-
+convert_(::Type{Dict}, t::BenchmarkTools.Trial)::Dict = trial_to_dict(t)
+convert_(::Type{Dict}, e::TrialEntry)::Dict = Dict(
+    "versions" => e.versions,
+    "experiment_parameters" => e.experiment_parameters,
+    "results" => e.results,
+    "metadata" => e.metadata,
+    "machine_info" => e.machine_info
+)
 
 # Filtering entries
 
@@ -137,14 +151,12 @@ function is_matching_dict(entry_dict::Dict, template_dict::Dict)
 end
 
 
-function trial_append_to_db(filename::AbstractString, t::BenchmarkTools.Trial, parameters::Dict)
+function trial_append_to_db(filename::AbstractString, new_entry::TrialEntry)
     filename = joinpath(DB_DIR, filename)
 
     data = load_db_file_to_dicts(filename)
-
-    new_entry = convert(Dict, t, parameters)
-
-    push!(data, new_entry)
+    new_entry_dict = convert_(Dict, new_entry)
+    push!(data, new_entry_dict)
 
     open(filename, "w") do io
         JSON.print(io, data, 2)
