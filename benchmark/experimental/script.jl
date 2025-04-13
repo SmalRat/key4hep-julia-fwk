@@ -6,6 +6,8 @@ include("launch.jl")
 include("FrameworkDemoPipelineExperiments.jl")
 using .FrameworkDemoPipelineExperiments
 
+
+
 struct FrameworkDemoEPG <:ExperimentParametersGenerator
     experiment::AbstractExperiment
     parameters::BenchmarkParameters
@@ -13,6 +15,27 @@ struct FrameworkDemoEPG <:ExperimentParametersGenerator
     threads_max_num::Int
     concurrent_min_num::Int
     concurrent_max_num::Int
+    crunch_coefficients::Union{Nothing, Vector{Float64}}
+    repeated_crunch_calibration::Bool
+
+    function FrameworkDemoEPG(experiment::AbstractExperiment, parameters::BenchmarkParameters, threads_min_num::Int, threads_max_num::Int, concurrent_min_num::Int, concurrent_max_num::Int, repeated_crunch_calibration::Bool, fast::Bool)
+        if (!repeated_crunch_calibration)
+            println("Crunch coefficients will be calibrated only once.")
+            if fast
+                crunch_coefficients = nothing
+            else
+                crunch_coefficients = collect(collect(FrameworkDemo.calibrate_crunch(; fast = fast))[1])
+            end
+        else
+            println("Crunch coefficients will be calibrated for each experiment.")
+            crunch_coefficients = nothing
+        end
+
+        experiment_ = deepcopy(experiment)
+        experiment_.crunch_coefficients = crunch_coefficients
+
+        new(experiment, parameters, threads_min_num, threads_max_num, concurrent_min_num, concurrent_max_num, crunch_coefficients, repeated_crunch_calibration)
+    end
 end
 
 function Base.iterate(epg::FrameworkDemoEPG, state = (epg.concurrent_min_num, epg.threads_min_num))
@@ -41,6 +64,50 @@ Base.length(epg::FrameworkDemoEPG) =
     (epg.concurrent_max_num - epg.concurrent_min_num + 1) *
     (epg.threads_max_num - epg.threads_min_num + 1)
 
+
+mutable struct ExperimentsBookkeeper
+    current_experiment_set::String
+    conducted_experiments::Vector{String}
+end
+
+function get_experiment_set(experiment_set_name::String; filename::String="experiments_management/experiment_sets.json")
+    open(filename, "r") do f
+        content = JSON.parse(read(f, String))
+        experiment_set = content[experiment_set_name]
+        return experiment_set
+    end
+end
+
+function ExperimentsStateBookkeeper(; new_experiment_set_name::Union{String, Nothing} = nothing)
+    mkpath("experiments_management")
+
+    current_experiment_set::String
+    conducted_experiments::Vector{String}
+
+    if (new_experiment_set_name === nothing)
+        isfile("experiments_management/current_experiment_state.json") || error("Experiment is to be resumed, but there is no experiment state file.")
+        content = open("experiments_management/current_experiment_state.json", "r") do f
+            JSON.parse(read(f, String))
+        end
+        current_experiment_set = content["current_experiment_set"]
+        conducted_experiments = content["conducted_experiments"]
+    else
+        current_experiment_set = new_experiment_set_name
+        conducted_experiments = []
+        file_content = Dict(
+            "current_experiment_set" => current_experiment_set,
+            "conducted_experiments" => conducted_experiments
+        )
+        open("experiments_management/current_experiment_state.json", "w") do f
+            write(f, JSON.print(file_content), 4)
+        end
+    end
+    new(current_experiment_set, conducted_experiments)
+end
+
+# function get_next_experiment(bookkeeper::ExperimentsStateBookkeeper)
+
+# end
 
 function parse_args(raw_args)
     s = ArgParseSettings()
@@ -135,30 +202,16 @@ function (@main)(raw_args)
 
     implementation = "FrameworkDemoPipelineExperiments.jl"
 
-    if (!repeated_crunch_calibration)
-        println("Crunch coefficients will be calibrated only once.")
-        if fast
-            crunch_coefficients = nothing
-        else
-            crunch_coefficients = collect(collect(FrameworkDemo.calibrate_crunch(; fast = fast))[1])
-        end
-    else
-        println("Crunch coefficients will be calibrated for each experiment.")
-        crunch_coefficients = nothing
-    end
-
-    experiment = FrameworkDemoPipelineExperiment(data_flow, event_count, concurrent_low, fast, nothing, crunch_coefficients)
+    experiment = FrameworkDemoPipelineExperiment(data_flow, event_count, concurrent_low, fast, nothing, nothing)
     parameters = BenchmarkParameters(
         results_filename,
         pin_threads=pin_threads,
         samples=samples,
     )
-    epg = FrameworkDemoEPG(experiment, parameters, min_threads, max_threads, concurrent_low, concurrent_high)
+    epg = FrameworkDemoEPG(experiment, parameters, min_threads, max_threads, concurrent_low, concurrent_high, repeated_crunch_calibration, fast)
 
     for (exp, params) in epg
         println("Running with $(params.threads_num) threads on experiment $(exp)...")
-        for _ in 1:300
-            launcher(exp, params, implementation, errors_log_filename, relaunch_on_error)
-        end
+        launcher(exp, params, implementation, errors_log_filename, relaunch_on_error)
     end
 end

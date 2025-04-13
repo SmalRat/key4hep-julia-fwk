@@ -42,7 +42,7 @@ function warmup(experiment::AbstractExperiment)
 end
 
 function do_benchmarks(experiment::AbstractExperiment, b_p::BenchmarkParameters)
-    b = @benchmarkable println("Mock experiment!") seconds = b_p.timeout samples = b_p.samples evals = b_p.evals
+    b = @benchmarkable run_experiment($experiment) seconds = b_p.timeout samples = b_p.samples evals = b_p.evals
 
     @custom_exitcode_on_error begin
         run(b)
