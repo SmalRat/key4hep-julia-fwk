@@ -16,6 +16,18 @@ mutable struct FrameworkDemoPipelineExperiment <: AbstractExperiment
     crunch_coefficients::Union{Vector{Float64}, Dagger.Shard, Nothing} #TODO
 end
 
+function Base.show(io::IO, exp::FrameworkDemoPipelineExperiment)
+    println(io, "FrameworkDemoPipelineExperiment(")
+    println(io, "  data_flow_name        = ", exp.data_flow_name)
+    println(io, "  event_count           = ", exp.event_count)
+    println(io, "  max_concurrent_events = ", exp.max_concurrent_events)
+    println(io, "  fast                  = ", exp.fast)
+    println(io, "  df                    = ", isnothing(exp.df) ? "nothing" : "DataFlowGraph(...)")
+    cc = isnothing(exp.crunch_coefficients) ? "nothing" : exp.crunch_coefficients
+    println(io, "  crunch_coefficients   = ", cc)
+    print(io, ")")
+end
+
 function setup_experiment(x::FrameworkDemoPipelineExperiment)
     # Configure logs
     FrameworkDemo.disable_tracing!() # Disables internal Dagger logging mechanism

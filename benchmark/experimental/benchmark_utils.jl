@@ -102,6 +102,17 @@ mutable struct BenchmarkParameters
     end
 end
 
+function Base.show(io::IO, bp::BenchmarkParameters)
+    println(io, "BenchmarkParameters(")
+    println(io, "  threads_num     = ", bp.threads_num)
+    println(io, "  pin_threads     = ", bp.pin_threads)
+    println(io, "  samples         = ", bp.samples)
+    println(io, "  evals           = ", bp.evals)
+    println(io, "  timeout         = ", bp.timeout)
+    println(io, "  results_filename= ", bp.results_filename)
+    print(io, ")")
+end
+
 mutable struct BenchmarkMetadata
     start_time::String
     end_time::String
