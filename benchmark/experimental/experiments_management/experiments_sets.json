@@ -2468,5 +2468,147 @@
                 "data_flow": "ATLAS/q449"
             }
         ]
+    },
+    {
+        "description": "Test set to measure the demonstrator performance on the optimal number of max concurrent jobs",
+        "name": "experiments_set_2",
+        "experiments": [
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "1",
+                "max_concurrent_events": 1,
+                "threads_num": 1,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "2",
+                "max_concurrent_events": 4,
+                "threads_num": 8,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "3",
+                "max_concurrent_events": 8,
+                "threads_num": 16,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "4",
+                "max_concurrent_events": 12,
+                "threads_num": 24,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "5",
+                "max_concurrent_events": 16,
+                "threads_num": 32,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "6",
+                "max_concurrent_events": 20,
+                "threads_num": 40,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "7",
+                "max_concurrent_events": 24,
+                "threads_num": 48,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "8",
+                "max_concurrent_events": 28,
+                "threads_num": 56,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "9",
+                "max_concurrent_events": 32,
+                "threads_num": 64,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "10",
+                "max_concurrent_events": 36,
+                "threads_num": 72,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "11",
+                "max_concurrent_events": 40,
+                "threads_num": 80,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "12",
+                "max_concurrent_events": 44,
+                "threads_num": 88,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "13",
+                "max_concurrent_events": 48,
+                "threads_num": 96,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "14",
+                "max_concurrent_events": 52,
+                "threads_num": 104,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "15",
+                "max_concurrent_events": 56,
+                "threads_num": 112,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "16",
+                "max_concurrent_events": 60,
+                "threads_num": 120,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 1000,
+                "fast": false,
+                "id": "17",
+                "max_concurrent_events": 64,
+                "threads_num": 128,
+                "data_flow": "ATLAS/q449"
+            }
+        ]
     }
 ]

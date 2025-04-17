@@ -63,7 +63,7 @@ mutable struct ExperimentsBookkeeper
     crunch_coefficients::Vector{Float64}
 end
 
-function ExperimentsStateBookkeeper(new_experiment_set_name::Union{String, Nothing})
+function ExperimentsStateBookkeeper(new_experiment_set_name::Union{String, Nothing}, preserve_coefs::Bool=true)
     new_experiment_set_name == "" && (new_experiment_set_name = nothing)
     mkpath("experiments_management")
     json_path = "experiments_management/current_experiment_state.json"
@@ -83,7 +83,30 @@ function ExperimentsStateBookkeeper(new_experiment_set_name::Union{String, Nothi
     else
         current_experiment_set = new_experiment_set_name
         conducted_experiments = []
-        crunch_coefficients = collect(collect(FrameworkDemo.calibrate_crunch(; fast = false))[1])
+
+        do_calibration = true
+        
+        if preserve_coefs && isfile(json_path)
+            content = open(json_path, "r") do f
+                JSON.parse(read(f, String))
+            end
+            crunch_coefficients = content["crunch_coefficients"]
+            if length(crunch_coefficients) != 2
+                println("Existing crunch coefficients are not valid. They will be recalibrated.")
+            else
+                println("Crunch coefficients from previous experiments set will be reused.")
+                do_calibration = false
+            end
+        elseif preserve_coefs && !isfile(json_path)
+            println("No previous experiment state file found. Crunch coefficients will be calculated")
+        else
+            println("Crunch coefficients will be calculated.")
+        end
+
+        if do_calibration
+            crunch_coefficients = collect(collect(FrameworkDemo.calibrate_crunch(; fast = false))[1])
+            println("New crunch coefficients have been calculated.")
+        end
 
         file_content = Dict(
             "current_experiment_set" => current_experiment_set,

@@ -3,7 +3,7 @@ using JSON
 base_json = JSON.parsefile("template_experiments_set.json")
 base_experiment = base_json[1]["experiments"][1]
 
-# Function to generate the range of max_concurrent_events for a given thread_count
+
 function max_concurrent_range(thread_count)
     if thread_count == 1
         return 1:8
@@ -20,8 +20,11 @@ function max_concurrent_range(thread_count)
     end
 end
 
-function generate_experiments()
-    # Generate all experiments
+function optimal_jobs_number(thread_count::Int)
+    return convert(Int, ceil(thread_count / 2))
+end
+
+function generate_experiments_set_1()
     experiments = []
 
     id_counter = 1
@@ -43,7 +46,27 @@ function generate_experiments()
     experiments
 end
 
-experiments = generate_experiments()
+function generate_experiments_set_2()
+    experiments = []
+
+    id_counter = 1
+
+    for thread_count in (1, 8:8:128...)
+        push!(experiments, Dict(
+            "id" => string(id_counter),
+            "data_flow" => base_experiment["data_flow"],
+            "event_count" => base_experiment["event_count"],
+            "max_concurrent_events" => optimal_jobs_number(thread_count),
+            "threads_num" => thread_count,
+            "fast" => base_experiment["fast"]
+        ))
+        id_counter += 1
+    end
+
+    experiments
+end
+
+experiments = generate_experiments_set_2()
 
 output = [
     Dict(

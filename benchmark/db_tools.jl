@@ -99,6 +99,110 @@ convert_(::Type{Dict}, e::TrialEntry)::Dict = Dict(
 
 # Filtering entries
 
+function filter_db_helper(
+    db;
+    # experiment_parameters
+    threads_num::Union{Int,Nothing}=nothing,
+    thread_pinning::Union{Bool,Nothing}=nothing,
+
+    # versions
+    experiment_version::Union{String,Nothing}=nothing,
+    benchmark_version::Union{String,Nothing}=nothing,
+    Julia_version::Union{String,Nothing}=nothing,
+    BenchmarkTools_major::Union{Int,Nothing}=nothing,
+    BenchmarkTools_minor::Union{Int,Nothing}=nothing,
+    BenchmarkTools_patch::Union{Int,Nothing}=nothing,
+
+    # domain_parameters
+    max_concurrent::Union{Int,Nothing}=nothing,
+    crunch_coefficients::Union{Vector{Float64},Nothing}=nothing,
+    event_count::Union{Int,Nothing}=nothing,
+    data_flow_name::Union{String,Nothing}=nothing,
+    fast::Union{Bool,Nothing}=nothing,
+
+    # benchmarktools_parameters
+    samples::Union{Int,Nothing}=nothing,
+)
+
+    versions = Dict()
+    experiment_parameters = Dict()
+    metadata = Dict()
+    results = Dict()
+    machine_info = Dict()
+
+    experiment_parameters["threads_num"] = threads_num
+
+    # Optional experiment_parameters
+    if thread_pinning !== nothing
+        experiment_parameters["thread_pinning"] = thread_pinning
+    end
+
+    domain_params = Dict()
+    if max_concurrent !== nothing
+        domain_params["max_concurrent"] = max_concurrent
+    end
+    if crunch_coefficients !== nothing
+        domain_params["crunch_coefficients"] = crunch_coefficients
+    end
+    if event_count !== nothing
+        domain_params["event_count"] = event_count
+    end
+    if data_flow_name !== nothing
+        domain_params["data_flow_name"] = data_flow_name
+    end
+    if fast !== nothing
+        domain_params["fast"] = fast
+    end
+    if !isempty(domain_params)
+        experiment_parameters["domain_parameters"] = domain_params
+    end
+
+    bt_params = Dict()
+    if samples !== nothing
+        bt_params["samples"] = samples
+    end
+    if !isempty(bt_params)
+        experiment_parameters["benchmarktools_parameters"] = bt_params
+    end
+
+    # Optional versions
+    if experiment_version !== nothing
+        versions["experiment_version"] = experiment_version
+    end
+    if benchmark_version !== nothing
+        versions["benchmark_version"] = benchmark_version
+    end
+    if Julia_version !== nothing
+        versions["Julia"] = Julia_version
+    end
+    if any(x -> x !== nothing, (BenchmarkTools_major, BenchmarkTools_minor, BenchmarkTools_patch))
+        bt_version = Dict()
+        if BenchmarkTools_major !== nothing
+            bt_version["major"] = BenchmarkTools_major
+        end
+        if BenchmarkTools_minor !== nothing
+            bt_version["minor"] = BenchmarkTools_minor
+        end
+        if BenchmarkTools_patch !== nothing
+            bt_version["patch"] = BenchmarkTools_patch
+        end
+        versions["BenchmarkTools"] = bt_version
+    end
+
+    template = TrialEntry(
+        versions,
+        experiment_parameters,
+        results,
+        metadata,
+        machine_info
+    )
+
+    filtered_db = filter_trial_entries(db, template)
+
+    return filtered_db
+end
+
+
 function filter_trial_entries(data::Vector{TrialEntry}, template::TrialEntry)::Vector{TrialEntry}
     return filter(entry -> is_fitting(entry, template), data)
 end

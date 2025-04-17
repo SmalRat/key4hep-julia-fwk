@@ -61,9 +61,9 @@ function parse_args(raw_args)
         # help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
         # action = :store_true
 
-        "--repeated-crunch-calibration"
-        help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
-        action = :store_true
+        # "--repeated-crunch-calibration"
+        # help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
+        # action = :store_true
 
         "--pin-threads"
         help = "Pin Julia threads to CPU threads"
@@ -79,6 +79,10 @@ function parse_args(raw_args)
         help = "Start a new experiment set"
         arg_type = String
         default = ""
+
+        "--no-preserve-coefs"
+        help = "Do not preserve crunch coefficients between experiments. By default, the coefficients are preserved if available."
+        action = :store_true
     end
 
     return ArgParse.parse_args(raw_args, s)
@@ -105,6 +109,7 @@ function (@main)(raw_args)
     errors_log_filename = args["errors-log-filename"]
 
     new_experiment_set_name = args["new-experiment-set"]
+    preserve_coefs = !args["no-preserve-coefs"]
 
     implementation = "FrameworkDemoPipelineExperiments.jl"
     parameters = BenchmarkParameters(
@@ -112,7 +117,8 @@ function (@main)(raw_args)
         pin_threads=pin_threads,
         samples=samples,
     )
-    bookkeeper = ExperimentsStateBookkeeper(new_experiment_set_name)
+
+    bookkeeper = ExperimentsStateBookkeeper(new_experiment_set_name, preserve_coefs)
     epg = RandomFrameworkDemoEPG(parameters, bookkeeper, nothing)
 
     for (exp, params) in epg
