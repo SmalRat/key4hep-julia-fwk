@@ -2610,5 +2610,267 @@
                 "data_flow": "ATLAS/q449"
             }
         ]
+    },
+    {
+        "name": "experiments_set_3",
+        "description": "Test set to measure the demonstrator performance with the optimal number of max concurrent jobs",
+        "experiments": [
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "1",
+                "max_concurrent_events": 2,
+                "threads_num": 4,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "2",
+                "max_concurrent_events": 4,
+                "threads_num": 8,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "3",
+                "max_concurrent_events": 6,
+                "threads_num": 12,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "4",
+                "max_concurrent_events": 8,
+                "threads_num": 16,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "5",
+                "max_concurrent_events": 10,
+                "threads_num": 20,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "6",
+                "max_concurrent_events": 12,
+                "threads_num": 24,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "7",
+                "max_concurrent_events": 14,
+                "threads_num": 28,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "8",
+                "max_concurrent_events": 16,
+                "threads_num": 32,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "9",
+                "max_concurrent_events": 2,
+                "threads_num": 4,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "10",
+                "max_concurrent_events": 4,
+                "threads_num": 8,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "11",
+                "max_concurrent_events": 6,
+                "threads_num": 12,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "12",
+                "max_concurrent_events": 8,
+                "threads_num": 16,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "13",
+                "max_concurrent_events": 10,
+                "threads_num": 20,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "14",
+                "max_concurrent_events": 12,
+                "threads_num": 24,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "15",
+                "max_concurrent_events": 14,
+                "threads_num": 28,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "16",
+                "max_concurrent_events": 16,
+                "threads_num": 32,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "17",
+                "max_concurrent_events": 2,
+                "threads_num": 4,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "18",
+                "max_concurrent_events": 4,
+                "threads_num": 8,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "19",
+                "max_concurrent_events": 6,
+                "threads_num": 12,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "20",
+                "max_concurrent_events": 8,
+                "threads_num": 16,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "21",
+                "max_concurrent_events": 10,
+                "threads_num": 20,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "22",
+                "max_concurrent_events": 12,
+                "threads_num": 24,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "23",
+                "max_concurrent_events": 14,
+                "threads_num": 28,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "24",
+                "max_concurrent_events": 16,
+                "threads_num": 32,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "25",
+                "max_concurrent_events": 2,
+                "threads_num": 4,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "26",
+                "max_concurrent_events": 4,
+                "threads_num": 8,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "27",
+                "max_concurrent_events": 6,
+                "threads_num": 12,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "28",
+                "max_concurrent_events": 8,
+                "threads_num": 16,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "29",
+                "max_concurrent_events": 10,
+                "threads_num": 20,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "30",
+                "max_concurrent_events": 12,
+                "threads_num": 24,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "31",
+                "max_concurrent_events": 14,
+                "threads_num": 28,
+                "data_flow": "ATLAS/q449"
+            },
+            {
+                "event_count": 200,
+                "fast": false,
+                "id": "32",
+                "max_concurrent_events": 16,
+                "threads_num": 32,
+                "data_flow": "ATLAS/q449"
+            }
+        ]
     }
 ]

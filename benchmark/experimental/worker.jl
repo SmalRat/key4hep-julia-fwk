@@ -16,7 +16,7 @@ using .AbstractExperiments
 include("benchmark_utils.jl")
 include("../db_tools.jl")
 
-const PROGRAM_VERSION = "0.11"
+const PROGRAM_VERSION = "0.12"
 
 implementation = ENV["JULIA_PARALLEL_TEST_IMPL_M"]
 ImplModule = include(implementation)
@@ -37,7 +37,7 @@ end
 
 function warmup(experiment::AbstractExperiment)
     @custom_exitcode_on_error begin
-        @elapsed run_experiment(experiment)
+        @elapsed @eval run_experiment($experiment)
     end errmsg="Error during task warmup execution!" exitcode=43
 end
 
