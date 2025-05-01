@@ -38,7 +38,7 @@ function launcher(experiment::AbstractExperiment, parameters::BenchmarkParameter
         flush(f_errors_log)
 
         while (true)
-            worker_cmd = Cmd(`julia --threads=$t --project=.. worker.jl`) # TODO Env var
+            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl`) # TODO Env var
             worker_in = Pipe()
             proc = run(pipeline(ignorestatus(worker_cmd), stderr=f_errors_log, stdout=stdout, stdin=worker_in), wait=false)
             serialize(worker_in, experiment)

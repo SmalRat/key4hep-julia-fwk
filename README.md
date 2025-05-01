@@ -1,3 +1,5 @@
+# Performance evaluation of a Julia-based framework for parallel computing of dependent tasks in high-energy physics application
+
 # FrameworkDemo.jl
 
 [![test](https://github.com/key4hep/key4hep-julia-fwk/actions/workflows/test.yml/badge.svg)](https://github.com/key4hep/key4hep-julia-fwk/actions/workflows/test.yml)

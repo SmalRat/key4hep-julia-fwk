@@ -71,22 +71,46 @@ function generate_experiments_set_3()
 
     id_counter = 1
 
-    for thread_count in (4:4:32...)
-        push!(experiments, Dict(
-            "id" => string(id_counter),
-            "data_flow" => base_experiment["data_flow"],
-            "event_count" => base_experiment["event_count"],
-            "max_concurrent_events" => optimal_jobs_number(thread_count),
-            "threads_num" => thread_count,
-            "fast" => base_experiment["fast"]
-        ))
-        id_counter += 1
+    for repetitions in 1:4
+        for thread_count in 4:4:32
+            push!(experiments, Dict(
+                "id" => string(id_counter),
+                "data_flow" => base_experiment["data_flow"],
+                "event_count" => base_experiment["event_count"],
+                "max_concurrent_events" => optimal_jobs_number(thread_count),
+                "threads_num" => thread_count,
+                "fast" => base_experiment["fast"]
+            ))
+            id_counter += 1
+        end
     end
 
     experiments
 end
 
-experiments = generate_experiments_set_3()
+function generate_experiments_set_4()
+    experiments = []
+
+    id_counter = 1
+
+    for repetitions in 1:3
+        for event_count in 10:10:200
+            push!(experiments, Dict(
+                "id" => string(id_counter),
+                "data_flow" => base_experiment["data_flow"],
+                "event_count" => event_count,
+                "max_concurrent_events" => base_experiment["max_concurrent_events"],
+                "threads_num" => base_experiment["threads_num"],
+                "fast" => base_experiment["fast"]
+            ))
+            id_counter += 1
+        end
+    end
+
+    experiments
+end
+
+experiments = generate_experiments_set_4()
 
 output = [
     Dict(

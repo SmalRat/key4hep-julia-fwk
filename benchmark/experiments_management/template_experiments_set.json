@@ -1,0 +1,16 @@
+[
+    {
+        "name": "experiments_set_5",
+        "description": "Additional test set to measure the event number effect on the throughput",
+        "experiments": [
+            {
+                "id": "1",
+                "data_flow": "ATLAS/q449",
+                "event_count": 200,
+                "max_concurrent_events": 8,
+                "threads_num": 16,
+                "fast": false
+            }
+        ]
+    }
+]
