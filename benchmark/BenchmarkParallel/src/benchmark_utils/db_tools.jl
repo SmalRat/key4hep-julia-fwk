@@ -1,5 +1,5 @@
-using BenchmarkTools
-using JSON
+using BenchmarkParallel.BenchmarkTools
+using BenchmarkParallel.JSON
 
 const DB_DIR = "benchmark_results"
 
@@ -96,6 +96,14 @@ convert_(::Type{Dict}, e::TrialEntry)::Dict = Dict(
     "metadata" => e.metadata,
     "machine_info" => e.machine_info
 )
+function convert_(::Type{Dict}, benchmark_metadata::BenchmarkMetadata)
+    metadata = Dict(
+        "start_time" => benchmark_metadata.start_time,
+        "end_time" => benchmark_metadata.end_time,
+        "UUID" => benchmark_metadata.UUID
+    )
+    return metadata
+end
 
 # Filtering entries
 

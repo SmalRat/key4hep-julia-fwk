@@ -1,25 +1,28 @@
-using FrameworkDemo
-using JSON
-using ArgParse
-using Dates
-using UUIDs
+# using FrameworkDemo
+using BenchmarkParallel
+using BenchmarkParallel.BenchmarkParallelUtils
+using BenchmarkParallel.JSON
+using BenchmarkParallel.ArgParse
+using BenchmarkParallel.Dates
+using BenchmarkParallel.UUIDs
 
-using BenchmarkTools
-using BenchmarkPlots, StatsPlots
+using BenchmarkParallel.BenchmarkTools
+using BenchmarkParallel.BenchmarkPlots, BenchmarkParallel.StatsPlots
 
-using Logging
-using Serialization
+using BenchmarkParallel.Logging
+using BenchmarkParallel.Serialization
 
-include("AbstractExperiments.jl")
-using .AbstractExperiments
+# include("AbstractExperiments.jl")
+# using .AbstractExperiments
 
-include("benchmark_utils.jl")
-include("db_tools.jl")
+# include("benchmark_utils.jl")
+# include("db_tools.jl")
 
 const PROGRAM_VERSION = "0.12"
 
 implementation = ENV["JULIA_PARALLEL_TEST_IMPL_M"]
 ImplModule = include(implementation)
+using .ImplModule
 
 
 function parse_args(raw_args)
@@ -84,6 +87,8 @@ function (@main)(raw_args)
     machine_info_filename::String = args["machine-info-filename"]
 
     experiment::AbstractExperiment = deserialize(stdin)
+    # b = deserialize(stdin)
+    # println(typeof(b))
     benchmark_parameters::BenchmarkParameters = deserialize(stdin)
     machine_info::Dict = get_machine_info(machine_info_filename)
 

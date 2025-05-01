@@ -4,8 +4,8 @@ using FrameworkDemo
 using Logging
 using Dates
 using Dagger
-using ..AbstractExperiments
-import ..AbstractExperiments: AbstractExperiment, setup_experiment, run_experiment, teardown_experiment, get_version, get_experiment_parameters
+using BenchmarkParallel
+import BenchmarkParallel: setup_experiment, run_experiment, teardown_experiment, get_version, get_experiment_parameters
 
 mutable struct FrameworkDemoPipelineExperiment <: AbstractExperiment
     data_flow_name::String
@@ -75,7 +75,7 @@ get_experiment_parameters(x::FrameworkDemoPipelineExperiment) = Dict(
                             end
 )
 
-export FrameworkDemoPipelineExperiment, setup_experiment, run_experiment, teardown_experiment, get_version, get_experiment_parameters
+export FrameworkDemoPipelineExperiment
 
 end
 

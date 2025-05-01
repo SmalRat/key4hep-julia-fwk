@@ -6,12 +6,8 @@ using Cairo
 using FrameworkDemo
 using ArgParse
 using StatsBase
-
-include("../experimental/AbstractExperiments.jl")
-using .AbstractExperiments
-
-include("../experimental/benchmark_utils.jl")
-include("../db_tools.jl")
+using BenchmarkParallel
+using BenchmarkParallel.BenchmarkParallelUtils
 
 include("visualization_utilities.jl")
 include("strong_scalability_visualization.jl")
@@ -24,9 +20,12 @@ include("other_visualizations.jl")
 Script for visualizing benchmark results
 
 Usage:
-    julia visualization.jl results-filename=<results-filename> [--str-scal=<str-scal>] [--par-eff=<par-eff>] [--hist=<hist>] [--exec-plan=<exec-plan>] [--df-graph=<df-graph>]
-Example:
-    julia --project=. visualization.jl benchmark_results_2025-02-13_23-53-50.json --str-scal=strong_scalability_plot.png --par-eff=parallel_efficiency_plot.png --hist=histogram_plot.png --exec-plan=execution_plan.png --df-graph=../data/demo/sequential/df.graphml
+    julia visualization.jl results-filename=<results-filename> [--str-scal=<plot_filename>] [--event-count-exp=<plot_filename>] [--conc-eff=<plot_filename>] [--crunch-exp=<plot_filename>]
+Example (launch from the file directory):
+    julia --project=.. visualization.jl ../benchmark_results/machine-2/results-machine-2-4.json --event-count-exp=plot_filename
+    julia --project=.. visualization.jl ../benchmark_results/machine-2/merged.json --str-scal=plot_filename
+    julia --project=.. visualization.jl ../benchmark_results/machine-2/results-machine-2-1.json --conc-eff=plot_filename
+    julia --project=.. visualization.jl ../benchmark_results/machine-2/coefs-exp-machine-2.json --crunch-exp=plot_filename
 """
 
 
@@ -44,28 +43,8 @@ function parse_args(raw_args)
         arg_type = String
         default = nothing
 
-        "--par-eff"
-        help = "Parallel efficiency plot filename"
-        arg_type = String
-        default = nothing
-
-        "--hist"
-        help = "Histogram plot filename"
-        arg_type = String
-        default = nothing
-
         "--conc-eff"
         help = "Concurrency efficiency plot filename"
-        arg_type = String
-        default = nothing
-
-        "--exec-plan"
-        help = "Execution plan graph filename"
-        arg_type = String
-        default = nothing
-
-        "--df-graph"
-        help = "Data flow graph filename"
         arg_type = String
         default = nothing
 
@@ -89,14 +68,9 @@ function (@main)(raw_args)
 
     results_filename = args["results-filename"]
     strong_scalability_plot_filename = args["str-scal"]
-    parallel_efficiency_plot_filename = args["par-eff"]
-    histogram_plot_filename = args["hist"]
     concurrency_effect_plot_filename = args["conc-eff"]
     crunch_experiment_plot_filename = args["crunch-exp"]
     event_count_experiment_plot_filename = args["event-count-exp"]
-
-    execution_plan_path = args["exec-plan"]
-    df_graph_path = args["df-graph"]
 
     # Filter entries by parameters
     db = get_trial_entries_from_file(results_filename)

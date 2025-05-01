@@ -7,39 +7,12 @@ Run benchmarks from the project's main directory
 Run benchmark script
 
 ```
-julia --project=benchmark benchmark/benchmarks.jl
-```
-
-or benchmark with [PkgBenchmark](https://github.com/JuliaCI/PkgBenchmark.jl)
-
-```julia
-using PkgBenchmark
-import FrameworkDemo
-
-benchmarkpkg(FrameworkDemo)
+julia --project=. FrameworkDemoBenchmark.jl test.json --samples=1 --pin-threads=true --relaunch-on-error=true --new-experiment-set=experiments_set_4
 ```
 
 
-## Developing benchmarks
+This example launches ``FrameworkDemo`` benchmark with 1 sample per experiment for experiments from experiments set 4 (``experiments_management/experiments_sets.json``). The pipeline will be restarted in case of error and threads are pinned. Results will be saved in `test.json`.
 
-The benchmarks are based on [BenchmarkTools](https://github.com/JuliaCi/BenchmarkTools.jl) and try to follow a standard benchmark structure with `BenchmarkTools::BenchmarkGroups`
+## Results visualization 
 
-Add new benchmarks:
-
-```julia
-SUITE["new_benchmark"] = BenchmarkGroup(["tag1", "tag2", "etc"])
-SUITE["new_benchmark"]["foo"] = @benchmarkable foo($bar)
-```
-
-Add result processing function (e.g. for visualization)
-
-```julia
-function plot_foo(results::BenchmarkGroup)
-    foo_results = results["new_benchmark"]["foo"]
-    do_something(foo_results)
-end
-
-push!(result_processors, plot_foo) # register function
-```
-
-The functions added to `results_processors` will be called automatically when executing `benchmark/benchmarks.jl` script. Alternatively the functions can be added with `postprocess`argument of `PkgBenchmark.benchmarkpkg`. 
+Check the `visualization` folder.

@@ -2,10 +2,7 @@ using ArgParse
 using Serialization
 using Dates
 
-include("AbstractExperiments.jl")
-using .AbstractExperiments
-
-include("benchmark_utils.jl")
+# using .AbstractExperiments
 
 abstract type ExperimentParametersGenerator end
 
@@ -30,7 +27,9 @@ Base.length(epg::SimpleEPG) = epg.threads_max_num - epg.threads_min_num + 1
 
 
 function launcher(experiment::AbstractExperiment, parameters::BenchmarkParameters, implementation::String, errors_log_filename::String, relaunch_on_error::Bool)
-    ENV["JULIA_PARALLEL_TEST_IMPL_M"] = implementation
+    implementation_source = first(methods(typeof(experiment))).file
+    # println("Implementation source: $implementation_source")
+    ENV["JULIA_PARALLEL_TEST_IMPL_M"] = implementation_source
     t = parameters.threads_num
 
     open(errors_log_filename, "a") do f_errors_log
@@ -38,7 +37,9 @@ function launcher(experiment::AbstractExperiment, parameters::BenchmarkParameter
         flush(f_errors_log)
 
         while (true)
-            worker_cmd = Cmd(`julia --threads=$t --project=. worker.jl`) # TODO Env var
+            worker_script_path = joinpath(dirname(@__FILE__), "worker.jl")
+            # worker_script_path = "test1.jl"
+            worker_cmd = Cmd(`julia --threads=$t --project=. $worker_script_path`) # TODO Env var
             worker_in = Pipe()
             proc = run(pipeline(ignorestatus(worker_cmd), stderr=f_errors_log, stdout=stdout, stdin=worker_in), wait=false)
             serialize(worker_in, experiment)

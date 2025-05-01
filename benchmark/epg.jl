@@ -1,4 +1,5 @@
 using .FrameworkDemoPipelineExperiments
+using JSON
 
 struct FrameworkDemoEPG <:ExperimentParametersGenerator
     experiment::AbstractExperiment
@@ -85,7 +86,7 @@ function ExperimentsStateBookkeeper(new_experiment_set_name::Union{String, Nothi
         conducted_experiments = []
 
         do_calibration = true
-        
+
         if preserve_coefs && isfile(json_path)
             content = open(json_path, "r") do f
                 JSON.parse(read(f, String))

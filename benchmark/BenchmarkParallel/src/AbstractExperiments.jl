@@ -1,5 +1,3 @@
-module AbstractExperiments
-
 abstract type AbstractExperiment end
 
 "Interface function"
@@ -28,4 +26,3 @@ get_experiment_parameters(x::AbstractExperiment) = Dict()
 
 export AbstractExperiment, do_work, setup_experiment, run_experiment, teardown_experiment, get_version, get_experiment_parameters
 
-end

@@ -1,7 +1,11 @@
 # How to run?
 # > julia --project=. FrameworkDemoBenchmark.jl test.json --samples=1 --pin-threads=true --relaunch-on-error=true --new-experiment-set=experiments_set_4
 
-include("launch.jl")
+# include("launch.jl")
+using ArgParse
+using Dates
+using BenchmarkParallel
+using BenchmarkParallel.BenchmarkParallelUtils
 
 using FrameworkDemo
 
