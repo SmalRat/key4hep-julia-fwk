@@ -1,0 +1,318 @@
+[
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Neoverse-V2",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   72",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "6.8.0-56-generic-64k"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-3"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.11",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.89021550772e11,
+        8.98902751262e11,
+        9.7558601078e11,
+        1.101825766628e12,
+        1.153392389024e12
+      ],
+      "memory_usage": 1035293853624,
+      "execution_times": [
+        3.925958456662e12,
+        4.105384297057e12,
+        4.358209909034e12,
+        4.748670707448e12,
+        4.587907007234e12
+      ],
+      "warmup_time": 2476.242454896,
+      "allocations": 11258054574
+    },
+    "metadata": {
+      "start_time": "2025-04-17 12:29:11",
+      "end_time": "2025-04-17 19:25:41",
+      "UUID": "db9d85e5-8cd8-4f52-b7f0-142036aed927"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 40,
+        "crunch_coefficients": [
+          6.205603105937961e-8,
+          6.78820945509714e-11
+        ],
+        "event_count": 1000,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 80,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Neoverse-V2",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   72",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "6.8.0-56-generic-64k"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-3"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.11",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.62955526528e11,
+        2.00383960728e11,
+        1.90206576389e11,
+        2.10214927996e11,
+        1.82590573719e11
+      ],
+      "memory_usage": 194403772424,
+      "execution_times": [
+        1.362433415244e12,
+        1.373178691049e12,
+        1.330300018159e12,
+        1.621058884353e12,
+        1.037323830011e12
+      ],
+      "warmup_time": 1268.841055152,
+      "allocations": 2920791803
+    },
+    "metadata": {
+      "start_time": "2025-04-17 19:51:08",
+      "end_time": "2025-04-17 22:06:38",
+      "UUID": "d3e49bbe-e963-4efd-8839-e6a8e3693aee"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.205603105937961e-8,
+          6.78820945509714e-11
+        ],
+        "event_count": 1000,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 32,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Neoverse-V2",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   72",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "6.8.0-56-generic-64k"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-3"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.11",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.60205580792e11,
+        3.76462278698e11,
+        4.65452043847e11,
+        4.79525305675e11,
+        4.64115368981e11
+      ],
+      "memory_usage": 529027104736,
+      "execution_times": [
+        1.85107805992e12,
+        1.504493122452e12,
+        2.235074217476e12,
+        1.828934596157e12,
+        1.577810425478e12
+      ],
+      "warmup_time": 1593.517291526,
+      "allocations": 6284215921
+    },
+    "metadata": {
+      "start_time": "2025-04-17 22:36:45",
+      "end_time": "2025-04-18 01:32:05",
+      "UUID": "9bc3021b-06b8-4980-b811-b7ca4ba169bc"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 28,
+        "crunch_coefficients": [
+          6.205603105937961e-8,
+          6.78820945509714e-11
+        ],
+        "event_count": 1000,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 56,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Neoverse-V2",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   72",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "6.8.0-56-generic-64k"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-3"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.11",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.414916087435e12,
+        1.68707895487e12,
+        1.958102888641e12,
+        2.126556508154e12,
+        2.209748245793e12
+      ],
+      "memory_usage": 2146442689160,
+      "execution_times": [
+        5.491583550064e12,
+        6.207082904891e12,
+        7.363671099781e12,
+        8.13632928142e12,
+        7.591479888073e12
+      ],
+      "warmup_time": 4228.268499863,
+      "allocations": 21751273411
+    },
+    "metadata": {
+      "start_time": "2025-04-18 02:43:59",
+      "end_time": "2025-04-18 13:52:39",
+      "UUID": "1dacc126-3a91-4201-a8a6-7fb487beffb1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 60,
+        "crunch_coefficients": [
+          6.205603105937961e-8,
+          6.78820945509714e-11
+        ],
+        "event_count": 1000,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 120,
+      "thread_pinning": true
+    }
+  }
+]

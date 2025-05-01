@@ -1,0 +1,4306 @@
+[
+  {
+    "warmup_results": {
+      "execution_time": 251.287898394
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        3.125586105e9,
+        4.493205211e9,
+        4.624730696e9,
+        4.470775157e9,
+        4.720521777e9
+      ],
+      "memory_usage": 8644635344,
+      "execution_times": [
+        2.47912273142e11,
+        2.49036106124e11,
+        2.50427020829e11,
+        2.48276327113e11,
+        2.50931243643e11
+      ],
+      "allocations": 154782716
+    },
+    "metadata": {
+      "start_time": "2025-03-21 19:31:24",
+      "end_time": "2025-03-21 19:56:20",
+      "UUID": "3734b3aa-013c-447c-a8e0-ea07b58e2454",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 1,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 135.633414836
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.914213968e9,
+        4.495417371e9,
+        3.945809943e9,
+        4.298539538e9,
+        4.925025334e9
+      ],
+      "memory_usage": 8513477232,
+      "execution_times": [
+        1.34986461299e11,
+        1.37928274111e11,
+        1.34571205401e11,
+        1.3629065014e11,
+        1.38712573351e11
+      ],
+      "allocations": 153130112
+    },
+    "metadata": {
+      "start_time": "2025-03-21 19:58:57",
+      "end_time": "2025-03-21 20:12:37",
+      "UUID": "37aa6554-49b8-4de4-a3c3-f7d2e13c0564",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 2,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 104.431071087
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.968134875e9,
+        3.395382766e9,
+        4.582809059e9,
+        4.095077336e9,
+        3.219697477e9
+      ],
+      "memory_usage": 8416860128,
+      "execution_times": [
+        1.02153052474e11,
+        1.0371660063e11,
+        1.02797207916e11,
+        1.03850185521e11,
+        1.0073807196e11
+      ],
+      "allocations": 150796846
+    },
+    "metadata": {
+      "start_time": "2025-03-21 20:14:43",
+      "end_time": "2025-03-21 20:25:01",
+      "UUID": "ee06ff0c-d8ee-4b88-a54c-3ad10ef287dc",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 3,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 98.104416689
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.716769792e9,
+        4.10077854e9,
+        4.061494513e9,
+        4.213301939e9,
+        3.134734949e9
+      ],
+      "memory_usage": 8315474616,
+      "execution_times": [
+        9.4390646346e10,
+        9.6251787274e10,
+        9.7480772694e10,
+        9.5596739501e10,
+        9.4112744693e10
+      ],
+      "allocations": 149766272
+    },
+    "metadata": {
+      "start_time": "2025-03-21 20:27:01",
+      "end_time": "2025-03-21 20:36:37",
+      "UUID": "5862b602-8bb4-4b21-9592-6cab45ffe68d",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 4,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 98.025459751
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.774338082e9,
+        3.547510916e9,
+        3.625889019e9,
+        3.897408678e9,
+        4.395417345e9
+      ],
+      "memory_usage": 8301138688,
+      "execution_times": [
+        9.3491734517e10,
+        9.4648873786e10,
+        9.4589451853e10,
+        9.6126620177e10,
+        9.6804009309e10
+      ],
+      "allocations": 150707939
+    },
+    "metadata": {
+      "start_time": "2025-03-21 20:38:34",
+      "end_time": "2025-03-21 20:48:08",
+      "UUID": "896f4522-7d1d-47cb-8b77-85c99d385293",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 5,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.636303587
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.847413033e9,
+        3.525328447e9,
+        4.49209797e9,
+        2.878184822e9,
+        6.467995992e9
+      ],
+      "memory_usage": 8172223096,
+      "execution_times": [
+        9.38657334e10,
+        9.4914184432e10,
+        9.539251829e10,
+        9.2910052457e10,
+        1.01203726401e11
+      ],
+      "allocations": 149329699
+    },
+    "metadata": {
+      "start_time": "2025-03-21 20:50:07",
+      "end_time": "2025-03-21 20:59:42",
+      "UUID": "c6507b34-6d35-44f4-a20d-9ba4fa1a8864",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 6,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.515573746
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.888773398e9,
+        3.400794912e9,
+        4.472844018e9,
+        2.955178093e9,
+        6.004747672e9
+      ],
+      "memory_usage": 8182977496,
+      "execution_times": [
+        9.2721592516e10,
+        9.3872483941e10,
+        9.584622834e10,
+        9.2476684309e10,
+        9.9738018534e10
+      ],
+      "allocations": 149470011
+    },
+    "metadata": {
+      "start_time": "2025-03-21 21:01:40",
+      "end_time": "2025-03-21 21:11:11",
+      "UUID": "d4d6e924-a4d2-47bd-807f-9a6be2fdde65",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 7,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.127866554
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.792490181e9,
+        3.571666619e9,
+        3.636722747e9,
+        3.992315185e9,
+        4.355088705e9
+      ],
+      "memory_usage": 8259507832,
+      "execution_times": [
+        9.2317283107e10,
+        9.3831383566e10,
+        9.3504028851e10,
+        9.3887629808e10,
+        9.5896803864e10
+      ],
+      "allocations": 150468775
+    },
+    "metadata": {
+      "start_time": "2025-03-21 21:13:06",
+      "end_time": "2025-03-21 21:22:32",
+      "UUID": "8232630d-49f4-4852-b99b-9f354e0bdc58",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 8,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.205387273
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.854172663e9,
+        3.405485789e9,
+        3.761318239e9,
+        3.846188313e9,
+        4.922677941e9
+      ],
+      "memory_usage": 8223126664,
+      "execution_times": [
+        9.2703329958e10,
+        9.3569822629e10,
+        9.4093286495e10,
+        9.5413975556e10,
+        9.8516525571e10
+      ],
+      "allocations": 149949137
+    },
+    "metadata": {
+      "start_time": "2025-03-21 21:24:31",
+      "end_time": "2025-03-21 21:34:01",
+      "UUID": "878db309-8167-4d32-b638-f9afaca1dc69",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 9,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.161116701
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.842853045e9,
+        3.452746939e9,
+        3.918154545e9,
+        4.051651707e9,
+        4.94044451e9
+      ],
+      "memory_usage": 8235665024,
+      "execution_times": [
+        9.3005266284e10,
+        9.4836551232e10,
+        9.458508968e10,
+        9.4871440146e10,
+        9.7475802971e10
+      ],
+      "allocations": 150187604
+    },
+    "metadata": {
+      "start_time": "2025-03-21 21:35:59",
+      "end_time": "2025-03-21 21:45:31",
+      "UUID": "30c1f78e-7164-4dc1-a871-e78bd4208e71",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 10,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.495343503
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.918161788e9,
+        3.257125193e9,
+        3.835702764e9,
+        4.518382947e9,
+        4.564961653e9
+      ],
+      "memory_usage": 8299466536,
+      "execution_times": [
+        9.3156389313e10,
+        9.2983483806e10,
+        9.419180192e10,
+        9.6880141434e10,
+        9.5789050645e10
+      ],
+      "allocations": 150050244
+    },
+    "metadata": {
+      "start_time": "2025-03-21 21:47:31",
+      "end_time": "2025-03-21 21:57:01",
+      "UUID": "3842f5d6-6575-4081-bc6e-a8747132a141",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 11,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.837603041
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.709235243e9,
+        3.361583362e9,
+        4.682483085e9,
+        3.397907174e9,
+        4.604356574e9
+      ],
+      "memory_usage": 8160497368,
+      "execution_times": [
+        9.245106232e10,
+        9.393128256e10,
+        9.6090436622e10,
+        9.3054181736e10,
+        9.6802882587e10
+      ],
+      "allocations": 149300250
+    },
+    "metadata": {
+      "start_time": "2025-03-21 21:58:59",
+      "end_time": "2025-03-21 22:08:29",
+      "UUID": "2a5048dc-978e-4853-ab16-eea1f14406db",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 12,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.787325843
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.81064858e9,
+        3.385804906e9,
+        3.922651167e9,
+        4.220107751e9,
+        4.655312077e9
+      ],
+      "memory_usage": 8213348440,
+      "execution_times": [
+        9.2189711078e10,
+        9.3169942528e10,
+        9.3827625849e10,
+        9.5558101543e10,
+        9.4086558552e10
+      ],
+      "allocations": 149906808
+    },
+    "metadata": {
+      "start_time": "2025-03-21 22:10:28",
+      "end_time": "2025-03-21 22:19:53",
+      "UUID": "59377e5f-8581-4bab-bedb-5e156eeca5ee",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 13,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.969436038
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.941692049e9,
+        3.602018896e9,
+        5.006882681e9,
+        3.299548513e9,
+        4.17516671e9
+      ],
+      "memory_usage": 8138405496,
+      "execution_times": [
+        9.3233130916e10,
+        9.3685984708e10,
+        9.5893117167e10,
+        9.2480125079e10,
+        9.5335192046e10
+      ],
+      "allocations": 148948960
+    },
+    "metadata": {
+      "start_time": "2025-03-21 22:21:52",
+      "end_time": "2025-03-21 22:31:19",
+      "UUID": "2be957f2-3e44-4bd6-86b8-3c0220addcd2",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 14,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.827342097
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.730632042e9,
+        3.536243608e9,
+        5.08465984e9,
+        4.24886763e9,
+        4.655345604e9
+      ],
+      "memory_usage": 8213548784,
+      "execution_times": [
+        9.3035250127e10,
+        9.4033074891e10,
+        9.659983969e10,
+        9.3750742926e10,
+        9.4211554971e10
+      ],
+      "allocations": 149884823
+    },
+    "metadata": {
+      "start_time": "2025-03-21 22:33:19",
+      "end_time": "2025-03-21 22:42:46",
+      "UUID": "ccffe969-154e-4491-9cdc-8a33a937bac1",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 15,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.737368046
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.895361402e9,
+        4.503032045e9,
+        4.29293026e9,
+        4.564461583e9,
+        4.459131313e9
+      ],
+      "memory_usage": 8182649880,
+      "execution_times": [
+        9.3104287498e10,
+        9.647469816e10,
+        9.4833329889e10,
+        9.5890184664e10,
+        9.6127304615e10
+      ],
+      "allocations": 149673959
+    },
+    "metadata": {
+      "start_time": "2025-03-21 22:44:45",
+      "end_time": "2025-03-21 22:54:17",
+      "UUID": "d33e2e9f-f540-4609-a12c-069a7a0529a8",
+      "benchmark_version": "0.6",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 16,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 252.442278073
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        3.244464216e9,
+        4.728080178e9,
+        4.584146919e9,
+        4.467118543e9,
+        5.159682723e9
+      ],
+      "memory_usage": 8655164032,
+      "execution_times": [
+        2.49941525729e11,
+        2.51648092958e11,
+        2.52078114175e11,
+        2.50473996345e11,
+        2.53526645229e11
+      ],
+      "allocations": 154977068
+    },
+    "metadata": {
+      "start_time": "2025-03-25 00:09:27",
+      "end_time": "2025-03-25 00:34:37",
+      "UUID": "9dd731d6-fbc9-491c-b979-ccebf2ac7d39",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 1,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 138.361771585
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.921388455e9,
+        4.359080734e9,
+        4.242190612e9,
+        4.196021177e9,
+        4.854067974e9
+      ],
+      "memory_usage": 8531143400,
+      "execution_times": [
+        1.34695151232e11,
+        1.35458562567e11,
+        1.35855712955e11,
+        1.36295542393e11,
+        1.36660361428e11
+      ],
+      "allocations": 153396994
+    },
+    "metadata": {
+      "start_time": "2025-03-25 00:37:17",
+      "end_time": "2025-03-25 00:50:53",
+      "UUID": "578853fe-fcc6-4de2-a6a3-e60f86a8e02a",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 2,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 105.895870893
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.69354979e9,
+        4.256333625e9,
+        3.886293399e9,
+        4.256309031e9,
+        3.128034201e9
+      ],
+      "memory_usage": 8389753680,
+      "execution_times": [
+        1.00671645719e11,
+        1.04164252968e11,
+        1.02117577343e11,
+        1.02828539717e11,
+        1.01426386919e11
+      ],
+      "allocations": 150586989
+    },
+    "metadata": {
+      "start_time": "2025-03-25 00:53:01",
+      "end_time": "2025-03-25 01:03:16",
+      "UUID": "eda97582-475b-4ac2-bb89-556bee24f561",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 3,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.509343212
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.938511741e9,
+        3.985228955e9,
+        3.844199634e9,
+        3.901990468e9,
+        3.689369706e9
+      ],
+      "memory_usage": 8422810072,
+      "execution_times": [
+        9.4947702003e10,
+        9.6168639181e10,
+        9.5399334717e10,
+        9.6785920099e10,
+        9.4951266028e10
+      ],
+      "allocations": 150273494
+    },
+    "metadata": {
+      "start_time": "2025-03-25 01:05:17",
+      "end_time": "2025-03-25 01:14:52",
+      "UUID": "529cca04-bf3d-422b-ba6a-04e3774c58a6",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 4,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 95.382897906
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.909219575e9,
+        3.207207798e9,
+        4.882814085e9,
+        3.067737217e9,
+        4.256809923e9
+      ],
+      "memory_usage": 8204817264,
+      "execution_times": [
+        9.3327681667e10,
+        9.3557725401e10,
+        9.7241993948e10,
+        9.3357809594e10,
+        9.5768236913e10
+      ],
+      "allocations": 149653870
+    },
+    "metadata": {
+      "start_time": "2025-03-25 01:53:44",
+      "end_time": "2025-03-25 02:03:13",
+      "UUID": "be2e015c-e177-4d8c-9dfa-c6e876c0a0ac",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 5,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.816166704
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.702924858e9,
+        4.36806922e9,
+        3.658039783e9,
+        4.217821343e9,
+        3.197979629e9
+      ],
+      "memory_usage": 8261333184,
+      "execution_times": [
+        9.3573170985e10,
+        9.6406098049e10,
+        9.5554229188e10,
+        9.5543473248e10,
+        9.4094657931e10
+      ],
+      "allocations": 149495243
+    },
+    "metadata": {
+      "start_time": "2025-03-25 02:05:11",
+      "end_time": "2025-03-25 02:14:42",
+      "UUID": "b4f72339-19eb-440a-86be-38424a6b2425",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 6,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.018283516
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.90265602e9,
+        3.37535108e9,
+        3.5326919e9,
+        3.899488069e9,
+        4.354661649e9
+      ],
+      "memory_usage": 8291455864,
+      "execution_times": [
+        9.2542672228e10,
+        9.3017492701e10,
+        9.3519056041e10,
+        9.4229498057e10,
+        9.6308866081e10
+      ],
+      "allocations": 150761598
+    },
+    "metadata": {
+      "start_time": "2025-03-25 02:16:42",
+      "end_time": "2025-03-25 02:26:08",
+      "UUID": "b725af0e-5e56-46ea-866a-20b3be9143ee",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 7,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.726931176
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.887872183e9,
+        3.604805262e9,
+        3.600797205e9,
+        3.87513638e9,
+        4.478570034e9
+      ],
+      "memory_usage": 8257732448,
+      "execution_times": [
+        9.2551862806e10,
+        9.40652773e10,
+        9.4481948328e10,
+        9.4579617646e10,
+        9.5112873046e10
+      ],
+      "allocations": 150406242
+    },
+    "metadata": {
+      "start_time": "2025-03-25 02:28:07",
+      "end_time": "2025-03-25 02:37:36",
+      "UUID": "88a3b655-b855-408b-ab8c-ce97f904de4e",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 8,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.469822205
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.747586251e9,
+        3.696743715e9,
+        4.098666892e9,
+        4.069374043e9,
+        4.317402896e9
+      ],
+      "memory_usage": 8243131392,
+      "execution_times": [
+        9.2477936836e10,
+        9.487858059e10,
+        9.4775925314e10,
+        9.4864040093e10,
+        9.6016089578e10
+      ],
+      "allocations": 150264036
+    },
+    "metadata": {
+      "start_time": "2025-03-25 02:39:35",
+      "end_time": "2025-03-25 02:49:05",
+      "UUID": "3713b1b0-06d4-4721-a570-40505bb59b6a",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 9,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 95.868735286
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.699007211e9,
+        4.319714802e9,
+        4.030810598e9,
+        4.346667392e9,
+        4.661545529e9
+      ],
+      "memory_usage": 8223200568,
+      "execution_times": [
+        9.2312752203e10,
+        9.436104488e10,
+        9.4524219268e10,
+        9.5132526751e10,
+        9.5358912951e10
+      ],
+      "allocations": 149983708
+    },
+    "metadata": {
+      "start_time": "2025-03-25 02:51:03",
+      "end_time": "2025-03-25 03:00:31",
+      "UUID": "26a45daf-a26b-44a0-8db6-9af83b21be38",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 10,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.322418298
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.68069341e9,
+        3.749890476e9,
+        3.742169133e9,
+        3.890537027e9,
+        4.38790107e9
+      ],
+      "memory_usage": 8239268104,
+      "execution_times": [
+        9.1553508041e10,
+        9.4836157559e10,
+        9.2209237063e10,
+        9.3667811569e10,
+        9.5628384553e10
+      ],
+      "allocations": 150320268
+    },
+    "metadata": {
+      "start_time": "2025-03-25 03:02:31",
+      "end_time": "2025-03-25 03:11:53",
+      "UUID": "9ab820b7-d6a8-4afc-87ab-4e5ea4efd3ef",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 11,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.418136395
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.823219934e9,
+        3.696180426e9,
+        4.024682537e9,
+        3.996615301e9,
+        4.477861682e9
+      ],
+      "memory_usage": 8235126216,
+      "execution_times": [
+        9.2960118429e10,
+        9.4376272296e10,
+        9.5729241222e10,
+        9.4848603268e10,
+        9.5458747166e10
+      ],
+      "allocations": 150273646
+    },
+    "metadata": {
+      "start_time": "2025-03-25 03:13:52",
+      "end_time": "2025-03-25 03:23:22",
+      "UUID": "f7ffc981-d496-49db-9ee7-3f24fc08e97e",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 12,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.800166791
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.845608482e9,
+        3.297822201e9,
+        3.694099219e9,
+        4.114119926e9,
+        5.201695928e9
+      ],
+      "memory_usage": 8215585992,
+      "execution_times": [
+        9.2041286083e10,
+        9.200366787e10,
+        9.3020455477e10,
+        9.405904165e10,
+        9.6155397936e10
+      ],
+      "allocations": 149971500
+    },
+    "metadata": {
+      "start_time": "2025-03-25 03:25:22",
+      "end_time": "2025-03-25 03:34:45",
+      "UUID": "17bc3364-694d-4a7f-8dbc-1fb10c27cd49",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 13,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.784862187
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        3.158500599e9,
+        3.819658806e9,
+        4.565003785e9,
+        4.374731877e9,
+        3.511130411e9
+      ],
+      "memory_usage": 8258932248,
+      "execution_times": [
+        9.3644612815e10,
+        9.4646846057e10,
+        9.5515225931e10,
+        9.6233153872e10,
+        9.3719999031e10
+      ],
+      "allocations": 149140943
+    },
+    "metadata": {
+      "start_time": "2025-03-25 03:36:45",
+      "end_time": "2025-03-25 03:46:17",
+      "UUID": "5f8a2856-c9a0-42dd-a883-5534e62c2a60",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 14,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.095617948
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.838840998e9,
+        3.447357603e9,
+        3.674534701e9,
+        3.817120372e9,
+        4.407779412e9
+      ],
+      "memory_usage": 8212677264,
+      "execution_times": [
+        9.149032353e10,
+        9.4027831188e10,
+        9.3078206582e10,
+        9.3949798787e10,
+        9.4490614747e10
+      ],
+      "allocations": 149944091
+    },
+    "metadata": {
+      "start_time": "2025-03-25 03:48:18",
+      "end_time": "2025-03-25 03:57:43",
+      "UUID": "d4f4d636-b80c-470a-baa4-14bf375ddb23",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 15,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.141293988
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        3.019883795e9,
+        3.476478319e9,
+        4.176218308e9,
+        5.91753677e9,
+        4.926262199e9
+      ],
+      "memory_usage": 8198095336,
+      "execution_times": [
+        9.3245300706e10,
+        9.3141850555e10,
+        9.4710845201e10,
+        9.839374831e10,
+        9.5930917525e10
+      ],
+      "allocations": 149760813
+    },
+    "metadata": {
+      "start_time": "2025-03-25 03:59:42",
+      "end_time": "2025-03-25 04:09:14",
+      "UUID": "444cfee8-eda1-4257-9fdf-d5d294153f63",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 16,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": true
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 250.746270275
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        3.229694645e9,
+        4.660264793e9,
+        4.096202785e9,
+        4.454413329e9,
+        4.982993385e9
+      ],
+      "memory_usage": 8662329656,
+      "execution_times": [
+        2.48683125209e11,
+        2.49768964847e11,
+        2.49597189873e11,
+        2.48813164046e11,
+        2.51054017853e11
+      ],
+      "allocations": 154966744
+    },
+    "metadata": {
+      "start_time": "2025-03-25 11:24:01",
+      "end_time": "2025-03-25 11:48:59",
+      "UUID": "b75ab264-892c-44ea-9546-e4e1c742310c",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 1,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 136.118491081
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.912696852e9,
+        4.361105108e9,
+        3.827887199e9,
+        4.273176842e9,
+        5.017575992e9
+      ],
+      "memory_usage": 8537734088,
+      "execution_times": [
+        1.33551445956e11,
+        1.36770031409e11,
+        1.34726030812e11,
+        1.34229237287e11,
+        1.36171087724e11
+      ],
+      "allocations": 153432666
+    },
+    "metadata": {
+      "start_time": "2025-03-25 11:51:37",
+      "end_time": "2025-03-25 12:05:10",
+      "UUID": "f40ec2dd-85f5-4778-820b-43dd91325e71",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 2,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 104.156418557
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.847979139e9,
+        4.040668044e9,
+        3.657961099e9,
+        4.075974444e9,
+        3.402918718e9
+      ],
+      "memory_usage": 8403840112,
+      "execution_times": [
+        1.01381768148e11,
+        1.02089418329e11,
+        1.0254124857e11,
+        1.03489711155e11,
+        1.00713901387e11
+      ],
+      "allocations": 150859757
+    },
+    "metadata": {
+      "start_time": "2025-03-25 12:07:16",
+      "end_time": "2025-03-25 12:17:30",
+      "UUID": "f2012e00-5432-47a0-9892-e2dadbbcf3dd",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 3,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 98.861760733
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.770599995e9,
+        3.427543918e9,
+        4.716504928e9,
+        3.01313478e9,
+        4.53407744e9
+      ],
+      "memory_usage": 8238892376,
+      "execution_times": [
+        9.5442616542e10,
+        9.5804270842e10,
+        9.8035567687e10,
+        9.5104519752e10,
+        9.8014613999e10
+      ],
+      "allocations": 149856836
+    },
+    "metadata": {
+      "start_time": "2025-03-25 12:19:31",
+      "end_time": "2025-03-25 12:29:11",
+      "UUID": "8894d3ac-f419-4a00-87cc-2230bea2b897",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 4,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 97.006752472
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.900246456e9,
+        3.566349706e9,
+        3.423607934e9,
+        3.834093161e9,
+        4.464452936e9
+      ],
+      "memory_usage": 8305626776,
+      "execution_times": [
+        9.2756739494e10,
+        9.3091160069e10,
+        9.2811529273e10,
+        9.4009621784e10,
+        9.5505839918e10
+      ],
+      "allocations": 150803163
+    },
+    "metadata": {
+      "start_time": "2025-03-25 12:31:11",
+      "end_time": "2025-03-25 12:40:34",
+      "UUID": "c5676b67-34c5-4911-a52d-8dd79a439eca",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 5,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.562995165
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.889057783e9,
+        3.505278221e9,
+        3.54509283e9,
+        3.913641298e9,
+        4.56407485e9
+      ],
+      "memory_usage": 8298281920,
+      "execution_times": [
+        9.3351089027e10,
+        9.41631115e10,
+        9.4022085998e10,
+        9.3695358746e10,
+        9.6035472821e10
+      ],
+      "allocations": 150775453
+    },
+    "metadata": {
+      "start_time": "2025-03-25 12:42:33",
+      "end_time": "2025-03-25 12:52:00",
+      "UUID": "722ecfbd-aad5-491c-a460-59b85d8122ad",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 6,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.560745272
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.737529385e9,
+        3.485022635e9,
+        3.627242229e9,
+        4.726613307e9,
+        4.320956777e9
+      ],
+      "memory_usage": 8271435920,
+      "execution_times": [
+        9.1663023887e10,
+        9.399361552e10,
+        9.410248399e10,
+        9.633540361e10,
+        9.4593504224e10
+      ],
+      "allocations": 150638920
+    },
+    "metadata": {
+      "start_time": "2025-03-25 12:53:58",
+      "end_time": "2025-03-25 13:03:24",
+      "UUID": "9bf075b1-a568-4498-966c-12ff6b9007cf",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 7,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.929972549
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.713589033e9,
+        3.496683451e9,
+        3.535426377e9,
+        3.901165051e9,
+        4.331485893e9
+      ],
+      "memory_usage": 8256163424,
+      "execution_times": [
+        9.2854757762e10,
+        9.2922467932e10,
+        9.3982547393e10,
+        9.4139175527e10,
+        9.5353681743e10
+      ],
+      "allocations": 150410705
+    },
+    "metadata": {
+      "start_time": "2025-03-25 13:05:23",
+      "end_time": "2025-03-25 13:14:49",
+      "UUID": "0bcf0d21-dc81-4025-9db6-cd104c3d76a8",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 8,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.968146556
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.840115489e9,
+        3.393320733e9,
+        3.942781434e9,
+        3.866124438e9,
+        4.427634381e9
+      ],
+      "memory_usage": 8260867624,
+      "execution_times": [
+        9.3263132751e10,
+        9.4062716495e10,
+        9.4872001099e10,
+        9.5012190595e10,
+        9.6972772229e10
+      ],
+      "allocations": 150494779
+    },
+    "metadata": {
+      "start_time": "2025-03-25 13:16:48",
+      "end_time": "2025-03-25 13:26:18",
+      "UUID": "148edc57-1f4e-4665-aaff-1603f95eb65f",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 9,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.893575931
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.956815132e9,
+        3.400907106e9,
+        4.099384423e9,
+        4.076299562e9,
+        4.410933475e9
+      ],
+      "memory_usage": 8377932432,
+      "execution_times": [
+        9.2299384645e10,
+        9.331098148e10,
+        9.5051906962e10,
+        9.4668432172e10,
+        9.6911712855e10
+      ],
+      "allocations": 150279082
+    },
+    "metadata": {
+      "start_time": "2025-03-25 13:28:17",
+      "end_time": "2025-03-25 13:37:45",
+      "UUID": "61cbbbbe-e1cf-4e9b-afb7-908eae3d4bb2",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 10,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.681972965
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        3.04677677e9,
+        3.376921928e9,
+        3.821722721e9,
+        3.978337003e9,
+        4.485985685e9
+      ],
+      "memory_usage": 8306847680,
+      "execution_times": [
+        9.2221221423e10,
+        9.3811288635e10,
+        9.3631141711e10,
+        9.4282798308e10,
+        9.4971595259e10
+      ],
+      "allocations": 150294051
+    },
+    "metadata": {
+      "start_time": "2025-03-25 13:39:45",
+      "end_time": "2025-03-25 13:49:11",
+      "UUID": "ff06f26d-f958-4a92-ae07-795018af1f76",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 11,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.429843922
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.722288164e9,
+        3.896941527e9,
+        4.542879713e9,
+        2.988006958e9,
+        4.474671761e9
+      ],
+      "memory_usage": 8147888440,
+      "execution_times": [
+        9.1648754032e10,
+        9.4264406833e10,
+        9.5006341932e10,
+        9.1542201646e10,
+        9.3916502518e10
+      ],
+      "allocations": 149148759
+    },
+    "metadata": {
+      "start_time": "2025-03-25 13:51:10",
+      "end_time": "2025-03-25 14:00:32",
+      "UUID": "78fb32d5-b4d9-48c8-ad61-11c757f98424",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 12,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.280589858
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.828703567e9,
+        3.729332632e9,
+        4.375280328e9,
+        3.316486406e9,
+        4.470499398e9
+      ],
+      "memory_usage": 8167391952,
+      "execution_times": [
+        9.241287975e10,
+        9.5335983457e10,
+        9.4564313754e10,
+        9.2866653324e10,
+        9.4718328274e10
+      ],
+      "allocations": 149420728
+    },
+    "metadata": {
+      "start_time": "2025-03-25 14:02:32",
+      "end_time": "2025-03-25 14:11:59",
+      "UUID": "641d0b55-f58b-4332-a1af-444427aaf0fb",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 13,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.264888484
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.952809615e9,
+        4.633748459e9,
+        3.933617696e9,
+        4.06913722e9,
+        4.494194483e9
+      ],
+      "memory_usage": 8246191216,
+      "execution_times": [
+        9.2977100253e10,
+        9.5918599442e10,
+        9.418709953e10,
+        9.3950130725e10,
+        9.5198375748e10
+      ],
+      "allocations": 149580603
+    },
+    "metadata": {
+      "start_time": "2025-03-25 14:13:59",
+      "end_time": "2025-03-25 14:23:27",
+      "UUID": "8011faf9-eb3d-4863-bc90-e8b597968e64",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 14,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.257642819
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.948779283e9,
+        3.461487014e9,
+        5.205567353e9,
+        4.577700852e9,
+        4.715735294e9
+      ],
+      "memory_usage": 8319642904,
+      "execution_times": [
+        9.2727366575e10,
+        9.2699011219e10,
+        9.5586648193e10,
+        9.6095537575e10,
+        9.6602312902e10
+      ],
+      "allocations": 149811349
+    },
+    "metadata": {
+      "start_time": "2025-03-25 14:25:25",
+      "end_time": "2025-03-25 14:34:56",
+      "UUID": "52f233cf-ba63-4891-8e83-87b5d4abd7e5",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 15,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 96.754441293
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        2.88910509e9,
+        4.137167157e9,
+        3.985752602e9,
+        4.472133417e9,
+        4.476425235e9
+      ],
+      "memory_usage": 8188113768,
+      "execution_times": [
+        9.2444758539e10,
+        9.3770210371e10,
+        9.5005818603e10,
+        9.4056330114e10,
+        9.4594965099e10
+      ],
+      "allocations": 149668770
+    },
+    "metadata": {
+      "start_time": "2025-03-25 14:36:55",
+      "end_time": "2025-03-25 14:46:19",
+      "UUID": "42ba0158-0596-410b-975a-b0422a5b03cc",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 16,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 8,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 602.95187616
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.971063603e9,
+        7.682977078e9,
+        6.577193963e9,
+        7.028826373e9,
+        8.39075607e9
+      ],
+      "memory_usage": 7561596104,
+      "execution_times": [
+        5.99749530387e11,
+        6.02969764278e11,
+        6.01466391819e11,
+        6.02394641319e11,
+        6.04260652864e11
+      ],
+      "allocations": 133876324
+    },
+    "metadata": {
+      "start_time": "2025-03-25 15:07:07",
+      "end_time": "2025-03-25 16:07:23",
+      "UUID": "3aa307fd-fdff-4499-8e6c-52df32be18b7",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 1,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 604.583644153
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.965084104e9,
+        7.595426519e9,
+        6.524413929e9,
+        7.213399432e9,
+        8.339447046e9
+      ],
+      "memory_usage": 7551104416,
+      "execution_times": [
+        6.01079672653e11,
+        6.04292512425e11,
+        6.02884463826e11,
+        6.04041441542e11,
+        6.05438744428e11
+      ],
+      "allocations": 133800309
+    },
+    "metadata": {
+      "start_time": "2025-03-25 16:17:52",
+      "end_time": "2025-03-25 17:18:16",
+      "UUID": "0edd2f90-96ea-44b5-9f0c-17e98fffe91c",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 2,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 607.775154553
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.850054412e9,
+        8.071580502e9,
+        6.676043395e9,
+        7.344238509e9,
+        8.039217088e9
+      ],
+      "memory_usage": 7527039696,
+      "execution_times": [
+        6.03915735764e11,
+        6.07786413783e11,
+        6.06086071421e11,
+        6.06579909711e11,
+        6.08330816607e11
+      ],
+      "allocations": 133470718
+    },
+    "metadata": {
+      "start_time": "2025-03-25 17:28:48",
+      "end_time": "2025-03-25 18:29:30",
+      "UUID": "ab028adc-72e0-4ef4-a006-c67e9c43b38d",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 3,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 609.354080125
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.050377059e9,
+        7.852598052e9,
+        6.735569068e9,
+        7.414724724e9,
+        8.141158817e9
+      ],
+      "memory_usage": 7566715672,
+      "execution_times": [
+        6.06008580678e11,
+        6.09522236246e11,
+        6.08322252483e11,
+        6.09441395065e11,
+        6.10328537865e11
+      ],
+      "allocations": 134012566
+    },
+    "metadata": {
+      "start_time": "2025-03-25 18:40:04",
+      "end_time": "2025-03-25 19:40:59",
+      "UUID": "6070f05b-e85c-4f52-b606-e528361fedc0",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 4,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 612.148700644
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.007321165e9,
+        7.962235739e9,
+        6.822194764e9,
+        7.290296755e9,
+        8.563636096e9
+      ],
+      "memory_usage": 7558596392,
+      "execution_times": [
+        6.08269927759e11,
+        6.12258772328e11,
+        6.10680266354e11,
+        6.11467712871e11,
+        6.13022568525e11
+      ],
+      "allocations": 133864279
+    },
+    "metadata": {
+      "start_time": "2025-03-25 19:51:36",
+      "end_time": "2025-03-25 20:52:45",
+      "UUID": "18aebd7a-fe95-48bc-8c3e-417eb7d4601e",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 5,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 614.162313538
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.921009014e9,
+        8.185870241e9,
+        6.465675203e9,
+        7.319424067e9,
+        4.928506638e9
+      ],
+      "memory_usage": 7544290040,
+      "execution_times": [
+        6.09778454887e11,
+        6.14878853003e11,
+        6.12434578084e11,
+        6.13367262401e11,
+        6.11012416003e11
+      ],
+      "allocations": 132645013
+    },
+    "metadata": {
+      "start_time": "2025-03-25 21:03:24",
+      "end_time": "2025-03-25 22:04:41",
+      "UUID": "8a1f7cc2-b771-4933-9d13-fba125430020",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 6,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 615.789175893
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.880221361e9,
+        8.167274651e9,
+        6.753196097e9,
+        7.386433202e9,
+        4.514939831e9
+      ],
+      "memory_usage": 7549649344,
+      "execution_times": [
+        6.11763705582e11,
+        6.15997408398e11,
+        6.14255430753e11,
+        6.15345879106e11,
+        6.12577548047e11
+      ],
+      "allocations": 132399522
+    },
+    "metadata": {
+      "start_time": "2025-03-25 22:15:25",
+      "end_time": "2025-03-25 23:16:53",
+      "UUID": "59f5304c-5af0-4246-b766-d4789942bcaa",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 7,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 618.250524145
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.94351206e9,
+        7.943433228e9,
+        6.766662442e9,
+        7.366236221e9,
+        8.104096661e9
+      ],
+      "memory_usage": 7553693128,
+      "execution_times": [
+        6.14011162274e11,
+        6.18377666794e11,
+        6.17239317029e11,
+        6.18795446136e11,
+        6.1957473543e11
+      ],
+      "allocations": 133820769
+    },
+    "metadata": {
+      "start_time": "2025-03-25 23:27:39",
+      "end_time": "2025-03-26 00:29:27",
+      "UUID": "0009fa24-50a9-4d9b-8679-02c8c45018c1",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 8,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 1,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 484.588146466
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.208234356e9,
+        8.199905989e9,
+        6.973824793e9,
+        7.691224546e9,
+        5.026253241e9
+      ],
+      "memory_usage": 7688647760,
+      "execution_times": [
+        4.9519085848e11,
+        5.0531538099e11,
+        4.92746220379e11,
+        4.93782556516e11,
+        4.9330180167e11
+      ],
+      "allocations": 136209784
+    },
+    "metadata": {
+      "start_time": "2025-03-26 02:43:26",
+      "end_time": "2025-03-26 03:33:05",
+      "UUID": "3759e36f-c028-4520-958b-1655ab094563",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 1,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 444.736477068
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.171832002e9,
+        7.991759139e9,
+        7.219161294e9,
+        8.129085986e9,
+        4.730763444e9
+      ],
+      "memory_usage": 7696951520,
+      "execution_times": [
+        4.52174685177e11,
+        4.50677518687e11,
+        4.56978001623e11,
+        4.53381201271e11,
+        4.44978589767e11
+      ],
+      "allocations": 135859770
+    },
+    "metadata": {
+      "start_time": "2025-03-26 03:40:58",
+      "end_time": "2025-03-26 04:26:03",
+      "UUID": "d44f5609-34d8-4fad-bcc1-5ec2d895331d",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 2,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 427.831025074
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.089863113e9,
+        8.518836197e9,
+        7.193730612e9,
+        4.582762047e9,
+        8.297601579e9
+      ],
+      "memory_usage": 7582531336,
+      "execution_times": [
+        4.34588191728e11,
+        4.24882906234e11,
+        4.1026331414e11,
+        4.19440644097e11,
+        4.3435187171e11
+      ],
+      "allocations": 135779047
+    },
+    "metadata": {
+      "start_time": "2025-03-26 04:33:41",
+      "end_time": "2025-03-26 05:16:14",
+      "UUID": "5d27887a-2105-4a9d-819d-30c23c14524b",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 3,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 404.644440151
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.98932021e9,
+        6.263032718e9,
+        6.461162175e9,
+        7.545585439e9,
+        7.83634247e9
+      ],
+      "memory_usage": 7703351296,
+      "execution_times": [
+        4.06717503375e11,
+        4.05719864639e11,
+        4.07349114676e11,
+        4.20656377963e11,
+        4.24540682508e11
+      ],
+      "allocations": 137298127
+    },
+    "metadata": {
+      "start_time": "2025-03-26 05:23:27",
+      "end_time": "2025-03-26 06:04:27",
+      "UUID": "d3538b81-5224-4fdb-9f19-a24a73340ed1",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 4,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 406.903770923
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.171399992e9,
+        6.582306829e9,
+        9.674678219e9,
+        4.726132276e9,
+        7.831488779e9
+      ],
+      "memory_usage": 7607137528,
+      "execution_times": [
+        3.88396637183e11,
+        3.92020238971e11,
+        4.05505369643e11,
+        4.00248797627e11,
+        3.9883502742e11
+      ],
+      "allocations": 136145437
+    },
+    "metadata": {
+      "start_time": "2025-03-26 06:11:40",
+      "end_time": "2025-03-26 06:51:23",
+      "UUID": "11b69ff2-e73e-49ac-95ef-0f4964ca29dd",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 5,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 395.209036855
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.07362416e9,
+        6.473389083e9,
+        6.537943499e9,
+        7.607983251e9,
+        8.151839649e9
+      ],
+      "memory_usage": 7693868184,
+      "execution_times": [
+        4.01445101403e11,
+        3.92756787083e11,
+        3.96223611461e11,
+        4.03550029627e11,
+        3.93489063324e11
+      ],
+      "allocations": 137214644
+    },
+    "metadata": {
+      "start_time": "2025-03-26 06:58:24",
+      "end_time": "2025-03-26 07:38:03",
+      "UUID": "975944e5-f2e6-4653-85ae-71e9dd31d9ce",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 6,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 398.297090671
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.174473469e9,
+        8.204904462e9,
+        7.203141856e9,
+        7.728167693e9,
+        5.015793759e9
+      ],
+      "memory_usage": 7687430560,
+      "execution_times": [
+        3.8743263148e11,
+        4.00942331928e11,
+        4.045210921e11,
+        3.84059420973e11,
+        3.93502186291e11
+      ],
+      "allocations": 136176527
+    },
+    "metadata": {
+      "start_time": "2025-03-26 07:45:07",
+      "end_time": "2025-03-26 08:24:23",
+      "UUID": "dcf8380b-e6b9-4b38-a607-1f49f6766334",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 7,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 379.74125411
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.195299074e9,
+        6.172627259e9,
+        6.86940481e9,
+        7.593263043e9,
+        8.008071153e9
+      ],
+      "memory_usage": 7696486960,
+      "execution_times": [
+        3.84419541273e11,
+        3.67613559416e11,
+        3.78192718717e11,
+        3.8265965123e11,
+        3.86472989474e11
+      ],
+      "allocations": 137360969
+    },
+    "metadata": {
+      "start_time": "2025-03-26 08:31:07",
+      "end_time": "2025-03-26 09:09:23",
+      "UUID": "6f1111e9-6691-43f5-9c0c-e704ea39cc87",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 8,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 372.675764566
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.382634851e9,
+        8.439974871e9,
+        7.170833996e9,
+        8.155680749e9,
+        4.909080558e9
+      ],
+      "memory_usage": 7675845008,
+      "execution_times": [
+        3.85356072641e11,
+        3.90335679683e11,
+        3.81286063552e11,
+        3.8325665494e11,
+        3.7234081429e11
+      ],
+      "allocations": 135821076
+    },
+    "metadata": {
+      "start_time": "2025-03-26 09:16:02",
+      "end_time": "2025-03-26 09:54:18",
+      "UUID": "4fa71f44-e186-4038-b864-da574aa07c15",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 9,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 384.285248715
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.276892579e9,
+        6.319365065e9,
+        7.11851416e9,
+        7.271979897e9,
+        8.069053068e9
+      ],
+      "memory_usage": 7681777304,
+      "execution_times": [
+        3.55569802246e11,
+        3.80281229466e11,
+        3.73818676983e11,
+        3.75355954328e11,
+        3.92896140614e11
+      ],
+      "allocations": 137144885
+    },
+    "metadata": {
+      "start_time": "2025-03-26 10:01:11",
+      "end_time": "2025-03-26 10:39:00",
+      "UUID": "1208865d-0de8-453c-a1e1-72189e6717a7",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 10,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 2,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 360.163307817
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.290806082e9,
+        7.940933691e9,
+        7.209913661e9,
+        7.967914427e9,
+        8.077692693e9
+      ],
+      "memory_usage": 7803822696,
+      "execution_times": [
+        3.57713820095e11,
+        3.60116024461e11,
+        3.60508810883e11,
+        3.5955124923e11,
+        3.62390314239e11
+      ],
+      "allocations": 139700929
+    },
+    "metadata": {
+      "start_time": "2025-03-26 11:53:24",
+      "end_time": "2025-03-26 12:29:29",
+      "UUID": "ba090058-9823-4747-8e34-49e8de4ab8da",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 1,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 3,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 298.871057341
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.072933414e9,
+        6.11973712e9,
+        9.139148606e9,
+        4.639844921e9,
+        8.187722262e9
+      ],
+      "memory_usage": 7700999728,
+      "execution_times": [
+        2.97721092287e11,
+        2.98691691962e11,
+        3.02383222325e11,
+        2.96759085506e11,
+        3.01526105179e11
+      ],
+      "allocations": 138389633
+    },
+    "metadata": {
+      "start_time": "2025-03-26 12:34:53",
+      "end_time": "2025-03-26 13:04:52",
+      "UUID": "f8ba7ced-bf65-44d6-8f52-6ff2d81bb8db",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 2,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 3,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 298.749716541
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.101196739e9,
+        8.317567344e9,
+        7.291673161e9,
+        8.139208557e9,
+        5.559735484e9
+      ],
+      "memory_usage": 7774357088,
+      "execution_times": [
+        2.97299505684e11,
+        3.00479662196e11,
+        2.99790527072e11,
+        2.9865175559e11,
+        2.95957400127e11
+      ],
+      "allocations": 138673801
+    },
+    "metadata": {
+      "start_time": "2025-03-26 13:10:20",
+      "end_time": "2025-03-26 13:40:14",
+      "UUID": "e08bb506-a3a0-4ae0-b23a-8c32969f370c",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 3,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 3,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 299.710618267
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.241740269e9,
+        8.374432785e9,
+        6.914211917e9,
+        5.1529873e9,
+        8.097968234e9
+      ],
+      "memory_usage": 7698434016,
+      "execution_times": [
+        2.97019295849e11,
+        3.00280390721e11,
+        2.99266878864e11,
+        2.96921768681e11,
+        3.02021906615e11
+      ],
+      "allocations": 138396999
+    },
+    "metadata": {
+      "start_time": "2025-03-26 13:45:41",
+      "end_time": "2025-03-26 14:15:38",
+      "UUID": "d807e6b0-3a1a-4f8e-89a2-ddb3f4d0a9ee",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 4,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 3,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 298.563426076
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        4.908642503e9,
+        8.291459934e9,
+        7.258856214e9,
+        7.965030619e9,
+        5.042753175e9
+      ],
+      "memory_usage": 7771560568,
+      "execution_times": [
+        2.97778583243e11,
+        3.0052201104e11,
+        2.98881615699e11,
+        2.99319672998e11,
+        2.96642167874e11
+      ],
+      "allocations": 138497123
+    },
+    "metadata": {
+      "start_time": "2025-03-26 14:21:01",
+      "end_time": "2025-03-26 14:50:56",
+      "UUID": "89ddc64e-fa17-4937-be99-96d7ed1328c1",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 5,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 3,
+      "thread_pinning": false
+    }
+  },
+  {
+    "warmup_results": {
+      "execution_time": 297.720332343
+    },
+    "versions": {
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "benchmarktools_parameters": {
+      "gctrial": true,
+      "time_tolerance": 0.05,
+      "evals_set": false,
+      "samples": 5,
+      "evals": 1,
+      "gcsample": false,
+      "seconds": 172800.0,
+      "overhead": 0.0,
+      "memory_tolerance": 0.01
+    },
+    "results": {
+      "gc_times": [
+        5.208380595e9,
+        6.843238583e9,
+        9.205794419e9,
+        4.993396838e9,
+        8.279061224e9
+      ],
+      "memory_usage": 7690284048,
+      "execution_times": [
+        2.97856856363e11,
+        2.98289562872e11,
+        3.03210334631e11,
+        2.9458808772e11,
+        3.01099362521e11
+      ],
+      "allocations": 138305574
+    },
+    "metadata": {
+      "start_time": "2025-03-26 14:56:22",
+      "end_time": "2025-03-26 15:26:18",
+      "UUID": "4499c95a-9132-4dea-9cd0-1bdc6fd326e8",
+      "benchmark_version": "0.7",
+      "results_filename": "results-machine-1.json"
+    },
+    "experiment_parameters": {
+      "max_concurrent": 6,
+      "event_count": 100,
+      "samples": 5,
+      "data_flow_name": "ATLAS/q449",
+      "fast": false,
+      "threads_num": 3,
+      "thread_pinning": false
+    }
+  }
+]

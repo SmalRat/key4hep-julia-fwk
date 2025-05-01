@@ -1,0 +1,4742 @@
+[
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.905940873e9,
+        3.283214621e9,
+        3.716794493e9,
+        2.673626842e9,
+        3.882452733e9
+      ],
+      "memory_usage": 6131500568,
+      "execution_times": [
+        4.7692767293e10,
+        5.0497650267e10,
+        5.1155024132e10,
+        4.4560556394e10,
+        4.3919973767e10
+      ],
+      "warmup_time": 55.261776741,
+      "allocations": 108865276
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:02:13",
+      "end_time": "2025-04-19 05:07:05",
+      "UUID": "2887caea-9d3f-4230-93f7-631561120250"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.302993746e9,
+        4.928605803e9,
+        5.383125371e9,
+        5.740250637e9,
+        4.762162186e9
+      ],
+      "memory_usage": 8972511528,
+      "execution_times": [
+        6.5541470442e10,
+        6.7262096952e10,
+        6.850332232e10,
+        6.7802655209e10,
+        6.5035694944e10
+      ],
+      "warmup_time": 80.75129824,
+      "allocations": 161872966
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:08:51",
+      "end_time": "2025-04-19 05:15:44",
+      "UUID": "a7e36e73-6138-4162-979c-ea28faaa05cc"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.0306568918e10,
+        1.1676079441e10,
+        1.2481656992e10,
+        1.269274887e10,
+        1.4443906824e10
+      ],
+      "memory_usage": 18647798960,
+      "execution_times": [
+        1.35993053767e11,
+        1.37281443134e11,
+        1.33743975467e11,
+        1.28872649924e11,
+        1.36059450783e11
+      ],
+      "warmup_time": 166.884815847,
+      "allocations": 338115313
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:19:00",
+      "end_time": "2025-04-19 05:32:50",
+      "UUID": "bd681f0b-990e-4ecf-8245-e89f418b58b0"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.614709765e9,
+        1.192642613e10,
+        1.1652305327e10,
+        1.2930011753e10,
+        1.4258459605e10
+      ],
+      "memory_usage": 18682291200,
+      "execution_times": [
+        1.26457056072e11,
+        1.38038711961e11,
+        1.26226583064e11,
+        1.31330723046e11,
+        1.36404035517e11
+      ],
+      "warmup_time": 165.446636344,
+      "allocations": 340891326
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:36:12",
+      "end_time": "2025-04-19 05:49:53",
+      "UUID": "43817ef0-7299-46b8-a396-b7ec07e69e53"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.464201223e9,
+        8.912914448e9,
+        1.1099987123e10,
+        1.0040463325e10,
+        8.179993167e9
+      ],
+      "memory_usage": 14492825760,
+      "execution_times": [
+        1.0523528196e11,
+        1.09388866135e11,
+        1.09929655885e11,
+        1.05318139458e11,
+        9.8339354113e10
+      ],
+      "warmup_time": 128.965166554,
+      "allocations": 265829421
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:52:32",
+      "end_time": "2025-04-19 06:03:32",
+      "UUID": "d8d5b6e2-cba7-4692-932f-3a185e5eb909"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.21101567e8,
+        3.02983117e8,
+        4.95601483e8,
+        2.45249362e8,
+        4.59835969e8
+      ],
+      "memory_usage": 971576808,
+      "execution_times": [
+        5.733437321e9,
+        6.07624155e9,
+        6.260790624e9,
+        5.790179827e9,
+        6.243216638e9
+      ],
+      "warmup_time": 11.048121382,
+      "allocations": 17766636
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:04:17",
+      "end_time": "2025-04-19 06:04:55",
+      "UUID": "8884113d-efd1-44d5-9999-282d207b9ce2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.491530798e9,
+        1.796342238e9,
+        2.057291278e9,
+        2.45977986e9,
+        2.522379356e9
+      ],
+      "memory_usage": 4036980392,
+      "execution_times": [
+        3.027095224e10,
+        3.2166237913e10,
+        3.2921724497e10,
+        3.2471889558e10,
+        3.4454980926e10
+      ],
+      "warmup_time": 38.927748513,
+      "allocations": 72705411
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:05:57",
+      "end_time": "2025-04-19 06:09:15",
+      "UUID": "27a011f2-b525-4498-af0b-0cab79299c9b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.45156733e8,
+        1.425413458e9,
+        1.770610164e9,
+        1.162030863e9,
+        1.868565189e9
+      ],
+      "memory_usage": 2940810336,
+      "execution_times": [
+        1.9241529879e10,
+        2.3835187891e10,
+        2.2770967847e10,
+        2.3586615474e10,
+        2.4044101801e10
+      ],
+      "warmup_time": 28.081119152,
+      "allocations": 53550109
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:10:08",
+      "end_time": "2025-04-19 06:12:26",
+      "UUID": "2cf4d6e3-6c77-4013-8b08-8d2a5c9e6789"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.676861254e9,
+        4.959201726e9,
+        4.640536124e9,
+        4.918435009e9,
+        5.80648337e9
+      ],
+      "memory_usage": 8058182264,
+      "execution_times": [
+        5.9685776618e10,
+        6.3529989839e10,
+        6.3569406326e10,
+        6.0161351194e10,
+        6.1489251606e10
+      ],
+      "warmup_time": 72.39737152,
+      "allocations": 145276601
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:14:03",
+      "end_time": "2025-04-19 06:20:22",
+      "UUID": "e6b1a579-c715-4faa-acef-5444633045f1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.145829855e9,
+        8.588529371e9,
+        1.0810985534e10,
+        7.259538253e9,
+        1.015771027e10
+      ],
+      "memory_usage": 13675849480,
+      "execution_times": [
+        1.00830554218e11,
+        1.06884825572e11,
+        1.0566128069e11,
+        9.2666196599e10,
+        9.6378415501e10
+      ],
+      "warmup_time": 125.74882331,
+      "allocations": 249587582
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:22:55",
+      "end_time": "2025-04-19 06:33:20",
+      "UUID": "37065330-a5c9-4a63-8943-09493f25cd77"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.91425574e8,
+        1.499326862e9,
+        1.680285271e9,
+        1.306706179e9,
+        1.646893586e9
+      ],
+      "memory_usage": 2983993048,
+      "execution_times": [
+        2.0634523515e10,
+        2.2684647839e10,
+        2.4962338106e10,
+        2.3562902218e10,
+        2.3519062957e10
+      ],
+      "warmup_time": 27.469391902,
+      "allocations": 53925032
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:34:19",
+      "end_time": "2025-04-19 06:36:40",
+      "UUID": "9b42e294-1482-4a71-87ec-ac9809d44072"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.163928873e9,
+        6.279420382e9,
+        6.565624331e9,
+        7.338098572e9,
+        7.97990627e9
+      ],
+      "memory_usage": 10972137624,
+      "execution_times": [
+        7.5430249712e10,
+        8.1785800707e10,
+        8.1972758031e10,
+        8.2399315821e10,
+        7.9030003088e10
+      ],
+      "warmup_time": 98.032615638,
+      "allocations": 197515193
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:38:42",
+      "end_time": "2025-04-19 06:47:02",
+      "UUID": "a070e1b0-fc18-4436-93fd-4503abaf04d0"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.248759875e9,
+        5.483235517e9,
+        5.468105611e9,
+        4.623097042e9,
+        6.219806798e9
+      ],
+      "memory_usage": 8963296256,
+      "execution_times": [
+        6.4730317365e10,
+        7.1224085707e10,
+        6.8513874794e10,
+        6.215220391e10,
+        6.9192670524e10
+      ],
+      "warmup_time": 82.099476993,
+      "allocations": 162093202
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:48:52",
+      "end_time": "2025-04-19 06:55:49",
+      "UUID": "1daaba9b-623b-4512-a2ba-77c202dad79e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.775810311e9,
+        7.157093489e9,
+        7.133356407e9,
+        8.718087045e9,
+        8.133660228e9
+      ],
+      "memory_usage": 12079652232,
+      "execution_times": [
+        8.6221288317e10,
+        9.0565650528e10,
+        8.7409437212e10,
+        9.5101832221e10,
+        8.7220121999e10
+      ],
+      "warmup_time": 108.226542037,
+      "allocations": 216676796
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:58:07",
+      "end_time": "2025-04-19 07:07:18",
+      "UUID": "ce55e3a0-a08c-461a-b377-7b3a1aa80f66"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.799642895e9,
+        1.3214877698e10,
+        1.2041654981e10,
+        1.2851875524e10,
+        9.853211547e9
+      ],
+      "memory_usage": 17121935312,
+      "execution_times": [
+        1.21330045994e11,
+        1.36507571e11,
+        1.29371038843e11,
+        1.21610570996e11,
+        1.15012148426e11
+      ],
+      "warmup_time": 158.159962653,
+      "allocations": 315564896
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:10:26",
+      "end_time": "2025-04-19 07:23:27",
+      "UUID": "2944c527-da49-43b0-89bd-62c96c8c2f80"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.045572438e9,
+        7.250551376e9,
+        8.074865174e9,
+        8.305688757e9,
+        9.783574071e9
+      ],
+      "memory_usage": 13172700416,
+      "execution_times": [
+        9.4704623721e10,
+        9.9062114087e10,
+        9.8001714247e10,
+        9.4642211489e10,
+        9.9676551685e10
+      ],
+      "warmup_time": 117.522144634,
+      "allocations": 235758115
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:26:00",
+      "end_time": "2025-04-19 07:36:01",
+      "UUID": "025ebfcb-d4d7-41d1-80a0-9f3d084ed0d4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.25993662e9,
+        7.450649039e9,
+        8.099936093e9,
+        9.32953847e9,
+        8.997380985e9
+      ],
+      "memory_usage": 12989478912,
+      "execution_times": [
+        9.2020589467e10,
+        9.5493533207e10,
+        9.7235612225e10,
+        9.9654056839e10,
+        8.8816589934e10
+      ],
+      "warmup_time": 113.833236811,
+      "allocations": 234411106
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:38:26",
+      "end_time": "2025-04-19 07:48:11",
+      "UUID": "9a6fe482-87ac-451b-b242-4feadaff5412"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.1612594e8,
+        2.90635023e8,
+        5.86074493e8,
+        3.08193139e8,
+        2.98340562e8
+      ],
+      "memory_usage": 966012936,
+      "execution_times": [
+        5.820210144e9,
+        5.931449849e9,
+        5.834209501e9,
+        6.473445196e9,
+        5.883465556e9
+      ],
+      "warmup_time": 10.635279188,
+      "allocations": 17681186
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:48:53",
+      "end_time": "2025-04-19 07:49:31",
+      "UUID": "c2e5119a-61fb-4b0d-b54f-543214af20a2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.563158821e9,
+        1.1792484797e10,
+        1.5048737014e10,
+        1.046741639e10,
+        1.342952582e10
+      ],
+      "memory_usage": 18198033688,
+      "execution_times": [
+        1.30400051871e11,
+        1.35751789873e11,
+        1.41462101274e11,
+        1.21299022918e11,
+        1.33983366525e11
+      ],
+      "warmup_time": 167.914887488,
+      "allocations": 335076614
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:52:42",
+      "end_time": "2025-04-19 08:06:32",
+      "UUID": "7b09f03c-b4dc-4bd5-9961-26c9a803f4e2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.860864981e9,
+        6.840288258e9,
+        7.629289054e9,
+        8.433163025e9,
+        8.189336387e9
+      ],
+      "memory_usage": 11994713656,
+      "execution_times": [
+        8.3297121179e10,
+        8.9736290597e10,
+        9.1924587067e10,
+        9.1244381936e10,
+        8.620963801e10
+      ],
+      "warmup_time": 109.091396273,
+      "allocations": 215890420
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:08:57",
+      "end_time": "2025-04-19 08:18:02",
+      "UUID": "84786ce4-39c8-4770-9246-e3c328172fba"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.911299602e9,
+        2.264208567e9,
+        1.55939131e9,
+        2.524148837e9,
+        1.802856205e9
+      ],
+      "memory_usage": 4080514144,
+      "execution_times": [
+        3.0005146094e10,
+        3.2805794776e10,
+        3.3425494881e10,
+        3.1815026055e10,
+        3.3645873889e10
+      ],
+      "warmup_time": 38.49908368,
+      "allocations": 73244833
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:19:11",
+      "end_time": "2025-04-19 08:22:30",
+      "UUID": "e9b5cb5c-0bf4-4360-83ab-ebe2b827df20"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.879773109e9,
+        1.0577494695e10,
+        1.145378414e10,
+        1.2366139679e10,
+        1.2242799885e10
+      ],
+      "memory_usage": 16862737432,
+      "execution_times": [
+        1.23990841869e11,
+        1.27980895856e11,
+        1.24078679669e11,
+        1.1939724573e11,
+        1.17335687973e11
+      ],
+      "warmup_time": 153.818789563,
+      "allocations": 305222731
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:25:30",
+      "end_time": "2025-04-19 08:38:16",
+      "UUID": "6578585d-d4a8-4322-8d8c-d5f6d81770c0"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.197311347e9,
+        4.089597733e9,
+        4.744844611e9,
+        3.983768937e9,
+        5.640618653e9
+      ],
+      "memory_usage": 7218828408,
+      "execution_times": [
+        5.6173708465e10,
+        6.7612167661e10,
+        6.5082248389e10,
+        6.270300626e10,
+        7.3982008026e10
+      ],
+      "warmup_time": 63.612397516,
+      "allocations": 128641148
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:39:53",
+      "end_time": "2025-04-19 08:46:22",
+      "UUID": "a96d17cb-b2de-4e77-9f9a-6c939d57c9f5"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.0274290711e10,
+        1.188986695e10,
+        1.2825143958e10,
+        1.3271658957e10,
+        1.3467983336e10
+      ],
+      "memory_usage": 17275181712,
+      "execution_times": [
+        1.47011680097e11,
+        1.57994871733e11,
+        1.36608979125e11,
+        1.53604493402e11,
+        1.36246267941e11
+      ],
+      "warmup_time": 158.343435691,
+      "allocations": 311276757
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:49:30",
+      "end_time": "2025-04-19 09:04:30",
+      "UUID": "9966639b-a996-431e-b72f-0c0fd96a5967"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.807577426e9,
+        6.989817701e9,
+        7.983549837e9,
+        8.138899811e9,
+        9.743291616e9
+      ],
+      "memory_usage": 11281658712,
+      "execution_times": [
+        8.829201636e10,
+        1.06066291507e11,
+        1.04297057878e11,
+        1.04936275351e11,
+        1.09344284754e11
+      ],
+      "warmup_time": 103.027950704,
+      "allocations": 200846810
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:06:51",
+      "end_time": "2025-04-19 09:17:17",
+      "UUID": "61683d08-d60e-45ec-bccb-63f987d5733e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.0860414761e10,
+        1.4255500428e10,
+        1.420790757e10,
+        1.5569598758e10,
+        1.308271539e10
+      ],
+      "memory_usage": 20335123552,
+      "execution_times": [
+        1.62628009579e11,
+        1.70161330688e11,
+        1.72433525828e11,
+        1.68123960953e11,
+        1.65752817748e11
+      ],
+      "warmup_time": 187.939719588,
+      "allocations": 363804525
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:20:57",
+      "end_time": "2025-04-19 09:38:08",
+      "UUID": "87948104-cdd1-49a9-a702-401d91e7f057"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.557189743e9,
+        1.0081893369e10,
+        1.0156587953e10,
+        1.0640062044e10,
+        1.2681691137e10
+      ],
+      "memory_usage": 15599509680,
+      "execution_times": [
+        1.28504854957e11,
+        1.38974497309e11,
+        1.3568188822e11,
+        1.3150471698e11,
+        1.46934153846e11
+      ],
+      "warmup_time": 146.182559694,
+      "allocations": 276792017
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:41:11",
+      "end_time": "2025-04-19 09:55:10",
+      "UUID": "e0e17656-b306-4810-85f0-f8deaed4ad77"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.994851588e9,
+        2.224346716e9,
+        2.323142767e9,
+        1.798860495e9,
+        3.134125548e9
+      ],
+      "memory_usage": 4175276064,
+      "execution_times": [
+        4.0070802996e10,
+        4.0426967187e10,
+        4.1969422222e10,
+        3.7071799513e10,
+        4.4502008594e10
+      ],
+      "warmup_time": 42.50549627,
+      "allocations": 74043465
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:56:25",
+      "end_time": "2025-04-19 10:00:35",
+      "UUID": "9f3fe4c7-7277-4d46-b0c3-7e09ddec007d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.589199696e9,
+        5.901591231e9,
+        7.82441919e9,
+        7.65752578e9,
+        9.041194399e9
+      ],
+      "memory_usage": 11416675664,
+      "execution_times": [
+        9.3393648147e10,
+        1.02650599201e11,
+        1.06009466928e11,
+        1.06093337926e11,
+        1.12698245269e11
+      ],
+      "warmup_time": 118.358996517,
+      "allocations": 202216841
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:03:03",
+      "end_time": "2025-04-19 10:13:34",
+      "UUID": "3e8f4b87-4542-465f-b505-e447cb366342"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.27847687e8,
+        1.355207744e9,
+        7.362114e8,
+        1.42926115e9,
+        9.99961202e8
+      ],
+      "memory_usage": 2076946120,
+      "execution_times": [
+        1.8748760945e10,
+        2.1163782573e10,
+        1.8868946737e10,
+        2.4302795528e10,
+        2.4109808611e10
+      ],
+      "warmup_time": 24.916120107,
+      "allocations": 36952804
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:14:30",
+      "end_time": "2025-04-19 10:16:40",
+      "UUID": "aa864c3f-3b49-4c5b-ab06-e457718c8168"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.0012435431e10,
+        1.4625367492e10,
+        1.3403108308e10,
+        1.4639651006e10,
+        1.6636621387e10
+      ],
+      "memory_usage": 20272012920,
+      "execution_times": [
+        1.59663279942e11,
+        1.80405665846e11,
+        1.53103051951e11,
+        1.76549535707e11,
+        1.70298324939e11
+      ],
+      "warmup_time": 191.165088896,
+      "allocations": 365394619
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:20:19",
+      "end_time": "2025-04-19 10:37:34",
+      "UUID": "69c1591a-3bde-42d6-988f-be881c62e8b4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.257082997e9,
+        2.764383227e9,
+        3.002520443e9,
+        2.202374025e9,
+        3.309101917e9
+      ],
+      "memory_usage": 5201479568,
+      "execution_times": [
+        4.1056786854e10,
+        5.3383133722e10,
+        5.0055612497e10,
+        4.5767682805e10,
+        5.0370377209e10
+      ],
+      "warmup_time": 51.937280592,
+      "allocations": 92113526
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:39:05",
+      "end_time": "2025-04-19 10:43:52",
+      "UUID": "b2972d59-873a-444f-9cb0-afe5845ea50b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.596961565e9,
+        3.384078164e9,
+        3.519745779e9,
+        3.875475308e9,
+        4.256963401e9
+      ],
+      "memory_usage": 6278403992,
+      "execution_times": [
+        5.1950003538e10,
+        6.2525560402e10,
+        6.4308835425e10,
+        6.0239677366e10,
+        6.4394101671e10
+      ],
+      "warmup_time": 69.054951537,
+      "allocations": 110981837
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:45:31",
+      "end_time": "2025-04-19 10:51:34",
+      "UUID": "e1482f30-1ac4-4819-9c07-50b6c3927847"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.98254406e9,
+        9.739238898e9,
+        1.0278632753e10,
+        1.0274964464e10,
+        8.226491939e9
+      ],
+      "memory_usage": 14216220368,
+      "execution_times": [
+        1.17229283991e11,
+        1.32477999581e11,
+        1.38836087271e11,
+        1.2920348218e11,
+        1.1574398671e11
+      ],
+      "warmup_time": 122.494723593,
+      "allocations": 255640279
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:54:05",
+      "end_time": "2025-04-19 11:07:08",
+      "UUID": "56eb1000-64cf-4cec-9b58-740cf1b1436e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.926946321e9,
+        5.888476242e9,
+        6.831163993e9,
+        6.350522097e9,
+        7.625263118e9
+      ],
+      "memory_usage": 10410869320,
+      "execution_times": [
+        9.1651597801e10,
+        1.01113032057e11,
+        9.3189297599e10,
+        8.3741235896e10,
+        9.3979045306e10
+      ],
+      "warmup_time": 93.738854959,
+      "allocations": 185258942
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:09:15",
+      "end_time": "2025-04-19 11:18:47",
+      "UUID": "a7138834-87f4-44a7-b06e-b6cc55117929"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.284077391e9,
+        2.88863874e9,
+        2.147892435e9,
+        2.970192724e9,
+        3.205363194e9
+      ],
+      "memory_usage": 5251787344,
+      "execution_times": [
+        4.5120950936e10,
+        5.5431452358e10,
+        4.7678012406e10,
+        4.5623902936e10,
+        4.7064713494e10
+      ],
+      "warmup_time": 46.019055071,
+      "allocations": 92932376
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:20:04",
+      "end_time": "2025-04-19 11:24:59",
+      "UUID": "09832bf0-f835-4711-85d7-9e041cd0694b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.38005218e9,
+        6.65832379e9,
+        7.229098965e9,
+        9.688842195e9,
+        6.893178042e9
+      ],
+      "memory_usage": 12333614128,
+      "execution_times": [
+        1.02676145195e11,
+        1.04555571857e11,
+        1.02046191198e11,
+        1.10941642428e11,
+        1.0457820817e11
+      ],
+      "warmup_time": 122.795348863,
+      "allocations": 220557999
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:27:30",
+      "end_time": "2025-04-19 11:38:14",
+      "UUID": "006a0d67-4480-4b52-83f0-6b5abe5e8f6d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.795703476e9,
+        1.895307062e9,
+        2.759504951e9,
+        3.030220682e9,
+        3.255149754e9
+      ],
+      "memory_usage": 5174063080,
+      "execution_times": [
+        4.6404164694e10,
+        4.2697627255e10,
+        4.4397648432e10,
+        5.5055975196e10,
+        4.664549194e10
+      ],
+      "warmup_time": 53.374124673,
+      "allocations": 92141781
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:39:37",
+      "end_time": "2025-04-19 11:44:25",
+      "UUID": "120b9484-fd67-4b4f-bc83-df3876213dae"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.372929942e9,
+        7.931378422e9,
+        8.496508831e9,
+        1.0064494921e10,
+        8.57227406e9
+      ],
+      "memory_usage": 13429296208,
+      "execution_times": [
+        1.08297261782e11,
+        1.19729077195e11,
+        1.2142006542e11,
+        1.25850515196e11,
+        1.21316196964e11
+      ],
+      "warmup_time": 127.008125046,
+      "allocations": 238583213
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:47:00",
+      "end_time": "2025-04-19 11:59:08",
+      "UUID": "a727a277-9e1e-487d-bf8c-e77e5a9552a9"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.025909568e9,
+        1.3029800475e10,
+        1.1789690687e10,
+        9.677027693e9,
+        1.2653168882e10
+      ],
+      "memory_usage": 17389390304,
+      "execution_times": [
+        1.24319043772e11,
+        1.35931566523e11,
+        1.25944745008e11,
+        1.16600245801e11,
+        1.18615890191e11
+      ],
+      "warmup_time": 171.229849876,
+      "allocations": 318817641
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:02:34",
+      "end_time": "2025-04-19 12:15:55",
+      "UUID": "bb168add-d038-41f6-b92d-02edd19d9590"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.132875497e9,
+        1.0626833482e10,
+        1.1612679498e10,
+        1.0943219266e10,
+        9.540889568e9
+      ],
+      "memory_usage": 15416469640,
+      "execution_times": [
+        1.13711017572e11,
+        1.25197503614e11,
+        1.15960705204e11,
+        1.14772780724e11,
+        1.02355202408e11
+      ],
+      "warmup_time": 143.555686198,
+      "allocations": 283049599
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:18:53",
+      "end_time": "2025-04-19 12:30:45",
+      "UUID": "d96c7ee0-1110-4353-8d54-7b74c69b825a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.452906998e9,
+        1.0180655565e10,
+        1.3430844146e10,
+        9.488712498e9,
+        1.191146323e10
+      ],
+      "memory_usage": 16476440768,
+      "execution_times": [
+        1.18494933506e11,
+        1.24836123765e11,
+        1.31591221809e11,
+        1.12234504591e11,
+        1.16257783475e11
+      ],
+      "warmup_time": 156.468640957,
+      "allocations": 301715402
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:33:56",
+      "end_time": "2025-04-19 12:46:26",
+      "UUID": "cb61c7a1-4700-467b-8990-35089cd648e3"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.76522732e9,
+        5.402257592e9,
+        6.45399365e9,
+        6.179951395e9,
+        7.100059591e9
+      ],
+      "memory_usage": 9979082384,
+      "execution_times": [
+        7.1280182522e10,
+        7.5867539777e10,
+        7.5021385416e10,
+        7.1471055445e10,
+        7.2375539466e10
+      ],
+      "warmup_time": 87.232825377,
+      "allocations": 180491861
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:48:27",
+      "end_time": "2025-04-19 12:56:02",
+      "UUID": "86eabd02-dda8-4abc-adff-fb637fa81747"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.185671867e9,
+        5.118512325e9,
+        5.64986605e9,
+        5.680787898e9,
+        4.635817494e9
+      ],
+      "memory_usage": 8975247104,
+      "execution_times": [
+        6.6133598288e10,
+        6.8304474193e10,
+        6.9151427191e10,
+        6.567110106e10,
+        6.5012055738e10
+      ],
+      "warmup_time": 82.27832622,
+      "allocations": 161809301
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:57:53",
+      "end_time": "2025-04-19 13:04:48",
+      "UUID": "20152934-fe78-4ec3-91e7-5e519c9a3bb1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.27599984e8,
+        1.052554892e9,
+        7.10712969e8,
+        1.31145201e9,
+        6.83607616e8
+      ],
+      "memory_usage": 2018616728,
+      "execution_times": [
+        1.5739866989e10,
+        1.8175997942e10,
+        1.7369176364e10,
+        1.8243060014e10,
+        1.7501834018e10
+      ],
+      "warmup_time": 21.902383086,
+      "allocations": 36307724
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:05:39",
+      "end_time": "2025-04-19 13:07:27",
+      "UUID": "2d4e2d61-168d-4682-aedc-5cbbbf7fdf0e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.914885345e9,
+        1.0941936041e10,
+        1.4214245255e10,
+        1.0088144755e10,
+        1.3884590403e10
+      ],
+      "memory_usage": 17177818592,
+      "execution_times": [
+        1.20131417031e11,
+        1.28397531948e11,
+        1.32476814883e11,
+        1.12365800206e11,
+        1.35402508846e11
+      ],
+      "warmup_time": 159.616092868,
+      "allocations": 316847145
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:10:30",
+      "end_time": "2025-04-19 13:23:28",
+      "UUID": "2856e052-c489-40a4-be53-4249c95341a3"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.747620054e9,
+        4.542661211e9,
+        4.600754656e9,
+        5.185570714e9,
+        4.16351928e9
+      ],
+      "memory_usage": 8000256368,
+      "execution_times": [
+        5.7137381165e10,
+        6.2810902015e10,
+        5.9406161114e10,
+        6.0555308367e10,
+        5.8355126523e10
+      ],
+      "warmup_time": 73.224238541,
+      "allocations": 144618835
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:25:17",
+      "end_time": "2025-04-19 13:31:27",
+      "UUID": "76af99ac-69a3-43b1-8f51-e639174ca591"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.354372505e9,
+        4.054091121e9,
+        4.475208083e9,
+        4.401200501e9,
+        3.887748563e9
+      ],
+      "memory_usage": 7128562472,
+      "execution_times": [
+        5.3029453647e10,
+        6.0233885439e10,
+        5.7000320963e10,
+        5.5896866283e10,
+        5.5786639399e10
+      ],
+      "warmup_time": 64.90290997,
+      "allocations": 127880580
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:32:59",
+      "end_time": "2025-04-19 13:38:44",
+      "UUID": "321fef20-ff36-4810-924b-1ac69aff52fc"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.024482604e9,
+        8.663296173e9,
+        1.1576059943e10,
+        1.0250487852e10,
+        7.928516875e9
+      ],
+      "memory_usage": 14374196032,
+      "execution_times": [
+        1.02244733254e11,
+        1.10704936848e11,
+        1.11833841422e11,
+        1.04202662838e11,
+        9.3576022841e10
+      ],
+      "warmup_time": 137.492155527,
+      "allocations": 264695775
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:41:29",
+      "end_time": "2025-04-19 13:52:21",
+      "UUID": "4f94e852-a4fe-43eb-9d0d-538e89152904"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.23530639e8,
+        4.44522359e8,
+        4.97515727e8,
+        3.29285862e8,
+        3.86655526e8
+      ],
+      "memory_usage": 966454936,
+      "execution_times": [
+        6.006496126e9,
+        6.451072165e9,
+        6.167311227e9,
+        6.522402672e9,
+        5.976453215e9
+      ],
+      "warmup_time": 11.0648689,
+      "allocations": 17684156
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:53:05",
+      "end_time": "2025-04-19 13:53:45",
+      "UUID": "7543be4a-43a4-4e46-9a77-0967a58620f4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.062396986e9,
+        4.440969144e9,
+        4.483747261e9,
+        5.365876107e9,
+        3.923949539e9
+      ],
+      "memory_usage": 7932565600,
+      "execution_times": [
+        5.8066900991e10,
+        6.0693289726e10,
+        6.011587509e10,
+        5.7944056394e10,
+        5.6595255068e10
+      ],
+      "warmup_time": 72.076835363,
+      "allocations": 143813065
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:55:20",
+      "end_time": "2025-04-19 14:01:24",
+      "UUID": "3ff830a9-c553-4b36-8429-e6b0176eaf2e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.976274089e9,
+        9.984593553e9,
+        1.1568710501e10,
+        1.1240254001e10,
+        9.183598078e9
+      ],
+      "memory_usage": 15583462120,
+      "execution_times": [
+        1.10350956114e11,
+        1.27404344022e11,
+        1.11557491434e11,
+        1.0951595923e11,
+        1.0659845988e11
+      ],
+      "warmup_time": 142.899698068,
+      "allocations": 284870898
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:04:15",
+      "end_time": "2025-04-19 14:16:01",
+      "UUID": "7ac7ef52-6b60-4f54-8846-6ea1a46c38ae"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.777767768e9,
+        5.519215519e9,
+        6.151290415e9,
+        6.292506995e9,
+        7.193748681e9
+      ],
+      "memory_usage": 9947212784,
+      "execution_times": [
+        7.0901681006e10,
+        7.4409082474e10,
+        7.4372409522e10,
+        7.1295470511e10,
+        7.4506771559e10
+      ],
+      "warmup_time": 91.279679212,
+      "allocations": 180165254
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:18:06",
+      "end_time": "2025-04-19 14:25:39",
+      "UUID": "145e4c52-1ee3-4f9e-86cc-b3690aa708d0"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.628049359e9,
+        9.626702368e9,
+        1.0573363232e10,
+        1.0563834564e10,
+        8.87071973e9
+      ],
+      "memory_usage": 15519050488,
+      "execution_times": [
+        1.11697693564e11,
+        1.25142037512e11,
+        1.17660016323e11,
+        1.0968737431e11,
+        1.04133938423e11
+      ],
+      "warmup_time": 139.669971193,
+      "allocations": 284111000
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:28:27",
+      "end_time": "2025-04-19 14:40:17",
+      "UUID": "1a9836f9-a59a-4bff-90ec-f33de8d1481a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.03623278e9,
+        3.289462811e9,
+        3.801133548e9,
+        3.926492802e9,
+        3.020544905e9
+      ],
+      "memory_usage": 6122347104,
+      "execution_times": [
+        4.6040582544e10,
+        5.0171188425e10,
+        5.2987462011e10,
+        4.9445158863e10,
+        4.7702464461e10
+      ],
+      "warmup_time": 57.242048649,
+      "allocations": 109701504
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:41:47",
+      "end_time": "2025-04-19 14:46:48",
+      "UUID": "7270cd70-5edb-462c-b4e0-fca5c1981136"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.010319418e10,
+        1.4648131408e10,
+        1.3473579889e10,
+        1.0765293906e10,
+        1.6144959845e10
+      ],
+      "memory_usage": 19041812104,
+      "execution_times": [
+        1.37592794955e11,
+        1.47970625968e11,
+        1.36165257418e11,
+        1.24702539063e11,
+        1.45901308548e11
+      ],
+      "warmup_time": 180.94480444,
+      "allocations": 351398330
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:50:15",
+      "end_time": "2025-04-19 15:04:44",
+      "UUID": "c70c4c82-9a04-4c89-b3db-62be99d399f2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.049549745e9,
+        9.483453337e9,
+        9.10026769e9,
+        7.767627346e9,
+        9.171533526e9
+      ],
+      "memory_usage": 13893103368,
+      "execution_times": [
+        1.04554160277e11,
+        1.08452543636e11,
+        1.01724913109e11,
+        9.9479617973e10,
+        9.5261647825e10
+      ],
+      "warmup_time": 127.918827568,
+      "allocations": 251894250
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:07:29",
+      "end_time": "2025-04-19 15:18:03",
+      "UUID": "689b412a-91fb-49e2-95b3-716a428aa232"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.172658019e9,
+        4.000030755e9,
+        4.490211537e9,
+        4.49831036e9,
+        3.500949812e9
+      ],
+      "memory_usage": 7011292448,
+      "execution_times": [
+        4.9744840451e10,
+        5.6554178105e10,
+        5.6702631253e10,
+        5.3783480682e10,
+        5.6884234635e10
+      ],
+      "warmup_time": 65.742465135,
+      "allocations": 126762935
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:19:41",
+      "end_time": "2025-04-19 15:25:17",
+      "UUID": "a8904874-4197-4f00-a81f-073a67935d05"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.61783608e8,
+        1.065255617e9,
+        6.83648774e8,
+        1.354828859e9,
+        8.13230956e8
+      ],
+      "memory_usage": 2010801240,
+      "execution_times": [
+        1.4968151176e10,
+        1.7894286699e10,
+        1.7766085976e10,
+        1.9083997015e10,
+        1.7605892998e10
+      ],
+      "warmup_time": 21.298342383,
+      "allocations": 36240154
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:26:06",
+      "end_time": "2025-04-19 15:27:53",
+      "UUID": "22774e7c-a396-4b3a-807a-e54b57c0d32b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.126219089e9,
+        1.581367221e9,
+        1.202595819e9,
+        1.870613041e9,
+        1.962016847e9
+      ],
+      "memory_usage": 2975066480,
+      "execution_times": [
+        2.0172875416e10,
+        2.4052034025e10,
+        2.3906710118e10,
+        2.3211140935e10,
+        2.4726331241e10
+      ],
+      "warmup_time": 29.068345524,
+      "allocations": 53861130
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:28:46",
+      "end_time": "2025-04-19 15:31:10",
+      "UUID": "43b9a0f9-ed0c-433a-be98-4e3cbe3a0689"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  }
+]

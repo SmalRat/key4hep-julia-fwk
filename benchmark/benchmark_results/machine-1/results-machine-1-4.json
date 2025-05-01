@@ -1,0 +1,4742 @@
+[
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.763301081e9,
+        5.933360692e9,
+        7.929557096e9,
+        7.30597615e9,
+        7.292231003e9
+      ],
+      "memory_usage": 13734940200,
+      "execution_times": [
+        1.21617909137e11,
+        1.24071118402e11,
+        1.28013655616e11,
+        1.24162161542e11,
+        1.22055779215e11
+      ],
+      "warmup_time": 137.353754176,
+      "allocations": 244658459
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:04:22",
+      "end_time": "2025-04-19 05:16:52",
+      "UUID": "a4c54fe4-af47-427a-8ccd-ac7821abbeda"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.603892713e9,
+        3.199817126e9,
+        4.217622866e9,
+        3.57072396e9,
+        3.039596134e9
+      ],
+      "memory_usage": 7743968240,
+      "execution_times": [
+        7.1480893398e10,
+        7.2258093245e10,
+        7.4684296469e10,
+        7.2015716855e10,
+        6.9422314784e10
+      ],
+      "warmup_time": 78.209080375,
+      "allocations": 138654084
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:18:32",
+      "end_time": "2025-04-19 05:25:48",
+      "UUID": "51693e68-e48b-4e15-90d7-aeaad18eee6a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.399591846e9,
+        8.637704627e9,
+        1.1515423416e10,
+        1.0282244414e10,
+        1.1981198987e10
+      ],
+      "memory_usage": 19508588120,
+      "execution_times": [
+        1.71127141343e11,
+        1.74824166561e11,
+        1.76591184086e11,
+        1.74881143557e11,
+        1.7376631235e11
+      ],
+      "warmup_time": 190.226283862,
+      "allocations": 347127767
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:29:19",
+      "end_time": "2025-04-19 05:46:55",
+      "UUID": "e7b8f478-ca19-4b95-8a16-272e2dc7c0f1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.732954967e9,
+        5.100058546e9,
+        4.954950813e9,
+        5.178497179e9,
+        5.38816142e9
+      ],
+      "memory_usage": 10841848776,
+      "execution_times": [
+        9.7668119059e10,
+        9.8849883056e10,
+        9.9201353497e10,
+        9.8293991174e10,
+        9.4587156259e10
+      ],
+      "warmup_time": 107.195425126,
+      "allocations": 191874003
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:49:08",
+      "end_time": "2025-04-19 05:58:59",
+      "UUID": "a7bc4e04-a636-4188-9c0f-a66147efaa3b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.558086703e9,
+        6.226594031e9,
+        7.811676953e9,
+        7.127614663e9,
+        7.683094476e9
+      ],
+      "memory_usage": 13824699952,
+      "execution_times": [
+        1.22425359283e11,
+        1.26364693403e11,
+        1.26376273361e11,
+        1.22565398929e11,
+        1.2354053097e11
+      ],
+      "warmup_time": 136.114550636,
+      "allocations": 245135887
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:01:36",
+      "end_time": "2025-04-19 06:14:10",
+      "UUID": "46eef379-fc31-4f47-ba88-a894bfa12474"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.266770918e9,
+        7.827672014e9,
+        9.989647943e9,
+        9.367335284e9,
+        1.0803104987e10
+      ],
+      "memory_usage": 17449404816,
+      "execution_times": [
+        1.53402105413e11,
+        1.5716076688e11,
+        1.60379874824e11,
+        1.56516681554e11,
+        1.62180099707e11
+      ],
+      "warmup_time": 170.522763721,
+      "allocations": 313321714
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:17:22",
+      "end_time": "2025-04-19 06:33:17",
+      "UUID": "38a54e76-08f4-4891-8687-ca8605afa93d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.028854074e9,
+        7.617456983e9,
+        9.42207528e9,
+        9.274977071e9,
+        9.023081669e9
+      ],
+      "memory_usage": 16552847536,
+      "execution_times": [
+        1.49117528397e11,
+        1.51946673928e11,
+        1.53814792629e11,
+        1.49441103683e11,
+        1.45518387445e11
+      ],
+      "warmup_time": 163.035599429,
+      "allocations": 296951523
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:36:25",
+      "end_time": "2025-04-19 06:51:36",
+      "UUID": "bf76f1ab-d790-402c-8809-ee16ba93d90f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.973475019e9,
+        2.175278729e9,
+        2.618044438e9,
+        3.181668909e9,
+        2.315344991e9
+      ],
+      "memory_usage": 5906637592,
+      "execution_times": [
+        5.3708379893e10,
+        5.4184552508e10,
+        5.5764424796e10,
+        5.671694401e10,
+        5.416912511e10
+      ],
+      "warmup_time": 60.161269292,
+      "allocations": 104656485
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:52:56",
+      "end_time": "2025-04-19 06:58:29",
+      "UUID": "d47b2881-eb65-44b7-b4b6-d2cd7df05ee6"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.64722391e9,
+        5.607948254e9,
+        7.506087581e9,
+        7.038719346e9,
+        7.48467263e9
+      ],
+      "memory_usage": 13777537904,
+      "execution_times": [
+        1.2184407287e11,
+        1.24117226134e11,
+        1.22304510976e11,
+        1.22843133514e11,
+        1.24403547798e11
+      ],
+      "warmup_time": 134.313170258,
+      "allocations": 244923292
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:01:02",
+      "end_time": "2025-04-19 07:13:27",
+      "UUID": "47a811dc-b1b6-4171-b537-625aad063334"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.0416633e9,
+        4.917488696e9,
+        6.465648816e9,
+        6.300793108e9,
+        6.337213857e9
+      ],
+      "memory_usage": 11861500464,
+      "execution_times": [
+        1.07885925653e11,
+        1.0659415308e11,
+        1.09025531309e11,
+        1.09752037892e11,
+        1.0802499167e11
+      ],
+      "warmup_time": 116.080447983,
+      "allocations": 210907895
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:15:46",
+      "end_time": "2025-04-19 07:26:41",
+      "UUID": "e7a7d7fe-e879-4b09-8f4a-85360d4d5b31"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.278462934e9,
+        1.500854852e9,
+        1.570363557e9,
+        1.641644989e9,
+        1.388620502e9
+      ],
+      "memory_usage": 3936122200,
+      "execution_times": [
+        3.6235097503e10,
+        3.7261777294e10,
+        3.6668428293e10,
+        3.6608384396e10,
+        3.6121623534e10
+      ],
+      "warmup_time": 42.251240857,
+      "allocations": 69981032
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:27:42",
+      "end_time": "2025-04-19 07:31:24",
+      "UUID": "9fc64915-44ee-4c55-8f7e-0cc8c80c3954"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.325802183e9,
+        7.996636982e9,
+        9.581631064e9,
+        8.553779649e9,
+        9.540736935e9
+      ],
+      "memory_usage": 16378487400,
+      "execution_times": [
+        1.45096318144e11,
+        1.51216977231e11,
+        1.51050119556e11,
+        1.46084135856e11,
+        1.52500145092e11
+      ],
+      "warmup_time": 164.35650674,
+      "allocations": 294370642
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:34:27",
+      "end_time": "2025-04-19 07:49:29",
+      "UUID": "13f5c13f-b884-4669-b94f-72c8829867cd"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.20727137e8,
+        7.1790461e8,
+        8.08369611e8,
+        6.05115139e8,
+        9.10543655e8
+      ],
+      "memory_usage": 2011422512,
+      "execution_times": [
+        1.9483526667e10,
+        2.0607816972e10,
+        1.9406172495e10,
+        1.950032722e10,
+        2.0298279947e10
+      ],
+      "warmup_time": 23.077210838,
+      "allocations": 35501246
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:50:16",
+      "end_time": "2025-04-19 07:52:17",
+      "UUID": "dd3c7292-f0d2-45b5-8c4c-b4993d0f66a1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.22652071e8,
+        4.19375084e8,
+        2.84188104e8,
+        3.80542447e8,
+        2.70961682e8
+      ],
+      "memory_usage": 968061600,
+      "execution_times": [
+        8.33817676e9,
+        8.701960585e9,
+        8.583719417e9,
+        8.6925097e9,
+        8.596426856e9
+      ],
+      "warmup_time": 12.12111311,
+      "allocations": 17349298
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:52:46",
+      "end_time": "2025-04-19 07:53:39",
+      "UUID": "b77be46d-a452-4931-a08f-6d4a3bb2be9b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.645029113e9,
+        5.36264265e9,
+        4.87980359e9,
+        5.285811445e9,
+        5.715797715e9
+      ],
+      "memory_usage": 10873249200,
+      "execution_times": [
+        9.7304533841e10,
+        1.02003759964e11,
+        9.8839381191e10,
+        9.8207711237e10,
+        9.9054471055e10
+      ],
+      "warmup_time": 107.723423568,
+      "allocations": 192145919
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:56:01",
+      "end_time": "2025-04-19 08:06:01",
+      "UUID": "a5044231-2a3a-4a45-8c21-e2fc85c23319"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.163972252e9,
+        3.317637651e9,
+        3.041140066e9,
+        3.053750074e9,
+        3.281772031e9
+      ],
+      "memory_usage": 6885904576,
+      "execution_times": [
+        6.2005679329e10,
+        6.405129449e10,
+        6.6291858098e10,
+        6.3886150021e10,
+        6.3957368316e10
+      ],
+      "warmup_time": 69.101564654,
+      "allocations": 122050324
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:07:31",
+      "end_time": "2025-04-19 08:13:59",
+      "UUID": "9ae7a400-ce74-4f56-a7b3-983ebbbcb445"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.677792885e9,
+        1.868040387e9,
+        2.125631006e9,
+        2.294743792e9,
+        2.57427589e9
+      ],
+      "memory_usage": 4976585560,
+      "execution_times": [
+        4.456334847e10,
+        4.5439217153e10,
+        4.6461405549e10,
+        4.8301373405e10,
+        4.7114679489e10
+      ],
+      "warmup_time": 50.819394569,
+      "allocations": 87755092
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:15:09",
+      "end_time": "2025-04-19 08:19:50",
+      "UUID": "d39173f8-a6e4-431c-8976-7e98b364e17e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.320587481e9,
+        6.586597101e9,
+        8.126087558e9,
+        7.509105154e9,
+        8.277464135e9
+      ],
+      "memory_usage": 14911549864,
+      "execution_times": [
+        1.32749485116e11,
+        1.33288417061e11,
+        1.35138552778e11,
+        1.31276860486e11,
+        1.3567972969e11
+      ],
+      "warmup_time": 145.166423972,
+      "allocations": 262117721
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:22:34",
+      "end_time": "2025-04-19 08:36:01",
+      "UUID": "5ac91783-a798-49e2-8abb-bf5accb1cef1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.234683071e9,
+        9.543974592e9,
+        9.281843356e9,
+        1.1535701293e10,
+        1.0511105843e10
+      ],
+      "memory_usage": 18306382872,
+      "execution_times": [
+        1.62385912119e11,
+        1.68217375576e11,
+        1.63018203551e11,
+        1.70137375218e11,
+        1.63167144197e11
+      ],
+      "warmup_time": 183.117594137,
+      "allocations": 328352711
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:39:27",
+      "end_time": "2025-04-19 08:56:08",
+      "UUID": "a7f465fb-90f2-4b1c-b2bb-90780914f708"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.071380967e9,
+        8.508272715e9,
+        8.851081336e9,
+        9.800072184e9,
+        1.0059660794e10
+      ],
+      "memory_usage": 18441334696,
+      "execution_times": [
+        1.62890343961e11,
+        1.65369432194e11,
+        1.63578911594e11,
+        1.61958809661e11,
+        1.64734602489e11
+      ],
+      "warmup_time": 180.257275283,
+      "allocations": 330849780
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:59:32",
+      "end_time": "2025-04-19 09:16:04",
+      "UUID": "d0dae472-1c9e-4ce4-9ef2-89a98b44cfdd"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.401111764e9,
+        6.597534567e9,
+        8.930570705e9,
+        8.035382421e9,
+        8.788524092e9
+      ],
+      "memory_usage": 15578218320,
+      "execution_times": [
+        1.37938498982e11,
+        1.38060707972e11,
+        1.44519945101e11,
+        1.41012515859e11,
+        1.41012895812e11
+      ],
+      "warmup_time": 156.169097074,
+      "allocations": 278499543
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:19:01",
+      "end_time": "2025-04-19 09:33:11",
+      "UUID": "b19ef5bd-087a-4928-93c9-067501f450a1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.589224332e9,
+        5.014037917e9,
+        5.41108063e9,
+        6.936617915e9,
+        6.274191272e9
+      ],
+      "memory_usage": 11903255016,
+      "execution_times": [
+        1.06047899136e11,
+        1.07617924306e11,
+        1.07855290886e11,
+        1.09919339045e11,
+        1.07332793886e11
+      ],
+      "warmup_time": 118.585065595,
+      "allocations": 210530085
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:35:32",
+      "end_time": "2025-04-19 09:46:26",
+      "UUID": "1dd602d7-98a3-4145-bec7-1c19aa40898e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.928960259e9,
+        4.373978161e9,
+        3.763125249e9,
+        4.233353657e9,
+        4.740038767e9
+      ],
+      "memory_usage": 8818463672,
+      "execution_times": [
+        7.931508723e10,
+        8.198982729e10,
+        8.0243226362e10,
+        8.1703274844e10,
+        8.2440974115e10
+      ],
+      "warmup_time": 89.018346237,
+      "allocations": 157265533
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:48:16",
+      "end_time": "2025-04-19 09:56:27",
+      "UUID": "c9a6ded3-7378-40b6-9813-dff166e44a6e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.397543912e9,
+        4.87108038e9,
+        4.430556631e9,
+        4.783489393e9,
+        5.025585519e9
+      ],
+      "memory_usage": 9790468968,
+      "execution_times": [
+        8.8243020958e10,
+        9.2355348637e10,
+        9.206220273e10,
+        8.9612613671e10,
+        8.7913070236e10
+      ],
+      "warmup_time": 98.089985413,
+      "allocations": 174575374
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:58:26",
+      "end_time": "2025-04-19 10:07:34",
+      "UUID": "7391d9b6-2fdc-42aa-b150-3f52c33d9f1f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.976190127e9,
+        2.276453035e9,
+        2.518886153e9,
+        3.189357285e9,
+        2.103249219e9
+      ],
+      "memory_usage": 5890673832,
+      "execution_times": [
+        5.3995565951e10,
+        5.5406592485e10,
+        5.5541637022e10,
+        5.7389918537e10,
+        5.3067569478e10
+      ],
+      "warmup_time": 60.824228489,
+      "allocations": 104866413
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:08:56",
+      "end_time": "2025-04-19 10:14:29",
+      "UUID": "76855fa4-baf3-411b-87d4-844acb7604f0"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.500021487e9,
+        6.429581103e9,
+        5.914010623e9,
+        6.4258593e9,
+        6.495426387e9
+      ],
+      "memory_usage": 12680491632,
+      "execution_times": [
+        1.12108168747e11,
+        1.18357843364e11,
+        1.15213866289e11,
+        1.1454926457e11,
+        1.15053465e11
+      ],
+      "warmup_time": 125.140703878,
+      "allocations": 225703504
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:16:53",
+      "end_time": "2025-04-19 10:28:31",
+      "UUID": "538a4756-dce6-4c62-a433-ffb7cbb4f5ba"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.303593012e9,
+        9.547957018e9,
+        8.575230408e9,
+        9.179629618e9,
+        9.675966057e9
+      ],
+      "memory_usage": 17547149824,
+      "execution_times": [
+        1.54182819233e11,
+        1.60982352427e11,
+        1.57326448687e11,
+        1.56396750779e11,
+        1.5643403465e11
+      ],
+      "warmup_time": 172.68894224,
+      "allocations": 313508453
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:31:46",
+      "end_time": "2025-04-19 10:47:37",
+      "UUID": "9123e5a7-02f8-4db6-b8ff-3716d78a3005"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.9028996e8,
+        6.955584e8,
+        9.39741905e8,
+        6.48795055e8,
+        1.048246608e9
+      ],
+      "memory_usage": 2022602112,
+      "execution_times": [
+        1.9568165739e10,
+        2.0364969357e10,
+        2.027752762e10,
+        2.0088257051e10,
+        2.0822070083e10
+      ],
+      "warmup_time": 23.665029776,
+      "allocations": 35636080
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:48:21",
+      "end_time": "2025-04-19 10:50:24",
+      "UUID": "b874a546-5896-43f3-8861-3ad8c53afbe9"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.830262503e9,
+        2.168470259e9,
+        2.684759507e9,
+        3.12584141e9,
+        2.313723154e9
+      ],
+      "memory_usage": 5893636248,
+      "execution_times": [
+        5.2776593626e10,
+        5.4980609865e10,
+        5.7436507047e10,
+        5.4907747964e10,
+        5.3818500054e10
+      ],
+      "warmup_time": 58.602085899,
+      "allocations": 104606680
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:51:40",
+      "end_time": "2025-04-19 10:57:11",
+      "UUID": "20c7322f-2f3f-4627-9665-c0e3accd6463"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.525410761e9,
+        6.201907129e9,
+        6.038128488e9,
+        6.211480682e9,
+        6.770650367e9
+      ],
+      "memory_usage": 12753789408,
+      "execution_times": [
+        1.14099385751e11,
+        1.1773673587e11,
+        1.17080942764e11,
+        1.14581423674e11,
+        1.15956445457e11
+      ],
+      "warmup_time": 126.453322487,
+      "allocations": 226327522
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:59:37",
+      "end_time": "2025-04-19 11:11:19",
+      "UUID": "a62f80ef-5811-41e3-8b6b-22a82d387777"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.810112406e9,
+        5.211120557e9,
+        4.93491438e9,
+        5.302418671e9,
+        5.620493928e9
+      ],
+      "memory_usage": 10867835968,
+      "execution_times": [
+        9.7008303811e10,
+        1.00697407785e11,
+        9.8629685836e10,
+        9.6438901915e10,
+        9.7586251172e10
+      ],
+      "warmup_time": 106.682602291,
+      "allocations": 192108060
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:13:28",
+      "end_time": "2025-04-19 11:23:23",
+      "UUID": "019abc74-8ede-4519-8511-028096183f2f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.680927818e9,
+        3.223565441e9,
+        4.094252414e9,
+        3.510947733e9,
+        3.957965143e9
+      ],
+      "memory_usage": 7824587016,
+      "execution_times": [
+        7.1081916576e10,
+        7.2773241221e10,
+        7.1987800694e10,
+        7.1549592643e10,
+        7.0381443822e10
+      ],
+      "warmup_time": 78.48848122,
+      "allocations": 139623518
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:25:04",
+      "end_time": "2025-04-19 11:32:18",
+      "UUID": "53f3cc34-ab06-4419-8c36-882e945907d6"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.235608091e9,
+        3.249230162e9,
+        3.220275302e9,
+        2.934425733e9,
+        3.356695832e9
+      ],
+      "memory_usage": 6945263992,
+      "execution_times": [
+        6.3323082176e10,
+        6.5367981209e10,
+        6.3766673698e10,
+        6.2763265946e10,
+        6.3971331505e10
+      ],
+      "warmup_time": 69.778393482,
+      "allocations": 122676535
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:33:47",
+      "end_time": "2025-04-19 11:40:15",
+      "UUID": "684aa24e-ec71-4e81-94a2-1c84b23c4de2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.933570576e9,
+        4.012538817e9,
+        3.950183577e9,
+        4.17727759e9,
+        4.755332016e9
+      ],
+      "memory_usage": 8737949000,
+      "execution_times": [
+        7.8515863366e10,
+        8.1473176975e10,
+        8.0150915116e10,
+        7.974364809e10,
+        8.4501881164e10
+      ],
+      "warmup_time": 87.595354254,
+      "allocations": 156270468
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:42:02",
+      "end_time": "2025-04-19 11:50:11",
+      "UUID": "4d7bd161-deb1-460f-bd34-6a145f84aee4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.93227877e8,
+        7.8427175e8,
+        8.53424336e8,
+        6.17838048e8,
+        9.31925028e8
+      ],
+      "memory_usage": 1998859960,
+      "execution_times": [
+        1.8543934804e10,
+        2.0506332821e10,
+        2.0207004152e10,
+        1.975034532e10,
+        2.0461117323e10
+      ],
+      "warmup_time": 24.386362231,
+      "allocations": 35352128
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:50:55",
+      "end_time": "2025-04-19 11:52:56",
+      "UUID": "2649cfc9-f84b-4f0b-9f33-d1dd4bf11266"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.943122763e9,
+        4.033340686e9,
+        3.963505385e9,
+        4.098370785e9,
+        4.567543641e9
+      ],
+      "memory_usage": 8792821360,
+      "execution_times": [
+        7.9385529356e10,
+        8.053077621e10,
+        8.3264082133e10,
+        8.2177228674e10,
+        8.1773686737e10
+      ],
+      "warmup_time": 87.352043095,
+      "allocations": 156977566
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:54:40",
+      "end_time": "2025-04-19 12:02:53",
+      "UUID": "01e92ec5-fed2-4711-a0ca-844e6ee20f3b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.383676848e9,
+        7.874347786e9,
+        9.632030226e9,
+        9.680085314e9,
+        9.952396142e9
+      ],
+      "memory_usage": 17577775936,
+      "execution_times": [
+        1.55536166852e11,
+        1.5636999859e11,
+        1.5783344339e11,
+        1.5599428847e11,
+        1.60959099573e11
+      ],
+      "warmup_time": 171.552333097,
+      "allocations": 313838568
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:06:04",
+      "end_time": "2025-04-19 12:21:55",
+      "UUID": "494dbc94-7fcf-4b06-9a79-7426b701668d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.495145865e9,
+        2.07589477e9,
+        1.975092101e9,
+        2.112306916e9,
+        2.388936175e9
+      ],
+      "memory_usage": 4930380568,
+      "execution_times": [
+        4.3612887458e10,
+        4.740355643e10,
+        4.6110625062e10,
+        4.6172774851e10,
+        4.6480192457e10
+      ],
+      "warmup_time": 50.995436588,
+      "allocations": 87256522
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:23:06",
+      "end_time": "2025-04-19 12:27:44",
+      "UUID": "58014b63-814d-413a-bb35-faeae830c48c"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.66385188e8,
+        1.077257951e9,
+        1.125960319e9,
+        1.073452853e9,
+        1.331499145e9
+      ],
+      "memory_usage": 2928279160,
+      "execution_times": [
+        2.6329465148e10,
+        2.8148810429e10,
+        2.6769103806e10,
+        2.7787914671e10,
+        2.8136207833e10
+      ],
+      "warmup_time": 31.403653586,
+      "allocations": 52206093
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:28:34",
+      "end_time": "2025-04-19 12:31:20",
+      "UUID": "891c90ef-5435-4253-be26-d0ee5cf836be"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.88512965e9,
+        6.743053822e9,
+        7.916818627e9,
+        7.331416474e9,
+        8.068912499e9
+      ],
+      "memory_usage": 14632472096,
+      "execution_times": [
+        1.27906031513e11,
+        1.31930600512e11,
+        1.32291296273e11,
+        1.30542456493e11,
+        1.32100696333e11
+      ],
+      "warmup_time": 143.985932561,
+      "allocations": 260843714
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:34:02",
+      "end_time": "2025-04-19 12:47:15",
+      "UUID": "b0120afe-342d-42f5-b0c8-a33fb99ee41e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.24925988e8,
+        4.11686249e8,
+        3.27234784e8,
+        4.39359472e8,
+        3.20510805e8
+      ],
+      "memory_usage": 959535752,
+      "execution_times": [
+        8.641542672e9,
+        8.678202948e9,
+        8.364955241e9,
+        8.947623728e9,
+        8.49602751e9
+      ],
+      "warmup_time": 12.024546908,
+      "allocations": 17224812
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:47:50",
+      "end_time": "2025-04-19 12:48:43",
+      "UUID": "03e69628-3efb-4659-8277-20771dbea00f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.851316101e9,
+        4.885162985e9,
+        6.433438619e9,
+        5.592604257e9,
+        6.494310848e9
+      ],
+      "memory_usage": 11888318144,
+      "execution_times": [
+        1.07686394359e11,
+        1.0773973323e11,
+        1.08746013797e11,
+        1.0729510114e11,
+        1.08077992343e11
+      ],
+      "warmup_time": 116.41599312,
+      "allocations": 210700446
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:50:56",
+      "end_time": "2025-04-19 13:01:48",
+      "UUID": "f27c8069-d131-48ca-8af2-2ab528a94cbd"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.32249326e9,
+        3.171247729e9,
+        2.898550553e9,
+        3.250731521e9,
+        3.56271913e9
+      ],
+      "memory_usage": 6948002272,
+      "execution_times": [
+        6.2846046364e10,
+        6.4968085904e10,
+        6.4667449173e10,
+        6.4060739371e10,
+        6.4358922073e10
+      ],
+      "warmup_time": 69.216502933,
+      "allocations": 122739571
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:03:18",
+      "end_time": "2025-04-19 13:09:46",
+      "UUID": "6b418c93-8766-47fa-8be9-45bcb4c3aa20"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.66701231e9,
+        6.497579019e9,
+        6.175799256e9,
+        6.113540322e9,
+        6.562782314e9
+      ],
+      "memory_usage": 12667333144,
+      "execution_times": [
+        1.11868505527e11,
+        1.16886860834e11,
+        1.15794917926e11,
+        1.13909668978e11,
+        1.15190784262e11
+      ],
+      "warmup_time": 126.059261227,
+      "allocations": 225614199
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:12:11",
+      "end_time": "2025-04-19 13:23:46",
+      "UUID": "ba70efd8-22d4-4330-af42-730a14b2e01f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.18215003e8,
+        4.71846108e8,
+        2.14770991e8,
+        2.93096343e8,
+        4.39214448e8
+      ],
+      "memory_usage": 968213800,
+      "execution_times": [
+        8.494948798e9,
+        8.988535349e9,
+        8.524340408e9,
+        8.621674232e9,
+        8.887875627e9
+      ],
+      "warmup_time": 12.357103394,
+      "allocations": 17321704
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:24:21",
+      "end_time": "2025-04-19 13:25:14",
+      "UUID": "e9876b37-4658-46f9-8c52-77cac24460d9"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.268918027e9,
+        4.432854325e9,
+        4.532549559e9,
+        4.562062429e9,
+        5.114364831e9
+      ],
+      "memory_usage": 9700672816,
+      "execution_times": [
+        8.6804922403e10,
+        8.9445087703e10,
+        8.8909991412e10,
+        8.9736727759e10,
+        9.0596660646e10
+      ],
+      "warmup_time": 97.938937647,
+      "allocations": 173670745
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:27:09",
+      "end_time": "2025-04-19 13:36:10",
+      "UUID": "0800fa74-5b48-43ef-aa0d-51ab6f5182c9"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.071877689e9,
+        6.405082486e9,
+        8.607230975e9,
+        7.718767735e9,
+        7.707130956e9
+      ],
+      "memory_usage": 14677885592,
+      "execution_times": [
+        1.31633280479e11,
+        1.33171397425e11,
+        1.36533982897e11,
+        1.31384503221e11,
+        1.28344241828e11
+      ],
+      "warmup_time": 144.513067949,
+      "allocations": 261732029
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:38:55",
+      "end_time": "2025-04-19 13:52:18",
+      "UUID": "937e595d-c445-4139-8f7f-aabefa9aac96"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.518989544e9,
+        3.567578079e9,
+        3.294762786e9,
+        3.689655461e9,
+        4.154011127e9
+      ],
+      "memory_usage": 7786991904,
+      "execution_times": [
+        6.9849255842e10,
+        7.4492055484e10,
+        7.2425117287e10,
+        7.2259271718e10,
+        7.3345814176e10
+      ],
+      "warmup_time": 78.969601777,
+      "allocations": 139166125
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:53:59",
+      "end_time": "2025-04-19 14:01:18",
+      "UUID": "b567e864-796d-43c2-a6e5-8c74070cc572"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.454512657e9,
+        9.744164085e9,
+        1.1693695468e10,
+        1.0454961197e10,
+        1.1424262287e10
+      ],
+      "memory_usage": 19139831960,
+      "execution_times": [
+        1.68950949092e11,
+        1.75490501942e11,
+        1.7973175196e11,
+        1.7215743183e11,
+        1.77619231077e11
+      ],
+      "warmup_time": 189.740896712,
+      "allocations": 344721187
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:04:47",
+      "end_time": "2025-04-19 14:22:26",
+      "UUID": "1138d543-6e49-49d0-987a-d3d84b24d2f8"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.357065258e9,
+        1.540333791e9,
+        1.795704689e9,
+        1.718011368e9,
+        1.327926623e9
+      ],
+      "memory_usage": 4013410960,
+      "execution_times": [
+        3.6843000626e10,
+        3.8084213522e10,
+        3.747031738e10,
+        3.6699954885e10,
+        3.8825120409e10
+      ],
+      "warmup_time": 41.46156731,
+      "allocations": 70862047
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:23:35",
+      "end_time": "2025-04-19 14:27:21",
+      "UUID": "0dfbed3f-63ed-4020-a9f5-c0c7752315c9"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.129143036e9,
+        4.714865805e9,
+        4.520967616e9,
+        4.855748786e9,
+        5.3667677e9
+      ],
+      "memory_usage": 9723307608,
+      "execution_times": [
+        8.656034139e10,
+        9.0672957132e10,
+        8.9189373781e10,
+        9.0808102211e10,
+        8.8292732927e10
+      ],
+      "warmup_time": 97.90514758,
+      "allocations": 173928423
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:29:17",
+      "end_time": "2025-04-19 14:38:17",
+      "UUID": "b619e863-7ba3-4b86-8c8f-3733e3214640"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.03958576e9,
+        9.37986582e8,
+        1.215838864e9,
+        1.146503224e9,
+        1.241179858e9
+      ],
+      "memory_usage": 2980033520,
+      "execution_times": [
+        2.7100776482e10,
+        2.7835683118e10,
+        2.7500392987e10,
+        2.7868508051e10,
+        2.7456603337e10
+      ],
+      "warmup_time": 30.749891873,
+      "allocations": 52842624
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:39:08",
+      "end_time": "2025-04-19 14:41:55",
+      "UUID": "e54ffff8-50a1-4f77-8934-0e4fff6a9df4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.721440285e9,
+        1.85584882e9,
+        2.204154408e9,
+        2.168247612e9,
+        2.249084638e9
+      ],
+      "memory_usage": 5008042184,
+      "execution_times": [
+        4.5624559599e10,
+        4.7301174257e10,
+        4.7706765256e10,
+        4.6166468461e10,
+        4.8576090558e10
+      ],
+      "warmup_time": 50.478504324,
+      "allocations": 88055444
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:43:03",
+      "end_time": "2025-04-19 14:47:47",
+      "UUID": "c47aa2da-822c-48c9-b1c0-2ce343191b3c"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.350369847e9,
+        9.489445913e9,
+        1.0693118185e10,
+        1.0899626775e10,
+        1.085533062e10
+      ],
+      "memory_usage": 19382408408,
+      "execution_times": [
+        1.70187231814e11,
+        1.74661085225e11,
+        1.75138699893e11,
+        1.7480913469e11,
+        1.73312748144e11
+      ],
+      "warmup_time": 189.384209046,
+      "allocations": 347873630
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:51:15",
+      "end_time": "2025-04-19 15:08:45",
+      "UUID": "b83578c4-083b-4b3b-838f-56f3d4613fee"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.322638489e9,
+        8.387048575e9,
+        9.452989255e9,
+        8.986604457e9,
+        8.817429709e9
+      ],
+      "memory_usage": 16407369512,
+      "execution_times": [
+        1.45345127791e11,
+        1.50292245176e11,
+        1.5289699129e11,
+        1.49627052606e11,
+        1.48451313185e11
+      ],
+      "warmup_time": 163.990471323,
+      "allocations": 293767440
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:11:55",
+      "end_time": "2025-04-19 15:27:02",
+      "UUID": "95910de8-e6b6-433c-ab80-6efbd89b049d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.201683321e9,
+        1.623169883e9,
+        1.595430854e9,
+        1.761111421e9,
+        1.197437936e9
+      ],
+      "memory_usage": 3968346920,
+      "execution_times": [
+        3.7544506503e10,
+        3.8950287093e10,
+        3.7434680464e10,
+        3.6841153185e10,
+        3.6601139521e10
+      ],
+      "warmup_time": 43.075609156,
+      "allocations": 70315642
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:28:04",
+      "end_time": "2025-04-19 15:31:52",
+      "UUID": "98782ae7-d4f4-4957-aa8b-b15730c62cf2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.68319723e8,
+        1.106947571e9,
+        1.249560234e9,
+        1.188294759e9,
+        1.259082186e9
+      ],
+      "memory_usage": 2961578520,
+      "execution_times": [
+        2.6725563946e10,
+        2.7424702428e10,
+        2.8644192591e10,
+        2.7516492745e10,
+        2.8232223208e10
+      ],
+      "warmup_time": 31.656034479,
+      "allocations": 52561007
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:32:40",
+      "end_time": "2025-04-19 15:35:28",
+      "UUID": "7ab01506-aeee-4b4a-8651-dbe5c38b1f5d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.489728647e9,
+        6.887514163e9,
+        8.587104719e9,
+        8.336414145e9,
+        8.209312048e9
+      ],
+      "memory_usage": 15582212552,
+      "execution_times": [
+        1.40018962713e11,
+        1.40143630156e11,
+        1.41967948588e11,
+        1.42741289872e11,
+        1.37913452089e11
+      ],
+      "warmup_time": 152.887850962,
+      "allocations": 279372073
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:38:18",
+      "end_time": "2025-04-19 15:52:27",
+      "UUID": "40accb32-a737-46b6-861b-41cb1fc0fac9"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.486557771e9,
+        7.059690401e9,
+        8.670562056e9,
+        8.144360194e9,
+        8.745286452e9
+      ],
+      "memory_usage": 15724536696,
+      "execution_times": [
+        1.38975278681e11,
+        1.41744504938e11,
+        1.43619145246e11,
+        1.40400169666e11,
+        1.43127190222e11
+      ],
+      "warmup_time": 153.21250106,
+      "allocations": 279537574
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:55:20",
+      "end_time": "2025-04-19 16:09:35",
+      "UUID": "f0a21c17-ae61-451f-b5b3-57a3c0f61b01"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD Ryzen 7 5700G with Radeon Graphics",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   8",
+        "num_sockets": "Socket(s):                            1"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.21.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-1"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.726582715e9,
+        8.563674074e9,
+        1.0472308281e10,
+        1.0718364711e10,
+        9.76519185e9
+      ],
+      "memory_usage": 18394389792,
+      "execution_times": [
+        1.61527516238e11,
+        1.67740857164e11,
+        1.68976246176e11,
+        1.68143532262e11,
+        1.60569344238e11
+      ],
+      "warmup_time": 181.371340035,
+      "allocations": 330292208
+    },
+    "metadata": {
+      "start_time": "2025-04-19 16:12:56",
+      "end_time": "2025-04-19 16:29:40",
+      "UUID": "8872f832-5ada-408b-bfa9-859e08702c5f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          3.852861610489298e-8,
+          3.9434259261318184e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  }
+]

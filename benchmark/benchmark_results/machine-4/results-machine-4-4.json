@@ -1,0 +1,4742 @@
+[
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.3488187101e10,
+        1.946845033e10,
+        1.7411337083e10,
+        1.9257845473e10,
+        1.7819753129e10
+      ],
+      "memory_usage": 19681437912,
+      "execution_times": [
+        1.87868575138e11,
+        1.9508600358e11,
+        1.84926653475e11,
+        1.77311296112e11,
+        1.87146318784e11
+      ],
+      "warmup_time": 175.813083115,
+      "allocations": 347239010
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:02:31",
+      "end_time": "2025-04-19 05:21:24",
+      "UUID": "5c7870a7-2ea8-4287-8ccb-8eecfd10d75d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.148703507e10,
+        1.4688732839e10,
+        1.6622187047e10,
+        1.5497758242e10,
+        1.8351900871e10
+      ],
+      "memory_usage": 16665577832,
+      "execution_times": [
+        1.4845845809e11,
+        1.64174962405e11,
+        1.51901325395e11,
+        1.36533861972e11,
+        1.48034376939e11
+      ],
+      "warmup_time": 144.533545583,
+      "allocations": 294613601
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:24:32",
+      "end_time": "2025-04-19 05:39:26",
+      "UUID": "bf2d1f39-2d3a-44b0-b077-0791657ebde8"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.1141944722e10,
+        1.4398124063e10,
+        1.7827693433e10,
+        1.4766675121e10,
+        1.4410188299e10
+      ],
+      "memory_usage": 16560711224,
+      "execution_times": [
+        1.59617270881e11,
+        1.65288830829e11,
+        1.71503723829e11,
+        1.40593993822e11,
+        1.48723110343e11
+      ],
+      "warmup_time": 157.489593768,
+      "allocations": 292863807
+    },
+    "metadata": {
+      "start_time": "2025-04-19 05:42:47",
+      "end_time": "2025-04-19 05:58:45",
+      "UUID": "14b9a744-ced2-4074-98f1-b197667dbabc"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.5573190539e10,
+        1.9826357677e10,
+        2.1135710199e10,
+        1.9584099553e10,
+        1.6954896766e10
+      ],
+      "memory_usage": 19834238080,
+      "execution_times": [
+        1.90270601374e11,
+        1.84817691762e11,
+        1.84348028572e11,
+        1.69112561958e11,
+        1.88556499537e11
+      ],
+      "warmup_time": 179.505125062,
+      "allocations": 348968068
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:02:27",
+      "end_time": "2025-04-19 06:21:19",
+      "UUID": "7981aecc-52e0-4d3a-b9ce-0b20f51c807d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.104822474e9,
+        1.632726359e9,
+        1.151024873e9,
+        1.849719735e9,
+        1.30076866e9
+      ],
+      "memory_usage": 2137297712,
+      "execution_times": [
+        2.0730452774e10,
+        2.2024418864e10,
+        2.3609492091e10,
+        2.395546588e10,
+        2.3637380197e10
+      ],
+      "warmup_time": 27.237063054,
+      "allocations": 37263042
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:22:31",
+      "end_time": "2025-04-19 06:24:48",
+      "UUID": "63f8218d-7bfd-471c-ba29-4be7f4c7639f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.771478599e9,
+        9.213560573e9,
+        1.0206386112e10,
+        1.1106349061e10,
+        1.1129692907e10
+      ],
+      "memory_usage": 11765155440,
+      "execution_times": [
+        1.11380783764e11,
+        1.15708806599e11,
+        1.21000622187e11,
+        1.20829968009e11,
+        1.07839215629e11
+      ],
+      "warmup_time": 105.089086479,
+      "allocations": 204235355
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:27:03",
+      "end_time": "2025-04-19 06:38:43",
+      "UUID": "e8b1f642-0d41-4de8-a317-4a9c1c9fbb9c"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.081287694e9,
+        1.1021688066e10,
+        1.2176406351e10,
+        1.2566647267e10,
+        1.1931370871e10
+      ],
+      "memory_usage": 12770535192,
+      "execution_times": [
+        1.2203831824e11,
+        1.3471463849e11,
+        1.33739348476e11,
+        1.34008210189e11,
+        1.09948282085e11
+      ],
+      "warmup_time": 110.662859062,
+      "allocations": 223409391
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:41:14",
+      "end_time": "2025-04-19 06:53:43",
+      "UUID": "ee082529-4b3b-4d4b-a1f4-623bece8c73d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.140830088e9,
+        8.318470696e9,
+        9.42002432e9,
+        9.518134519e9,
+        1.071116855e10
+      ],
+      "memory_usage": 10763398120,
+      "execution_times": [
+        1.06443812124e11,
+        9.8065124393e10,
+        1.08602145468e11,
+        1.08577219216e11,
+        1.05324902776e11
+      ],
+      "warmup_time": 94.773598026,
+      "allocations": 187368857
+    },
+    "metadata": {
+      "start_time": "2025-04-19 06:55:56",
+      "end_time": "2025-04-19 07:06:26",
+      "UUID": "373a5fc3-f6fb-46f8-9188-2d3e2b3d906d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.934377159e9,
+        8.184163125e9,
+        8.726108592e9,
+        1.0423332149e10,
+        1.0150842224e10
+      ],
+      "memory_usage": 10531266128,
+      "execution_times": [
+        9.1941916439e10,
+        1.01715258381e11,
+        9.8463405763e10,
+        1.12635542192e11,
+        9.9252212956e10
+      ],
+      "warmup_time": 90.968407064,
+      "allocations": 184770413
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:08:35",
+      "end_time": "2025-04-19 07:18:35",
+      "UUID": "52610040-b4e6-45a9-8468-d389e712c085"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.869337259e9,
+        6.233242746e9,
+        6.018820016e9,
+        7.324392302e9,
+        8.065166381e9
+      ],
+      "memory_usage": 8534746824,
+      "execution_times": [
+        7.4872300576e10,
+        7.8658915456e10,
+        8.2819238087e10,
+        8.2117645151e10,
+        8.5086481563e10
+      ],
+      "warmup_time": 74.624467251,
+      "allocations": 149103495
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:20:26",
+      "end_time": "2025-04-19 07:28:26",
+      "UUID": "b283e2e7-1f8d-48ea-84e1-7e114bd15eb4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.680919896e9,
+        7.252657173e9,
+        7.64858854e9,
+        8.13357722e9,
+        9.334117721e9
+      ],
+      "memory_usage": 9539814984,
+      "execution_times": [
+        8.6639975475e10,
+        9.9714872215e10,
+        9.6152501279e10,
+        1.05599052588e11,
+        1.06393791325e11
+      ],
+      "warmup_time": 84.982065523,
+      "allocations": 167076234
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:30:25",
+      "end_time": "2025-04-19 07:40:13",
+      "UUID": "dd4e5043-544c-413d-ba18-ca9abb1338a4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.4337804042e10,
+        1.984889728e10,
+        1.8729655353e10,
+        2.0295183476e10,
+        1.9594744946e10
+      ],
+      "memory_usage": 21206381648,
+      "execution_times": [
+        1.98541948697e11,
+        1.96791294152e11,
+        1.86223564076e11,
+        1.99963804555e11,
+        2.0310201433e11
+      ],
+      "warmup_time": 187.875910111,
+      "allocations": 368701078
+    },
+    "metadata": {
+      "start_time": "2025-04-19 07:43:56",
+      "end_time": "2025-04-19 08:03:46",
+      "UUID": "4a54dddf-f2e0-4bfe-be79-4f207fe3caa1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.875282765e9,
+        4.645522108e9,
+        5.429307183e9,
+        4.505913265e9,
+        5.321695472e9
+      ],
+      "memory_usage": 6265101032,
+      "execution_times": [
+        4.9924343511e10,
+        6.5445413944e10,
+        6.9115027145e10,
+        7.4362904748e10,
+        5.9001429157e10
+      ],
+      "warmup_time": 56.915438452,
+      "allocations": 109905287
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:05:28",
+      "end_time": "2025-04-19 08:11:45",
+      "UUID": "dd2e9ea8-df09-415f-bf0a-f1be98e3ee57"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.999035534e9,
+        1.1331744513e10,
+        1.2424550705e10,
+        1.2670730813e10,
+        1.3591532054e10
+      ],
+      "memory_usage": 13581354272,
+      "execution_times": [
+        1.2816873515e11,
+        1.34739089082e11,
+        1.25827661828e11,
+        1.17183589903e11,
+        1.10173706425e11
+      ],
+      "warmup_time": 125.024821434,
+      "allocations": 239991662
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:14:24",
+      "end_time": "2025-04-19 08:27:04",
+      "UUID": "c1eeae92-b839-41ad-9469-b35a122c8446"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.748564926e9,
+        3.075220473e9,
+        2.67454797e9,
+        3.752667166e9,
+        4.114449242e9
+      ],
+      "memory_usage": 4337047864,
+      "execution_times": [
+        4.3310591003e10,
+        4.2574770489e10,
+        4.5411736663e10,
+        4.5518903889e10,
+        4.9589907325e10
+      ],
+      "warmup_time": 40.372721828,
+      "allocations": 75330661
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:28:24",
+      "end_time": "2025-04-19 08:32:56",
+      "UUID": "e31d80a6-3f39-4ecc-851f-1b0c5151b0cb"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.434909641e9,
+        5.350581322e9,
+        6.275186631e9,
+        5.424090568e9,
+        6.593731066e9
+      ],
+      "memory_usage": 7420617984,
+      "execution_times": [
+        6.2570801387e10,
+        6.8275936739e10,
+        7.2065832304e10,
+        7.2669578485e10,
+        7.4975073144e10
+      ],
+      "warmup_time": 64.481976209,
+      "allocations": 129543441
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:34:32",
+      "end_time": "2025-04-19 08:41:30",
+      "UUID": "fa8cd467-6b85-402e-8646-fed2b869456d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.349963202e9,
+        1.2345358326e10,
+        1.3143321311e10,
+        1.3760934751e10,
+        1.4543140457e10
+      ],
+      "memory_usage": 13981775024,
+      "execution_times": [
+        1.38979252634e11,
+        1.44169878433e11,
+        1.39614533216e11,
+        1.41115696344e11,
+        1.28884971447e11
+      ],
+      "warmup_time": 120.81085782,
+      "allocations": 243016214
+    },
+    "metadata": {
+      "start_time": "2025-04-19 08:44:07",
+      "end_time": "2025-04-19 08:58:03",
+      "UUID": "3976b2a3-c1e6-42b2-ad46-941b5925a22d"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.0212654929e10,
+        1.4238411576e10,
+        1.5223205739e10,
+        1.5137033699e10,
+        1.2187425063e10
+      ],
+      "memory_usage": 15468878752,
+      "execution_times": [
+        1.544468637e11,
+        1.59553149796e11,
+        1.79417986607e11,
+        1.37377665546e11,
+        1.35115251461e11
+      ],
+      "warmup_time": 141.600178238,
+      "allocations": 273998078
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:01:07",
+      "end_time": "2025-04-19 09:16:40",
+      "UUID": "831cf195-94e7-4aea-bd3d-9f2abe715032"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.920455693e9,
+        5.10124632e9,
+        5.775042149e9,
+        6.01359793e9,
+        5.084980469e9
+      ],
+      "memory_usage": 7350116904,
+      "execution_times": [
+        5.9119354807e10,
+        6.8206046272e10,
+        7.3137149697e10,
+        7.0835027159e10,
+        6.4489249607e10
+      ],
+      "warmup_time": 63.620447151,
+      "allocations": 128812922
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:18:25",
+      "end_time": "2025-04-19 09:25:10",
+      "UUID": "edafdd97-aa44-4909-b499-59a8c367f7c4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.61507655e8,
+        4.49133843e8,
+        1.003371877e9,
+        4.63010505e8,
+        4.51573806e8
+      ],
+      "memory_usage": 1007911320,
+      "execution_times": [
+        6.594309873e9,
+        6.98535666e9,
+        7.25785512e9,
+        7.279160179e9,
+        7.352829367e9
+      ],
+      "warmup_time": 13.250839784,
+      "allocations": 17981697
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:25:57",
+      "end_time": "2025-04-19 09:26:43",
+      "UUID": "686fa0b9-55f8-44ed-ad74-e38bfbeb200a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.072142458e9,
+        2.992731661e9,
+        3.187612959e9,
+        3.630370533e9,
+        3.880302739e9
+      ],
+      "memory_usage": 4247523064,
+      "execution_times": [
+        3.8137652702e10,
+        3.7707603877e10,
+        3.9847436414e10,
+        4.8781476963e10,
+        4.8141981951e10
+      ],
+      "warmup_time": 43.792003362,
+      "allocations": 74258493
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:27:57",
+      "end_time": "2025-04-19 09:32:14",
+      "UUID": "8f1671ee-1407-4f35-9e3d-f64d307c3f7b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        7.386069499e9,
+        9.50576231e9,
+        1.0592662132e10,
+        1.0802785358e10,
+        1.1909332842e10
+      ],
+      "memory_usage": 11649539560,
+      "execution_times": [
+        1.03944147735e11,
+        1.19495594719e11,
+        1.2546440738e11,
+        1.19686554455e11,
+        1.16283995297e11
+      ],
+      "warmup_time": 103.099546677,
+      "allocations": 202920591
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:34:30",
+      "end_time": "2025-04-19 09:46:06",
+      "UUID": "e5860a99-838f-42a7-91f7-e39232e26c1f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.010852996e9,
+        7.747181225e9,
+        8.63842691e9,
+        9.581422946e9,
+        7.096344233e9
+      ],
+      "memory_usage": 9401241384,
+      "execution_times": [
+        8.3904331146e10,
+        1.01093586607e11,
+        1.00039844276e11,
+        9.8466525072e10,
+        9.2172702713e10
+      ],
+      "warmup_time": 84.655263471,
+      "allocations": 165054237
+    },
+    "metadata": {
+      "start_time": "2025-04-19 09:48:08",
+      "end_time": "2025-04-19 09:57:36",
+      "UUID": "e80f6ae4-83b3-41f7-bcb2-8f2be7299824"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.2381920733e10,
+        1.6023669003e10,
+        1.6929099449e10,
+        1.7027316368e10,
+        1.9116994098e10
+      ],
+      "memory_usage": 17820954704,
+      "execution_times": [
+        1.58964358092e11,
+        1.77402147952e11,
+        1.57839722834e11,
+        1.52387623046e11,
+        1.59759766708e11
+      ],
+      "warmup_time": 165.0262177,
+      "allocations": 314554514
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:00:58",
+      "end_time": "2025-04-19 10:17:25",
+      "UUID": "1086108f-88c4-450d-b342-3511f25cf837"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.3333208622e10,
+        1.6189506819e10,
+        1.9604790925e10,
+        1.6466726328e10,
+        1.7470451184e10
+      ],
+      "memory_usage": 17735288552,
+      "execution_times": [
+        1.78745798572e11,
+        1.8341743776e11,
+        1.87448030858e11,
+        1.64327805606e11,
+        1.58274127717e11
+      ],
+      "warmup_time": 157.84481545,
+      "allocations": 313309417
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:20:45",
+      "end_time": "2025-04-19 10:38:21",
+      "UUID": "df9acaa0-438b-4290-ba07-cb7c1e946af1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.30117691e9,
+        3.192076552e9,
+        4.183503697e9,
+        4.717224879e9,
+        4.770059355e9
+      ],
+      "memory_usage": 5362672136,
+      "execution_times": [
+        4.6532310693e10,
+        5.1019355445e10,
+        5.3180973874e10,
+        5.5484334364e10,
+        5.4430348097e10
+      ],
+      "warmup_time": 49.395854542,
+      "allocations": 93131053
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:39:58",
+      "end_time": "2025-04-19 10:45:13",
+      "UUID": "ccf963f1-678b-4ada-b38f-becb9cf9feb7"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.6741376945e10,
+        2.1361579343e10,
+        1.9669085774e10,
+        2.2342390424e10,
+        2.1027930723e10
+      ],
+      "memory_usage": 20872429320,
+      "execution_times": [
+        2.125306094e11,
+        2.01467891103e11,
+        1.75877681897e11,
+        1.98556165457e11,
+        2.00258472235e11
+      ],
+      "warmup_time": 193.277435117,
+      "allocations": 368531311
+    },
+    "metadata": {
+      "start_time": "2025-04-19 10:49:00",
+      "end_time": "2025-04-19 11:09:21",
+      "UUID": "c433db9f-7bdf-47d3-864c-cb67bede18e1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.771801111e9,
+        1.0402898932e10,
+        1.2414900696e10,
+        1.2700726221e10,
+        1.4177634178e10
+      ],
+      "memory_usage": 13777278080,
+      "execution_times": [
+        1.09647450563e11,
+        1.44700689164e11,
+        1.50246257899e11,
+        1.39327808679e11,
+        1.26921667789e11
+      ],
+      "warmup_time": 114.415079292,
+      "allocations": 238579453
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:12:03",
+      "end_time": "2025-04-19 11:25:30",
+      "UUID": "630a4c45-81c2-4cb6-8e4e-f041b0f54eec"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 130,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.86341299e8,
+        6.15241259e8,
+        7.34935132e8,
+        4.57576211e8,
+        6.85867066e8
+      ],
+      "memory_usage": 1013328376,
+      "execution_times": [
+        6.82963444e9,
+        7.619621148e9,
+        7.341529553e9,
+        6.367354154e9,
+        7.5457603e9
+      ],
+      "warmup_time": 12.764443406,
+      "allocations": 18017289
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:26:22",
+      "end_time": "2025-04-19 11:27:07",
+      "UUID": "f55ad5cd-3b39-4c83-8556-e96fd5345e85"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.355297231e9,
+        3.320618395e9,
+        4.288585454e9,
+        4.927101406e9,
+        5.226044752e9
+      ],
+      "memory_usage": 5317648048,
+      "execution_times": [
+        4.3453442018e10,
+        5.651349558e10,
+        5.3949896844e10,
+        6.0244028864e10,
+        5.6197609839e10
+      ],
+      "warmup_time": 49.379936849,
+      "allocations": 92582935
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:28:26",
+      "end_time": "2025-04-19 11:33:48",
+      "UUID": "2a48d9df-ba7a-481a-9eb7-869f628fa6f3"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.405340964e9,
+        2.139521971e9,
+        2.595548796e9,
+        2.045135311e9,
+        2.695014556e9
+      ],
+      "memory_usage": 3135300912,
+      "execution_times": [
+        2.6252062678e10,
+        2.7445105568e10,
+        2.9177293223e10,
+        3.3006356662e10,
+        3.4574725391e10
+      ],
+      "warmup_time": 32.053173354,
+      "allocations": 55105250
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:34:53",
+      "end_time": "2025-04-19 11:37:56",
+      "UUID": "0d9da328-657a-47c3-a1e0-111457e245fb"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.357658055e9,
+        5.551896647e9,
+        5.660045649e9,
+        6.461450738e9,
+        5.262244957e9
+      ],
+      "memory_usage": 8349547760,
+      "execution_times": [
+        6.735082883e10,
+        8.2635773197e10,
+        7.6137456149e10,
+        7.7270158951e10,
+        8.1930987645e10
+      ],
+      "warmup_time": 69.914533688,
+      "allocations": 147232278
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:39:37",
+      "end_time": "2025-04-19 11:47:21",
+      "UUID": "60937ea0-c2c3-4467-be15-5dba3cf2de8f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        2.460542909e9,
+        3.065990899e9,
+        2.385636429e9,
+        3.597139792e9,
+        3.53409783e9
+      ],
+      "memory_usage": 4254279104,
+      "execution_times": [
+        4.0330330885e10,
+        4.8227312756e10,
+        3.9157624307e10,
+        4.8860295696e10,
+        4.9560457692e10
+      ],
+      "warmup_time": 39.413658545,
+      "allocations": 74301853
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:48:36",
+      "end_time": "2025-04-19 11:53:01",
+      "UUID": "59125811-d51c-45ea-ab69-f71603c4c30a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 40,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.496493007e10,
+        1.8998454902e10,
+        1.9270914238e10,
+        2.0712162817e10,
+        2.2703683952e10
+      ],
+      "memory_usage": 20047179904,
+      "execution_times": [
+        1.9417107016e11,
+        2.02697418651e11,
+        1.85027884176e11,
+        1.81726200986e11,
+        2.04856610451e11
+      ],
+      "warmup_time": 187.691308715,
+      "allocations": 352438623
+    },
+    "metadata": {
+      "start_time": "2025-04-19 11:56:41",
+      "end_time": "2025-04-19 12:16:24",
+      "UUID": "f59c069e-dd03-4177-956b-528e41eaf542"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 190,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.3219370155e10,
+        1.9423048858e10,
+        1.6723523851e10,
+        1.7928502486e10,
+        1.5460975432e10
+      ],
+      "memory_usage": 18610682168,
+      "execution_times": [
+        1.86410422805e11,
+        2.08868582945e11,
+        1.64540152841e11,
+        1.68125935424e11,
+        1.73958538657e11
+      ],
+      "warmup_time": 176.363706829,
+      "allocations": 328162502
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:20:07",
+      "end_time": "2025-04-19 12:38:45",
+      "UUID": "6902f0c6-7da9-4d59-ad8c-6cd93ff947b1"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.575548512e9,
+        1.0988510448e10,
+        1.1246487365e10,
+        1.2873704558e10,
+        1.1423735998e10
+      ],
+      "memory_usage": 12722263680,
+      "execution_times": [
+        1.24064381527e11,
+        1.35636815428e11,
+        1.30811552954e11,
+        1.33941665728e11,
+        1.12186639302e11
+      ],
+      "warmup_time": 110.958512541,
+      "allocations": 222912708
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:41:19",
+      "end_time": "2025-04-19 12:54:17",
+      "UUID": "12938eac-5919-49bd-ae1c-5a2992be27d2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.1129400056e10,
+        1.360509323e10,
+        1.7810425845e10,
+        1.5260634329e10,
+        1.2867102736e10
+      ],
+      "memory_usage": 15459085040,
+      "execution_times": [
+        1.45615895712e11,
+        1.62461100957e11,
+        1.63513361519e11,
+        1.41453672735e11,
+        1.36951585786e11
+      ],
+      "warmup_time": 145.250146784,
+      "allocations": 273873105
+    },
+    "metadata": {
+      "start_time": "2025-04-19 12:57:22",
+      "end_time": "2025-04-19 13:12:47",
+      "UUID": "a7306984-cfc1-4b12-a008-638ef70efe38"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.361915417e9,
+        3.154900568e9,
+        4.117283094e9,
+        4.651791838e9,
+        5.428936074e9
+      ],
+      "memory_usage": 5346437728,
+      "execution_times": [
+        4.6312147447e10,
+        5.2588432465e10,
+        5.9125578834e10,
+        6.0460408149e10,
+        5.4438873339e10
+      ],
+      "warmup_time": 48.685778062,
+      "allocations": 92895708
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:14:17",
+      "end_time": "2025-04-19 13:19:42",
+      "UUID": "368ecaa6-4ad4-4a26-ae1e-ff006a23f9d2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 50,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.021149941e9,
+        1.650749729e9,
+        1.158862038e9,
+        1.896741447e9,
+        1.086012892e9
+      ],
+      "memory_usage": 2121559520,
+      "execution_times": [
+        1.9340660838e10,
+        2.1215595555e10,
+        2.2912753938e10,
+        2.3450568752e10,
+        2.5225839024e10
+      ],
+      "warmup_time": 23.342362846,
+      "allocations": 37086516
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:20:38",
+      "end_time": "2025-04-19 13:22:52",
+      "UUID": "620b679c-15fe-4e3a-9e7e-760d433b0350"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.087758363e9,
+        1.987059202e9,
+        2.70234378e9,
+        1.868703922e9,
+        2.712952283e9
+      ],
+      "memory_usage": 3103611352,
+      "execution_times": [
+        2.4842027232e10,
+        3.2768503779e10,
+        3.5125945287e10,
+        3.113292712e10,
+        3.4168815981e10
+      ],
+      "warmup_time": 35.118477174,
+      "allocations": 54778155
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:23:58",
+      "end_time": "2025-04-19 13:27:08",
+      "UUID": "ce489f99-0724-420a-9ecb-8d98a91b994a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.647708391e9,
+        4.956911094e9,
+        3.782123583e9,
+        5.524407767e9,
+        5.323094856e9
+      ],
+      "memory_usage": 6202670720,
+      "execution_times": [
+        4.6651058581e10,
+        7.2148124221e10,
+        6.6580042583e10,
+        6.8602207272e10,
+        5.4453227598e10
+      ],
+      "warmup_time": 57.895570446,
+      "allocations": 109322867
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:28:36",
+      "end_time": "2025-04-19 13:34:46",
+      "UUID": "f0b0a75c-81a5-4502-85a1-d34f0939d32e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        3.889403405e9,
+        4.90525986e9,
+        5.18455331e9,
+        4.659643545e9,
+        5.741636122e9
+      ],
+      "memory_usage": 6434765448,
+      "execution_times": [
+        5.7781776773e10,
+        6.33695496e10,
+        6.555103055e10,
+        6.5104747185e10,
+        6.0809698212e10
+      ],
+      "warmup_time": 58.39792709,
+      "allocations": 111762812
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:36:18",
+      "end_time": "2025-04-19 13:42:31",
+      "UUID": "3347261e-ee62-4c40-9aca-b2c08f277ac2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 60,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.006776968e9,
+        9.915910608e9,
+        1.0417860453e10,
+        1.1989289058e10,
+        1.1847979162e10
+      ],
+      "memory_usage": 11831716488,
+      "execution_times": [
+        1.1339093938e11,
+        1.23929380085e11,
+        1.26881427874e11,
+        1.3043139976e11,
+        1.25887423643e11
+      ],
+      "warmup_time": 102.000425054,
+      "allocations": 205068186
+    },
+    "metadata": {
+      "start_time": "2025-04-19 13:44:47",
+      "end_time": "2025-04-19 13:56:55",
+      "UUID": "3b99b79c-03d4-4134-9845-90270f960ffb"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 110,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.6622503949e10,
+        2.2184571336e10,
+        2.0431123126e10,
+        2.2108838943e10,
+        2.0064724108e10
+      ],
+      "memory_usage": 21106940512,
+      "execution_times": [
+        2.15941742809e11,
+        2.1586240715e11,
+        1.93330515765e11,
+        1.92434143397e11,
+        2.04734237624e11
+      ],
+      "warmup_time": 192.190829053,
+      "allocations": 368929957
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:00:46",
+      "end_time": "2025-04-19 14:21:22",
+      "UUID": "f2f3c4d8-1b42-4ee1-b179-59e8741a2a8a"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 200,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.353740357e9,
+        7.572742735e9,
+        7.969981388e9,
+        8.168235467e9,
+        9.976256575e9
+      ],
+      "memory_usage": 9615147880,
+      "execution_times": [
+        9.2253371408e10,
+        1.01388152189e11,
+        9.3175441112e10,
+        9.2957367136e10,
+        9.9609369428e10
+      ],
+      "warmup_time": 83.812560301,
+      "allocations": 167938992
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:23:32",
+      "end_time": "2025-04-19 14:32:59",
+      "UUID": "111c2f67-13b9-4a05-bd76-61597e071037"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 90,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.2771383612e10,
+        1.4617685861e10,
+        1.8025378284e10,
+        1.604142565e10,
+        1.4810478576e10
+      ],
+      "memory_usage": 17495620072,
+      "execution_times": [
+        1.62546988957e11,
+        1.68873006762e11,
+        1.52306452095e11,
+        1.44734634599e11,
+        1.60654759733e11
+      ],
+      "warmup_time": 161.318837922,
+      "allocations": 310012586
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:36:16",
+      "end_time": "2025-04-19 14:52:13",
+      "UUID": "92a472f6-6d79-496c-a815-d16eeb5a14ad"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 170,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.0787535793e10,
+        1.5063337908e10,
+        1.5174681752e10,
+        1.6810764015e10,
+        1.6293466963e10
+      ],
+      "memory_usage": 15807813368,
+      "execution_times": [
+        1.42808650519e11,
+        1.62987929172e11,
+        1.52469131587e11,
+        1.4633573476e11,
+        1.38950001519e11
+      ],
+      "warmup_time": 138.616011207,
+      "allocations": 278336997
+    },
+    "metadata": {
+      "start_time": "2025-04-19 14:55:14",
+      "end_time": "2025-04-19 15:10:11",
+      "UUID": "729bd171-10b8-422e-a278-f8972c96b7ae"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 150,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.295652337e9,
+        1.0538891307e10,
+        1.1583684796e10,
+        1.2889209198e10,
+        1.1671160981e10
+      ],
+      "memory_usage": 12672270696,
+      "execution_times": [
+        1.17850175349e11,
+        1.31874191263e11,
+        1.43482939813e11,
+        1.37470421637e11,
+        1.08385792362e11
+      ],
+      "warmup_time": 114.024161135,
+      "allocations": 222387926
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:12:45",
+      "end_time": "2025-04-19 15:25:40",
+      "UUID": "fa75f014-e826-43ee-a336-39d531249b5f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 120,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.347126607e9,
+        2.494502593e9,
+        2.63288259e9,
+        1.835240871e9,
+        3.072585098e9
+      ],
+      "memory_usage": 3153599704,
+      "execution_times": [
+        2.6501944359e10,
+        3.252657978e10,
+        3.4152261732e10,
+        3.3911146299e10,
+        3.3454128242e10
+      ],
+      "warmup_time": 33.110925573,
+      "allocations": 55311881
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:26:54",
+      "end_time": "2025-04-19 15:30:08",
+      "UUID": "a8ada857-2b2c-4935-9eba-a39c254e189f"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 30,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.1561955764e10,
+        1.4912378207e10,
+        1.5816055873e10,
+        1.6676503416e10,
+        1.650137322e10
+      ],
+      "memory_usage": 16725619424,
+      "execution_times": [
+        1.5101413257e11,
+        1.68420822509e11,
+        1.5810948816e11,
+        1.51756314289e11,
+        1.4698088498e11
+      ],
+      "warmup_time": 154.801048515,
+      "allocations": 295419376
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:33:14",
+      "end_time": "2025-04-19 15:48:46",
+      "UUID": "81af6dc5-d30e-4ca4-9964-cfbccc382499"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 160,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.3127310235e10,
+        2.0052648851e10,
+        1.8004719581e10,
+        1.6738002593e10,
+        2.1485975838e10
+      ],
+      "memory_usage": 18704891640,
+      "execution_times": [
+        1.69647926127e11,
+        1.94965684462e11,
+        1.65770600047e11,
+        1.67965774278e11,
+        1.98519002178e11
+      ],
+      "warmup_time": 166.87707017,
+      "allocations": 330265073
+    },
+    "metadata": {
+      "start_time": "2025-04-19 15:52:13",
+      "end_time": "2025-04-19 16:10:02",
+      "UUID": "2c099958-779e-469b-b826-51ee493701ca"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.277681782e9,
+        1.2886407393e10,
+        1.2065438745e10,
+        1.2685988321e10,
+        1.1355909523e10
+      ],
+      "memory_usage": 14569536592,
+      "execution_times": [
+        1.28247052159e11,
+        1.60006793257e11,
+        1.43455423325e11,
+        1.40276484917e11,
+        1.29961758894e11
+      ],
+      "warmup_time": 126.03738275,
+      "allocations": 257126137
+    },
+    "metadata": {
+      "start_time": "2025-04-19 16:12:54",
+      "end_time": "2025-04-19 16:27:08",
+      "UUID": "cb322f9a-a074-462d-b378-bde1e1999204"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.033535547e9,
+        4.841217273e9,
+        5.49873945e9,
+        5.599571922e9,
+        4.687955979e9
+      ],
+      "memory_usage": 7339025728,
+      "execution_times": [
+        6.0555236055e10,
+        7.7706948627e10,
+        8.0417992873e10,
+        7.2311675824e10,
+        6.8237749645e10
+      ],
+      "warmup_time": 65.046147198,
+      "allocations": 128812883
+    },
+    "metadata": {
+      "start_time": "2025-04-19 16:28:52",
+      "end_time": "2025-04-19 16:35:59",
+      "UUID": "63208dfe-3f60-40c2-8a06-1fb7c8acb1dd"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 70,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.988067502e9,
+        1.4768034288e10,
+        1.4045229911e10,
+        1.4582823728e10,
+        1.2310783051e10
+      ],
+      "memory_usage": 14539771912,
+      "execution_times": [
+        1.36917826365e11,
+        1.51181150342e11,
+        1.65118357461e11,
+        1.42655600331e11,
+        1.29598508749e11
+      ],
+      "warmup_time": 130.207981292,
+      "allocations": 256663148
+    },
+    "metadata": {
+      "start_time": "2025-04-19 16:38:43",
+      "end_time": "2025-04-19 16:53:29",
+      "UUID": "2e9f9f5d-0f04-401c-a757-f4f6aa28c8c2"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        8.78462367e8,
+        1.431018668e9,
+        1.042721418e9,
+        1.664434001e9,
+        1.142129799e9
+      ],
+      "memory_usage": 2114048256,
+      "execution_times": [
+        1.9219562408e10,
+        2.0790224867e10,
+        2.0147270535e10,
+        2.3567009806e10,
+        2.3853907539e10
+      ],
+      "warmup_time": 25.336641123,
+      "allocations": 37053368
+    },
+    "metadata": {
+      "start_time": "2025-04-19 16:54:37",
+      "end_time": "2025-04-19 16:56:48",
+      "UUID": "7a9baaff-6293-4243-828c-52864c884ccd"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 20,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        9.87430033e9,
+        1.2810969346e10,
+        1.5926946339e10,
+        1.1379418516e10,
+        1.5941062848e10
+      ],
+      "memory_usage": 14555689712,
+      "execution_times": [
+        1.28554890844e11,
+        1.67472473849e11,
+        1.59749334671e11,
+        1.26046954781e11,
+        1.52155864774e11
+      ],
+      "warmup_time": 128.182768289,
+      "allocations": 256951066
+    },
+    "metadata": {
+      "start_time": "2025-04-19 16:59:27",
+      "end_time": "2025-04-19 17:14:01",
+      "UUID": "6b52a767-6b50-4be4-bef4-778c09f74cf3"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 140,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        5.003194507e9,
+        6.716393393e9,
+        7.004961273e9,
+        7.588862507e9,
+        6.3419213e9
+      ],
+      "memory_usage": 8357831304,
+      "execution_times": [
+        6.8928562438e10,
+        7.9894706099e10,
+        7.3502202173e10,
+        8.6299733693e10,
+        7.7064490962e10
+      ],
+      "warmup_time": 77.153373431,
+      "allocations": 147242167
+    },
+    "metadata": {
+      "start_time": "2025-04-19 17:15:59",
+      "end_time": "2025-04-19 17:23:46",
+      "UUID": "042529ef-34dc-41ae-af79-e8df0b3d4a32"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 80,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        6.876574149e9,
+        8.488473851e9,
+        9.10073157e9,
+        1.046909378e10,
+        1.1536792865e10
+      ],
+      "memory_usage": 10456603280,
+      "execution_times": [
+        9.0252365294e10,
+        1.02955731054e11,
+        1.03370248875e11,
+        1.16451311531e11,
+        1.14015153793e11
+      ],
+      "warmup_time": 93.872576942,
+      "allocations": 184079548
+    },
+    "metadata": {
+      "start_time": "2025-04-19 17:25:54",
+      "end_time": "2025-04-19 17:36:18",
+      "UUID": "f95f2eed-df0f-4334-b4a7-fb9e46e5afe4"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 100,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        4.38814176e8,
+        6.62539501e8,
+        7.5790613e8,
+        4.50799117e8,
+        4.20800702e8
+      ],
+      "memory_usage": 1011694088,
+      "execution_times": [
+        6.639427146e9,
+        7.070409833e9,
+        6.999554075e9,
+        7.278892029e9,
+        6.588205147e9
+      ],
+      "warmup_time": 13.424228434,
+      "allocations": 18020687
+    },
+    "metadata": {
+      "start_time": "2025-04-19 17:37:09",
+      "end_time": "2025-04-19 17:37:53",
+      "UUID": "f82a3662-36a1-46a8-beaa-e530d24def3b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 10,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  },
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           Intel(R) Xeon(R) 6780E",
+        "threads_per_core": "Thread(s) per core:                   1",
+        "cores_per_socket": "Core(s) per socket:                   144",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-503.31.1.el9_5.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": false
+      },
+      "machine_id": "machine-4"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.12",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.2761059016e10,
+        1.8626473149e10,
+        1.6365277257e10,
+        1.8658498406e10,
+        1.723521766e10
+      ],
+      "memory_usage": 18630899744,
+      "execution_times": [
+        1.76678079695e11,
+        1.93718054283e11,
+        1.68649942525e11,
+        1.75318806254e11,
+        1.82593160008e11
+      ],
+      "warmup_time": 163.289220312,
+      "allocations": 328689044
+    },
+    "metadata": {
+      "start_time": "2025-04-19 17:41:06",
+      "end_time": "2025-04-19 17:59:19",
+      "UUID": "c0a890e2-5c28-44e9-b64c-2731d580153b"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 16,
+        "crunch_coefficients": [
+          6.169423985121871e-8,
+          5.918397975327382e-11
+        ],
+        "event_count": 180,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 16,
+      "thread_pinning": true
+    }
+  }
+]

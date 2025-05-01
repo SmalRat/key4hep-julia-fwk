@@ -1,0 +1,81 @@
+[
+  {
+    "machine_info": {
+      "hardware_info": {
+        "cpu_model": "Model name:                           AMD EPYC 7302 16-Core Processor",
+        "threads_per_core": "Thread(s) per core:                   2",
+        "cores_per_socket": "Core(s) per socket:                   16",
+        "num_sockets": "Socket(s):                            2"
+      },
+      "os_info": {
+        "os_name": "Linux",
+        "os_version": "5.14.0-427.42.1.el9_4.x86_64"
+      },
+      "boost_info": {
+        "boost_enabled": true
+      },
+      "machine_id": "machine-2"
+    },
+    "versions": {
+      "experiment_version": "0.1.1",
+      "benchmark_version": "0.11",
+      "Julia": "1.11.4",
+      "BenchmarkTools": {
+        "major": 1,
+        "prerelease": [],
+        "build": [],
+        "patch": 0,
+        "minor": 6
+      }
+    },
+    "results": {
+      "gc_times": [
+        1.844258040886e12,
+        2.226734017901e12,
+        2.474262032964e12,
+        2.810318762818e12,
+        2.889885046829e12
+      ],
+      "memory_usage": 1812995360336,
+      "execution_times": [
+        1.0441325485453e13,
+        1.1336414358519e13,
+        1.3483641101267e13,
+        1.4439123719532e13,
+        1.2446896702477e13
+      ],
+      "warmup_time": 8365.508512273,
+      "allocations": 18632672255
+    },
+    "metadata": {
+      "start_time": "2025-04-17 15:38:54",
+      "end_time": "2025-04-18 11:52:08",
+      "UUID": "4f196304-adcc-4b3d-a552-a32236a6cd9e"
+    },
+    "experiment_parameters": {
+      "domain_parameters": {
+        "max_concurrent": 56,
+        "crunch_coefficients": [
+          8.950285576096787e-8,
+          9.741731025465768e-11
+        ],
+        "event_count": 1000,
+        "data_flow_name": "ATLAS/q449",
+        "fast": false
+      },
+      "benchmarktools_parameters": {
+        "gctrial": true,
+        "time_tolerance": 0.05,
+        "evals_set": false,
+        "samples": 5,
+        "evals": 1,
+        "gcsample": false,
+        "seconds": 172800.0,
+        "overhead": 0.0,
+        "memory_tolerance": 0.01
+      },
+      "threads_num": 112,
+      "thread_pinning": true
+    }
+  }
+]
