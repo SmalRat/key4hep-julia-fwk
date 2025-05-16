@@ -12,6 +12,9 @@ function parse_kwargs_exprs(kwargs, d)
     end
 end
 
+"""
+Exit with a custom exit code if an error occurs in the given expression.
+"""
 macro custom_exitcode_on_error(ex, kwargs...)
     kwargs_dict = Dict{Symbol, Any}(:errmsg => nothing, :exitcode => 1)
     parse_kwargs_exprs(kwargs, kwargs_dict)

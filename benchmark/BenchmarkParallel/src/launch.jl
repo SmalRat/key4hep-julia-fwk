@@ -2,7 +2,6 @@ using ArgParse
 using Serialization
 using Dates
 
-# using .AbstractExperiments
 
 abstract type ExperimentParametersGenerator end
 
@@ -38,12 +37,11 @@ function launcher(experiment::AbstractExperiment, parameters::BenchmarkParameter
 
         while (true)
             worker_script_path = joinpath(dirname(@__FILE__), "worker.jl")
-            # worker_script_path = "test1.jl"
             worker_cmd = Cmd(`julia --threads=$t --project=. $worker_script_path`) # TODO Env var
             worker_in = Pipe()
             proc = run(pipeline(ignorestatus(worker_cmd), stderr=f_errors_log, stdout=stdout, stdin=worker_in), wait=false)
-            serialize(worker_in, experiment)
-            serialize(worker_in, parameters)
+            serialize(worker_in, experiment) # Transfer experiment object to the worker
+            serialize(worker_in, parameters) # Transfer parameters object to the worker
             flush(worker_in)
             close(worker_in.in)
             wait(proc)

@@ -22,6 +22,9 @@ function gen_crunch_experiment_plot(data::Vector{TrialEntry}, dir, filename)
     create_and_save_plot(dir, filename, crunch_experiment_plot, data)
 end
 
+"""
+Creates crunch experiment plot (histogram)
+"""
 function crunch_experiment_routine(db, crunch_experiment_plot_filename)
     versions = Dict()
     experiment_parameters = Dict()

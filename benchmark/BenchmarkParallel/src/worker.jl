@@ -12,11 +12,6 @@ using BenchmarkParallel.BenchmarkPlots, BenchmarkParallel.StatsPlots
 using BenchmarkParallel.Logging
 using BenchmarkParallel.Serialization
 
-# include("AbstractExperiments.jl")
-# using .AbstractExperiments
-
-# include("benchmark_utils.jl")
-# include("db_tools.jl")
 
 const PROGRAM_VERSION = "0.12"
 
@@ -86,10 +81,8 @@ function (@main)(raw_args)
     args = parse_args(raw_args)
     machine_info_filename::String = args["machine-info-filename"]
 
-    experiment::AbstractExperiment = deserialize(stdin)
-    # b = deserialize(stdin)
-    # println(typeof(b))
-    benchmark_parameters::BenchmarkParameters = deserialize(stdin)
+    experiment::AbstractExperiment = deserialize(stdin) # Receive experiment object from launcher
+    benchmark_parameters::BenchmarkParameters = deserialize(stdin) # Receive parameters object from launcher
     machine_info::Dict = get_machine_info(machine_info_filename)
 
     parameters = AllParams(experiment, benchmark_parameters, machine_info)

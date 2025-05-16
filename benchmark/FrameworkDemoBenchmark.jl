@@ -1,7 +1,6 @@
 # How to run?
 # > julia --project=. FrameworkDemoBenchmark.jl test.json --samples=1 --pin-threads=true --relaunch-on-error=true --new-experiment-set=experiments_set_4
 
-# include("launch.jl")
 using ArgParse
 using Dates
 using BenchmarkParallel
@@ -14,15 +13,10 @@ using .FrameworkDemoPipelineExperiments
 
 include("epg.jl")
 
-
 function parse_args(raw_args)
     s = ArgParseSettings()
 
     @add_arg_table! s begin
-        # "data-flow"
-        # help = "Input data-flow graph as a GraphML file"
-        # arg_type = String
-        # required = true
 
         "results-filename"
         help = "Benchmark results will be stored in this file"
@@ -38,39 +32,6 @@ function parse_args(raw_args)
         help = "Number of samples for each thread count"
         arg_type = Int
         default = 1
-
-        # "--min-threads"
-        # help = "Minimum number of threads to test"
-        # arg_type = Int
-        # default = 1
-
-        # "--max-threads"
-        # help = "Maximum number of threads to test"
-        # arg_type = Int
-        # default = 4
-
-        # "--event-count"
-        # help = "Number of events to be processed"
-        # arg_type = Int
-        # default = 1
-
-        # "--max-concurrent-low"
-        # help = "Number of slots for graphs to be scheduled concurrently (lower bound)"
-        # arg_type = Int
-        # default = 1
-
-        # "--max-concurrent-high"
-        # help = "Number of slots for graphs to be scheduled concurrently (upper bound)"
-        # arg_type = Int
-        # default = 1
-
-        # "--fast"
-        # help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
-        # action = :store_true
-
-        # "--repeated-crunch-calibration"
-        # help = "Execute algorithms immediately skipping algorithm runtime information and crunching"
-        # action = :store_true
 
         "--pin-threads"
         help = "Pin Julia threads to CPU threads"
@@ -96,20 +57,14 @@ function parse_args(raw_args)
 end
 
 
+"""
+Repeatedly runs the experiment with given implementation and different parameters.
+"""
 function (@main)(raw_args)
     args = parse_args(raw_args)
 
     pin_threads = args["pin-threads"]
     samples = args["samples"]
-    # min_threads = args["min-threads"]
-    # max_threads = args["max-threads"]
-
-    # data_flow = args["data-flow"]
-    # event_count = args["event-count"]
-    # concurrent_low = args["max-concurrent-low"]
-    # concurrent_high = args["max-concurrent-high"]
-    # fast = args["fast"]
-    # repeated_crunch_calibration = args["repeated-crunch-calibration"]
     relaunch_on_error = args["relaunch-on-error"]
 
     results_filename = args["results-filename"]

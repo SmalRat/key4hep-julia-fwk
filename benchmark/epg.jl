@@ -1,6 +1,9 @@
 using .FrameworkDemoPipelineExperiments
 using JSON
 
+"""
+Struct to generate parameters for the experiments.
+"""
 struct FrameworkDemoEPG <:ExperimentParametersGenerator
     experiment::AbstractExperiment
     parameters::BenchmarkParameters
@@ -58,12 +61,20 @@ Base.length(epg::FrameworkDemoEPG) =
     (epg.threads_max_num - epg.threads_min_num + 1)
 
 
+"""
+Struct to track the finished experiments and experiment set currently being run.
+Tracks and preserves the crunch coefficients between experiments as well.
+"""
 mutable struct ExperimentsBookkeeper
     current_experiment_set::String
     conducted_experiments::Vector{String}
     crunch_coefficients::Vector{Float64}
 end
 
+"""
+Initializes the state of the experiment set and the crunch coefficients.
+If the experiment set name is empty, it will try to resume the previous experiment set.
+"""
 function ExperimentsStateBookkeeper(new_experiment_set_name::Union{String, Nothing}, preserve_coefs::Bool=true)
     new_experiment_set_name == "" && (new_experiment_set_name = nothing)
     mkpath("experiments_management")
@@ -126,6 +137,9 @@ function ExperimentsStateBookkeeper(new_experiment_set_name::Union{String, Nothi
     ExperimentsBookkeeper(current_experiment_set, conducted_experiments, crunch_coefficients)
 end
 
+"""
+Returns experiments of given experiment set from the JSON file
+"""
 function get_experiment_set(experiment_set_name::String; filename::String="experiments_management/experiments_sets.json")
     open(filename, "r") do f
         content = JSON.parse(read(f, String))
@@ -138,6 +152,9 @@ function get_experiment_set(experiment_set_name::String; filename::String="exper
     end
 end
 
+"""
+Returns the random experiment (which was not executed yet) from the current experiment set.
+"""
 function get_random_experiment(bookkeeper::ExperimentsBookkeeper; filename::String="experiments_management/experiments_sets.json")
     experiment_set = get_experiment_set(bookkeeper.current_experiment_set; filename=filename) # TODO: check for "nothing"
 
@@ -155,6 +172,10 @@ function get_random_experiment(bookkeeper::ExperimentsBookkeeper; filename::Stri
     return (selected_id, selected_experiment)
 end
 
+
+"""
+Finalizes the experiment by adding it to the conducted experiments list and updating the JSON file.
+"""
 function finalize!(bookkeeper::ExperimentsBookkeeper, experiment_id::String)
     push!(bookkeeper.conducted_experiments, experiment_id)
 
@@ -169,7 +190,9 @@ function finalize!(bookkeeper::ExperimentsBookkeeper, experiment_id::String)
     end
 end
 
-
+"""
+Struct to randomly pick the experiments (parameters) to execute next.
+"""
 mutable struct RandomFrameworkDemoEPG
     parameters::BenchmarkParameters
     bookkeeper::ExperimentsBookkeeper

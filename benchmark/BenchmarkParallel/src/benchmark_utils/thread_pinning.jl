@@ -1,3 +1,6 @@
+"""
+Use CPU affinity to pin CPU threads; threads are pinned to the first NUMA node
+"""
 function do_pin_threads()
     @info "Pinning Julia threads to CPU threads"
     cpu_threads::Vector{Int} = []

@@ -1,5 +1,8 @@
 const EVENT_COUNT_EFFECT_PLOTS_DIR = "event_count_effect_plots"
 
+"""
+Creates event count effect plot
+"""
 function event_count_experiment_routine(db, event_count_effect_plot_filename)
     versions = Dict()
     experiment_parameters = Dict()

@@ -1,5 +1,8 @@
 const CONCURRENCY_EFFECT_PLOTS_DIR = "concurrency_effect_plots"
 
+"""
+Creates concurrency effect plots
+"""
 function concurrency_effect_routine(db, concurrency_effect_plot_filename)
     for threads_n in 1:16
         # Create filter template

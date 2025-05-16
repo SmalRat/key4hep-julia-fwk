@@ -1,5 +1,8 @@
 const STRONG_SCALABILITY_PLOTS_DIR = "strong_scalability_plots"
 
+"""
+Creates strong scalability plot
+"""
 function strong_scalability_routine(db, strong_scalability_plot_filename)
     # Create filter template
     versions = Dict()

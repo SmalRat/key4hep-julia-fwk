@@ -7,6 +7,9 @@ using Dagger
 using BenchmarkParallel
 import BenchmarkParallel: setup_experiment, run_experiment, teardown_experiment, get_version, get_experiment_parameters
 
+"""
+Structure containing parameters for the FrameworkDemo pipeline experiment.
+"""
 mutable struct FrameworkDemoPipelineExperiment <: AbstractExperiment
     data_flow_name::String
     event_count::Int
